@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-stretch: normal;  
+    font-family: get-font(family, primary);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: get-color(white, 500);
+    color: get-color(black, 500);
+    letter-spacing: -0.4px;
+
+    &.is-overlay {
+        overflow: hidden;
+    }
+
+    &.is-loading:not(.prevent-loading) * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;  
+    }
+
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#root > main {
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+code {
+    background-color: #eeeeee;
+    padding: 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: get-color(black, 500);
+    transition:  0.3s color;
+    padding: 0.3rem 0;
+    text-transform: capitalize;
+    transition: 0.3s color;
+
+    @media only screen and (min-width: get-breakpoint(sm)) {
+        padding: 0.5rem 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: get-color(primary, 500);
+    }
+
+    > i {
+        transition: 0.3s color;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: get-color(black, 500);
+}
+
+hr.vr {
+    border: none;
+    width: 1px;
+    height: 100%;
+    background-color: get-color(black, 500);
+}
+
+img {
+    display: block;
+}
+
+.is-hidden {
+    display: none !important;
+}

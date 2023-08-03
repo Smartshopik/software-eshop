@@ -1,0 +1,212 @@
+@use "sass:math";
+
+$layout--columns: 12;
+$layout--gaps: 24px;
+$layout--sm-gaps: 12px;
+
+@each $key, $value in $breakpoints {    
+    @media (min-width: $value) {
+        @for $columns from 1 through $layout--columns {
+            [class~="col"][class~='#{$columns}-#{$key}'],
+            [class~="cols"][class~='#{$columns}-#{$key}'] > * {
+                width: math.div(100, $layout--columns) * $columns * 1%;
+            }   
+
+            [class~="offset#{$columns}-#{$key}"] {
+                margin-left: math.div(100, $layout--columns) * $columns * 1%;
+            }
+            [class~="offsetr#{$columns}-#{$key}"] {
+                margin-right: math.div(100, $layout--columns) * $columns * 1%;
+            }
+        }
+
+    }
+}
+
+[class~="cols"] {
+    display: flex;
+    flex-wrap: wrap;
+    margin: math.div($layout--gaps, -2);
+
+    > * {
+        padding: math.div($layout--gaps, 2);
+        width: 100%
+
+        
+    }
+
+    &.is-collapse.is-open {
+        display: flex;
+    }
+
+    &.is-collapse {
+        display: none;
+    }
+}
+
+[class~="col"] {
+    padding: math.div($layout--gaps, 2);
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    margin: 0 auto; 
+
+    @media only screen and (min-width: get-breakpoint(sm)) {
+        max-width: calc(450px + 24px);
+    }   
+
+    @media only screen and (min-width: get-breakpoint(md)) {
+        max-width: calc(750px + 24px);
+       
+    } 
+
+    @media only screen and (min-width: get-breakpoint(lg)) {
+        max-width: calc(970px + 24px);
+    } 
+
+    @media only screen and (min-width: get-breakpoint(xl)) {
+        max-width: calc(1140px + 24px);
+    }   
+}
+
+.container--small {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: get-breakpoint(sm)) {
+        max-width: calc(450px + 24px);
+    }   
+
+    @media only screen and (min-width: get-breakpoint(md)) {
+        max-width: calc(460px + 24px);
+    } 
+
+    @media only screen and (min-width: get-breakpoint(lg)) {
+        max-width: calc(460px + 24px);
+    } 
+
+    @media only screen and (min-width: get-breakpoint(xl)) {
+        max-width: calc(460px + 24px);
+    } 
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1 !important;
+}
+
+.flex-nogrow {
+    flex-grow: 0 !important;
+}
+
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.align-start {
+    align-items: flex-start !important;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.align-end {
+    align-items: flex-end !important;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.no-shrink {
+    flex-shrink: 0 !important;
+}
+
+.shrink {
+    flex-shrink: unset !important;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+// positions
+.p-absolute {
+    position: absolute;
+}
+
+.p-sticky {
+    position: sticky;
+}
+
+.p-static {
+    position: static;
+}
+
+.p-relative {
+    position: relative;
+}
+
+// dimenstions
+.w-lg {
+    width: 680px;
+}
+
+.w-md {
+    width: 550px;
+}
+
+.w-sm {
+    width: 400px;
+}
+
+.min-h-full {
+    min-height: 100%;
+}

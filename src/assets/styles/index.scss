@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+| CORE
+|--------------------------------------------------------------------------
+*/
+    // Variables
+    @import "core/variables/variables.breakpoints";
+    @import "core/variables/variables.colors";
+    @import "core/variables/variables.fonts";
+    @import "core/variables/variables.gaps";
+    @import "core/variables/variables.shadows";
+    // Others
+    @import "core/functions";
+    @import "core/mixins";
+    @import "core/animations";
+    @import "core/typography";
+    @import "core/base";
+    @import "core/loops";
+
+/*
+|--------------------------------------------------------------------------
+| BLOCKS
+|--------------------------------------------------------------------------
+*/
+// @import "blocks/header/header";
+
+/*
+|--------------------------------------------------------------------------
+| COMPONENTS
+|--------------------------------------------------------------------------
+*/
+// @import "components/input/input";
+/*
+|--------------------------------------------------------------------------
+| UTILS
+|--------------------------------------------------------------------------
+*/
+@import "utils/utils.states";
+@import "utils/utils.text";
+@import "utils/utils.link";
+@import "utils/utils.layout";
+@import "utils/utils.bg";
+@import "utils/utils.image";
+

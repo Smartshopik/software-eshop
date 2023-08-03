@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "./public/",
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "target": "es5",
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+    }
+}

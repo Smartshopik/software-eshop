@@ -1,0 +1,45 @@
+.text--bold {
+    font-weight: get-font(weight, bold) !important;
+}
+
+.text--medium {
+    font-weight: get-font(weight, medium) !important;
+}
+
+.text--regular {
+    font-weight: get-font(weight, regular) !important;
+}
+
+// transform
+.text--uppercase {
+    text-transform: uppercase !important;
+}
+
+// transform
+.text--notransform {
+    text-transform: none !important;
+}
+
+.text--capitalize {
+    text-transform: capitalize !important;
+}
+
+// decoration
+.text--linethrough {
+    text-decoration: line-through !important;
+}
+
+.text--ellipsis {
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text--nowrap {
+    white-space: nowrap;
+}
+
+.text-white {
+    color: get-color(white, 500);
+}
