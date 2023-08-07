@@ -1,9 +1,33 @@
-.btn--btn a {
-    display: flex;
+.btn {
+    background-color: #5F56C6;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    border-radius: 0.7rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #584be0;
+        color: white;
+    }
 }
-.btn--btn--normal a {
-    text-decoration: none;
+.btn--sm {
+    font-size: 1.2rem;
+    padding: 1rem 1.8rem;
 }
-.normal a {
-    color: aqua;
+.btn--lg {
+    font-size: 1.6rem;
+    padding: 1.5rem 2.2rem;
+}
+.btn--secondary {
+    color: black;
+    background-color:#f7f7f7;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #ecebeb;
+        color: black;
+    }
 }
