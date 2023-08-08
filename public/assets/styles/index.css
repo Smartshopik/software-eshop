@@ -41582,6 +41582,11 @@ img {
   animation: donut-spin 1.2s linear infinite;
 }
 
+.btn--secondary.is-loading::after {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-left-color: #000000;
+}
+
 .btn--icon i:first-child:not(:last-child) {
   margin-right: 1.2rem;
 }

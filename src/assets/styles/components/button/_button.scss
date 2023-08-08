@@ -40,6 +40,10 @@
     min-height: 16px;
     animation: donut-spin 1.2s linear infinite;
 }
+.btn--secondary.is-loading::after {
+    border: 1px solid rgba(get-color(black, 500), 0.25);
+    border-left-color: get-color(black, 500);
+}
 .btn--icon i:first-child:not(:last-child) {
     margin-right: 1.2rem;
 }
