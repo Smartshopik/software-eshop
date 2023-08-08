@@ -41536,26 +41536,28 @@ img {
 |--------------------------------------------------------------------------
 */
 .btn {
-  background-color: #5F56C6;
-  color: #FFFFFF;
+  background-color: #5f56c6;
+  color: #ffffff;
   font-size: 1.3rem;
   padding: 1.2rem 2rem;
   border-radius: 0.7rem;
   position: relative;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 .btn:hover, .btn:focus, .btn:active {
-  background-color: #584be0;
-  color: white;
+  background-color: #443bae;
+  color: #ffffff;
 }
 
-.btn.is-disabled {
+.btn.is-disabled, .btn:disabled {
   pointer-events: none;
   opacity: 0.7;
-  color: transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: rgba(255, 255, 255, 0.585);
 }
 
 .btn.is-loading {
@@ -41571,13 +41573,21 @@ img {
   content: "";
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-left-color: white;
+  border-left-color: #ffffff;
   border-radius: 50%;
   left: calc(50% - 8px);
   top: calc(50% - 8px);
   min-width: 16px;
   min-height: 16px;
   animation: donut-spin 1.2s linear infinite;
+}
+
+.btn--icon i:first-child:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.btn--icon i:last-child:not(:first-child) {
+  margin-left: 1.2rem;
 }
 
 .btn--sm {
@@ -41591,12 +41601,12 @@ img {
 }
 
 .btn--secondary {
-  color: black;
+  color: #000000;
   background-color: #f7f7f7;
 }
 .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active {
-  background-color: #ecebeb;
-  color: black;
+  background-color: #eaeaea;
+  color: #000000;
 }
 
 @keyframes donut-spin {
