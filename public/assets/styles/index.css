@@ -41541,10 +41541,43 @@ img {
   font-size: 1.3rem;
   padding: 1.2rem 2rem;
   border-radius: 0.7rem;
+  position: relative;
 }
 .btn:hover, .btn:focus, .btn:active {
   background-color: #584be0;
   color: white;
+}
+
+.btn.is-disabled {
+  pointer-events: none;
+  opacity: 0.7;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: rgba(255, 255, 255, 0.585);
+}
+
+.btn.is-loading {
+  pointer-events: none;
+  opacity: 0.7;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.btn.is-loading::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left-color: white;
+  border-radius: 50%;
+  left: calc(50% - 8px);
+  top: calc(50% - 8px);
+  min-width: 16px;
+  min-height: 16px;
+  animation: donut-spin 1.2s linear infinite;
 }
 
 .btn--sm {
@@ -41566,6 +41599,11 @@ img {
   color: black;
 }
 
+@keyframes donut-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
 /*
 |--------------------------------------------------------------------------
 | UTILS
