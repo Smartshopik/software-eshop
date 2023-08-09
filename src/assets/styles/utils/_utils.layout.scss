@@ -1,7 +1,7 @@
 @use "sass:math";
 
 $layout--columns: 12;
-$layout--gaps: 24px;
+$layout--gaps: 15px;
 $layout--sm-gaps: 12px;
 
 @each $key, $value in $breakpoints {    
@@ -55,21 +55,8 @@ $layout--sm-gaps: 12px;
     padding: 0 12px;
     margin: 0 auto; 
 
-    @media only screen and (min-width: get-breakpoint(sm)) {
-        max-width: calc(450px + 24px);
-    }   
-
-    @media only screen and (min-width: get-breakpoint(md)) {
-        max-width: calc(750px + 24px);
-       
-    } 
-
-    @media only screen and (min-width: get-breakpoint(lg)) {
-        max-width: calc(970px + 24px);
-    } 
-
     @media only screen and (min-width: get-breakpoint(xl)) {
-        max-width: calc(1140px + 24px);
+        max-width: calc(1140px + $layout--gaps);
     }   
 }
 
@@ -79,21 +66,21 @@ $layout--sm-gaps: 12px;
     padding: 0 12px;
     margin: 0 auto;
 
-    @media only screen and (min-width: get-breakpoint(sm)) {
-        max-width: calc(450px + 24px);
-    }   
+    // @media only screen and (min-width: get-breakpoint(sm)) {
+    //     max-width: calc(450px + $layout--gaps);
+    // }   
 
-    @media only screen and (min-width: get-breakpoint(md)) {
-        max-width: calc(460px + 24px);
-    } 
+    // @media only screen and (min-width: get-breakpoint(md)) {
+    //     max-width: calc(460px + $layout--gaps);
+    // } 
 
-    @media only screen and (min-width: get-breakpoint(lg)) {
-        max-width: calc(460px + 24px);
-    } 
+    // @media only screen and (min-width: get-breakpoint(lg)) {
+    //     max-width: calc(460px + $layout--gaps);
+    // } 
 
-    @media only screen and (min-width: get-breakpoint(xl)) {
-        max-width: calc(460px + 24px);
-    } 
+    // @media only screen and (min-width: get-breakpoint(xl)) {
+    //     max-width: calc(460px + $layout--gaps);
+    // } 
 }
 
 .d-flex {

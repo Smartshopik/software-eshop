@@ -45,26 +45,26 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1.5rem;
-  line-height: 150%;
-  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  text-transform: uppercase;
 }
 
 p, .p {
   font-size: 1.6rem;
   line-height: 150%;
-  color: #000000;
+  color: #333333;
   font-weight: 400;
 }
 
 a, .a,
 li, .li {
   font-size: 1.3rem;
-  color: #000000;
+  color: #333333;
 }
 
 span, .span {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 small, .small {
@@ -93,8 +93,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #000000;
-  letter-spacing: -0.4px;
+  color: #333333;
 }
 body.is-overlay {
   overflow: hidden;
@@ -129,16 +128,8 @@ code {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
+  color: #333333;
   transition: 0.3s color;
-  padding: 0.3rem 0;
-  text-transform: capitalize;
-  transition: 0.3s color;
-}
-@media only screen and (min-width: 479px) {
-  a {
-    padding: 0.5rem 0;
-  }
 }
 a:hover, a:focus, a:active {
   text-decoration: none;
@@ -151,14 +142,14 @@ a > i {
 hr {
   border: none;
   height: 1px;
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 hr.vr {
   border: none;
   width: 1px;
   height: 100%;
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 img {
@@ -41583,8 +41574,8 @@ img {
 }
 
 .btn--secondary.is-loading::after {
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-left-color: #000000;
+  border: 1px solid rgba(51, 51, 51, 0.25);
+  border-left-color: #333333;
 }
 
 .btn--icon i:first-child:not(:last-child) {
@@ -41606,12 +41597,12 @@ img {
 }
 
 .btn--secondary {
-  color: #000000;
+  color: #333333;
   background-color: #f7f7f7;
 }
 .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active {
   background-color: #eaeaea;
-  color: #000000;
+  color: #333333;
 }
 
 @keyframes donut-spin {
@@ -41633,8 +41624,8 @@ div.is-loading:not(.prevent-loading):before {
   z-index: 100;
   top: calc(50% - 20px);
   left: calc(50% - 20px);
-  border: 4px solid rgba(0, 0, 0, 0.2);
-  border-left-color: #000000;
+  border: 4px solid rgba(51, 51, 51, 0.2);
+  border-left-color: #333333;
   opacity: 1;
   border-radius: 50%;
   min-width: 40px;
@@ -41693,7 +41684,33 @@ div.is-loading:not(.prevent-loading)::after {
   white-space: nowrap;
 }
 
-.text-white {
+.text--start {
+  text-align: start;
+}
+
+.text--end {
+  text-align: end;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--white,
+.text--white-500 {
+  color: #ffffff;
+}
+
+.text--white-300 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link--white {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+  font-size: 1.4rem;
+}
+.link--white:hover, .link--white:focus, .link--white:active {
   color: #ffffff;
 }
 
@@ -42432,10 +42449,10 @@ div.is-loading:not(.prevent-loading)::after {
 [class~=cols] {
   display: flex;
   flex-wrap: wrap;
-  margin: -12px;
+  margin: -7.5px;
 }
 [class~=cols] > * {
-  padding: 12px;
+  padding: 7.5px;
   width: 100%;
 }
 [class~=cols].is-collapse.is-open {
@@ -42446,7 +42463,7 @@ div.is-loading:not(.prevent-loading)::after {
 }
 
 [class~=col] {
-  padding: 12px;
+  padding: 7.5px;
   width: 100%;
 }
 
@@ -42456,24 +42473,9 @@ div.is-loading:not(.prevent-loading)::after {
   padding: 0 12px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 479px) {
-  .container {
-    max-width: 474px;
-  }
-}
-@media only screen and (min-width: 767px) {
-  .container {
-    max-width: 774px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .container {
-    max-width: 994px;
-  }
-}
 @media only screen and (min-width: 1199px) {
   .container {
-    max-width: 1164px;
+    max-width: 1155px;
   }
 }
 
@@ -42482,26 +42484,6 @@ div.is-loading:not(.prevent-loading)::after {
   max-width: 100%;
   padding: 0 12px;
   margin: 0 auto;
-}
-@media only screen and (min-width: 479px) {
-  .container--small {
-    max-width: 474px;
-  }
-}
-@media only screen and (min-width: 767px) {
-  .container--small {
-    max-width: 484px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .container--small {
-    max-width: 484px;
-  }
-}
-@media only screen and (min-width: 1199px) {
-  .container--small {
-    max-width: 484px;
-  }
 }
 
 .d-flex {
@@ -42616,6 +42598,20 @@ div.is-loading:not(.prevent-loading)::after {
   min-height: 100%;
 }
 
-.bg-primary {
+.bg--primary {
   background-color: #5f56c6;
+}
+
+.bg--black,
+.bg--black-500 {
+  background-color: #333333;
+}
+
+.bg--black-400 {
+  background-color: #101010;
+}
+
+.image--large {
+  max-width: 250px;
+  width: 100%;
 }

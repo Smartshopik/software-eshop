@@ -29,9 +29,9 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-size: 1.5rem;
-    line-height: 150%;
-    font-weight: get-font(weight, bold);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-transform: uppercase;
 }
 
 p, .p {
@@ -50,9 +50,7 @@ li, .li {
 }
 
 span, .span {
-    font-size: 1.3rem;
-
-
+    font-size: 1.4rem;
 }
 
 small, .small {

@@ -19,7 +19,6 @@ html {
 body {
     background-color: get-color(white, 500);
     color: get-color(black, 500);
-    letter-spacing: -0.4px;
 
     &.is-overlay {
         overflow: hidden;
@@ -62,14 +61,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: get-color(black, 500);
-    transition:  0.3s color;
-    padding: 0.3rem 0;
-    text-transform: capitalize;
     transition: 0.3s color;
-
-    @media only screen and (min-width: get-breakpoint(sm)) {
-        padding: 0.5rem 0;
-    }
 
     &:hover,
     &:focus,
@@ -86,15 +78,14 @@ a {
 hr {
     border: none;
     height: 1px;
-    background-color: get-color(black, 500);
+    background-color: rgba(get-color(white, 500), 0.15);
 }
 
 hr.vr {
     border: none;
     width: 1px;
     height: 100%;
-    background-color: get-color(black, 500);
-}
+    background-color: rgba(get-color(white, 500), 0.15);}
 
 img {
     display: block;

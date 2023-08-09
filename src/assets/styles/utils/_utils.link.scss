@@ -1,0 +1,11 @@
+.link--white {
+    color: rgba(get-color(white, 500), 0.6);
+    transition: color 0.3s;
+    font-size: 1.4rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: get-color(white, 500);
+    }
+}

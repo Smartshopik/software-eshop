@@ -40,6 +40,24 @@
     white-space: nowrap;
 }
 
-.text-white {
+.text--start {
+    text-align: start;
+}
+
+.text--end {
+    text-align: end;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--white,
+.text--white-500 {
     color: get-color(white, 500);
+}
+
+
+.text--white-300 {
+    color: get-color(white, 300);
 }
