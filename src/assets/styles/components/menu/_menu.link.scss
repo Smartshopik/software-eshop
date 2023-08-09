@@ -1,0 +1,125 @@
+.menu__link {
+    position: relative;
+
+    > a, button {
+        display: flex;
+        align-items: center;
+        border: 0;
+        font-size: 1.5rem !important;
+        font-weight: get-font(weight, bold);
+        padding: 1.2rem 0.8rem;
+        background-color: transparent;
+        color: get-color(black, 500);
+        cursor: pointer;
+        transition: 0.3s color;
+
+        > .menu__link--title {
+            font-size: 1.5rem !important;
+            white-space: nowrap;
+        }
+
+        > i:last-child:not(:first-child),
+        > img:last-child:not(:first-child),
+        > svg:last-child:not(:first-child) {
+            margin-left: 0.4rem;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            color: get-color(primary, 500);
+        }
+    }
+}
+
+.menu__link--dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: get-color(white, 500);
+    box-shadow: get-shadow(secondary);
+    z-index: 10;
+    border-radius: 0.2rem;
+    min-width: 220px;
+    padding: 1.2rem 2rem;
+    width: 100%;
+    transition: 0.3s opacity, 0.3s transform;
+
+    &.is-hidden {
+        display: block !important;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+    }
+
+    &.is-visible {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    > li a,
+    ul li a {
+        color: get-color(black, 300);
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        transition: 0.3s color;
+        padding: 0.8rem 0;
+
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            color: get-color(primary, 500);
+        }
+    }
+}
+
+.menu__link--badge {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    color: get-color(white, 500);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    background-color: get-color(black, 300);
+    top: -0.5rem;
+    left: calc(0% + 2rem);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 1rem;
+        border: 0.4rem solid;
+        border-bottom-color: transparent !important;
+        border-right-color: transparent !important;
+        border-right-width: 0.7rem;
+        border-left-width: 0;
+        border-color: get-color(black, 300);
+    }
+}
+
+.menu__link--badge--green {
+    background-color: get-color(green, 500);
+
+    &::before {
+        border-color: get-color(green, 500);
+    }
+}
+
+.menu__link--badge--blue {
+    background-color: get-color(blue, 500);
+
+    &::before {
+        border-color: get-color(blue, 500);
+    }
+}

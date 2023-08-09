@@ -1,0 +1,47 @@
+.menu__box {
+    position: relative;
+
+    > a, button {
+        display: flex;
+        align-items: flex-end;
+        border: 0;
+        padding: 1.2rem 0.8rem;
+        background-color: transparent;
+        color: get-color(black, 500);
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+}
+
+.menu__box--quantity {
+    position: absolute;
+    pointer-events: none;
+    top: 0.75rem;
+    right: -0.25rem;
+    min-width: 15px;
+    height: 15px;
+    font-size: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: get-color(white, 500);
+    background-color: get-color(primary, 500);
+    border-radius: 50%;
+}
+
+.menu__box--icon {
+    i, svg, img {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}

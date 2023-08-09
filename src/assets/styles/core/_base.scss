@@ -66,6 +66,7 @@ a {
     &:hover,
     &:focus,
     &:active {
+        outline: none;
         text-decoration: none;
         color: get-color(primary, 500);
     }
@@ -79,6 +80,10 @@ hr {
     border: none;
     height: 1px;
     background-color: rgba(get-color(white, 500), 0.15);
+
+    &.hr--light {
+        background-color: rgba(black, 0.05);
+    }
 }
 
 hr.vr {
