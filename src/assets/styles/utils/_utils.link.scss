@@ -9,3 +9,15 @@
         color: get-color(white, 500);
     }
 }
+
+.link--primary {
+    color: get-color(primary, 500);
+    transition: color 0.3s;
+    font-size: 1.4rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: get-color(black, 500);
+    }
+}

@@ -48,6 +48,14 @@
 
 @each $key, $value in $breakpoints {    
     @media (min-width: $value) {
+        .w-#{$key}-unset {
+            width: unset !important;
+        }
+
+        .h-#{$key}-unset {
+            width: unset !important;
+        }
+
         @for $i from 0 through 100 {
             .w-#{$key}-#{$i} {
                 width: ($i + 0%) !important;

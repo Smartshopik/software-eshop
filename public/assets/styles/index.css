@@ -19009,6 +19009,12 @@ img {
 }
 
 @media (min-width: 0px) {
+  .w-xs-unset {
+    width: unset !important;
+  }
+  .h-xs-unset {
+    width: unset !important;
+  }
   .w-xs-0 {
     width: 0% !important;
   }
@@ -19959,6 +19965,12 @@ img {
   }
 }
 @media (min-width: 400px) {
+  .w-tn-unset {
+    width: unset !important;
+  }
+  .h-tn-unset {
+    width: unset !important;
+  }
   .w-tn-0 {
     width: 0% !important;
   }
@@ -20909,6 +20921,12 @@ img {
   }
 }
 @media (min-width: 479px) {
+  .w-sm-unset {
+    width: unset !important;
+  }
+  .h-sm-unset {
+    width: unset !important;
+  }
   .w-sm-0 {
     width: 0% !important;
   }
@@ -21859,6 +21877,12 @@ img {
   }
 }
 @media (min-width: 767px) {
+  .w-md-unset {
+    width: unset !important;
+  }
+  .h-md-unset {
+    width: unset !important;
+  }
   .w-md-0 {
     width: 0% !important;
   }
@@ -22809,6 +22833,12 @@ img {
   }
 }
 @media (min-width: 992px) {
+  .w-lg-unset {
+    width: unset !important;
+  }
+  .h-lg-unset {
+    width: unset !important;
+  }
   .w-lg-0 {
     width: 0% !important;
   }
@@ -23759,6 +23789,12 @@ img {
   }
 }
 @media (min-width: 1199px) {
+  .w-xl-unset {
+    width: unset !important;
+  }
+  .h-xl-unset {
+    width: unset !important;
+  }
   .w-xl-0 {
     width: 0% !important;
   }
@@ -42443,6 +42479,91 @@ img {
   height: 2rem;
 }
 
+.menu__dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.menu__dropdown > a, .menu__dropdown button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1.2rem 0.8rem;
+  color: #333333;
+  transition: 0.3s opacity;
+  cursor: pointer;
+}
+.menu__dropdown > a i, .menu__dropdown button i {
+  transition: 0.3s transform;
+}
+.menu__dropdown > a:hover, .menu__dropdown > a:active, .menu__dropdown > a:focus, .menu__dropdown button:hover, .menu__dropdown button:active, .menu__dropdown button:focus {
+  outline: none;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.menu__dropdown--icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.menu__dropdown--icon i, .menu__dropdown--icon svg, .menu__dropdown--icon img {
+  font-size: 1.6rem;
+}
+
+.menu__dropdown--title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu__dropdown--list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  border-radius: 0.2rem;
+  min-width: 125px;
+  pointer-events: all;
+  padding: 1.2rem 2rem;
+  transition: 0.3s opacity, 0.3s transform;
+}
+.menu__dropdown--list.is-hidden {
+  display: block !important;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+.menu__dropdown--link {
+  display: flex;
+  align-items: center;
+  color: #848484;
+  transition: 0.3s color;
+  font-size: 1.4rem;
+  padding: 0.8rem 0;
+  white-space: nowrap;
+}
+.menu__dropdown--link img {
+  height: 100%;
+  margin-right: 8px;
+  width: 16px;
+}
+.menu__dropdown--link i {
+  width: 16px;
+  font-size: 1.6rem;
+  margin-right: 8px;
+}
+.menu__dropdown--link:hover, .menu__dropdown--link:active, .menu__dropdown--link:focus {
+  outline: none;
+  text-decoration: none;
+  color: #5f56c6;
+}
+
 /*
 |--------------------------------------------------------------------------
 | UTILS
@@ -42538,6 +42659,10 @@ div.is-loading:not(.prevent-loading)::after {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.text--black-200 {
+  color: #777777;
+}
+
 .link--white {
   color: rgba(255, 255, 255, 0.6);
   transition: color 0.3s;
@@ -42545,6 +42670,15 @@ div.is-loading:not(.prevent-loading)::after {
 }
 .link--white:hover, .link--white:focus, .link--white:active {
   color: #ffffff;
+}
+
+.link--primary {
+  color: #5f56c6;
+  transition: color 0.3s;
+  font-size: 1.4rem;
+}
+.link--primary:hover, .link--primary:focus, .link--primary:active {
+  color: #333333;
 }
 
 @media (min-width: 0px) {
@@ -43444,7 +43578,12 @@ div.is-loading:not(.prevent-loading)::after {
   background-color: #101010;
 }
 
-.image--large {
+.image--lg {
   max-width: 250px;
+  width: 100%;
+}
+
+.image--md {
+  max-width: 175px;
   width: 100%;
 }
