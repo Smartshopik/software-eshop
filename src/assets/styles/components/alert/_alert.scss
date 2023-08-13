@@ -1,0 +1,55 @@
+.alert {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: get-color(green,300);
+    border: 1px solid;
+    border-color: get-color(green, 500);
+    padding: 1.2rem;
+    margin: 0.8rem 0 0.8rem 0;
+}
+.alert--icon {
+    display: flex;
+    align-items: center;
+}
+.alert--icon p {
+    color: get-color(green, 500);
+}
+.alert--icon i {
+    color: get-color(green,400);
+    margin: 0rem 0.8rem 0rem 0.8rem;
+}
+.alert button {
+    border: 0rem solid;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: darken(get-color(green, 300),10%);
+    }
+}
+.alert--btn {
+    color: get-color(green, 400);
+}
+.alert--error {
+    background-color: get-color(red, 400);
+    border-color: get-color(red, 500);
+
+    .alert--icon p {
+        color: get-color(red, 500);
+    }
+    .alert--icon i {
+        color: get-color(red,500);
+    }
+    .alert--btn {
+        color: get-color(red,500);
+    }
+}
+
+
+

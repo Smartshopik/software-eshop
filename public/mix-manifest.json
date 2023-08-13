@@ -1,11 +1,11 @@
 {
     "/assets/scripts/index.js": "/assets/scripts/index.js",
+    "/assets/styles/index.css": "/assets/styles/index.css",
     "/assets/images/flags/cz.png": "/assets/images/flags/cz.png",
     "/assets/images/flags/de.png": "/assets/images/flags/de.png",
     "/assets/images/flags/fr.png": "/assets/images/flags/fr.png",
     "/assets/images/flags/sk.png": "/assets/images/flags/sk.png",
     "/assets/images/flags/us.png": "/assets/images/flags/us.png",
     "/assets/images/logo-bezpecny-nakup.jpg": "/assets/images/logo-bezpecny-nakup.jpg",
-    "/assets/images/logo.png": "/assets/images/logo.png",
-    "/assets/styles/index.css": "/assets/styles/index.css"
+    "/assets/images/logo.png": "/assets/images/logo.png"
 }

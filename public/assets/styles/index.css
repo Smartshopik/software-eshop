@@ -42586,6 +42586,60 @@ img {
   padding: 0.7rem;
 }
 
+.alert {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #ECFBE6;
+  border: 1px solid;
+  border-color: #65B32E;
+  padding: 1.2rem;
+  margin: 0.8rem 0 0.8rem 0;
+}
+
+.alert--icon {
+  display: flex;
+  align-items: center;
+}
+
+.alert--icon p {
+  color: #65B32E;
+}
+
+.alert--icon i {
+  color: #58a394;
+  margin: 0rem 0.8rem 0rem 0.8rem;
+}
+
+.alert button {
+  border: 0rem solid;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.alert button:hover, .alert button:focus, .alert button:active {
+  background-color: #cbf4ba;
+}
+
+.alert--btn {
+  color: #58a394;
+}
+
+.alert--error {
+  background-color: #FFE8EC;
+  border-color: #FF1A43;
+}
+.alert--error .alert--icon p {
+  color: #FF1A43;
+}
+.alert--error .alert--icon i {
+  color: #FF1A43;
+}
+.alert--error .alert--btn {
+  color: #FF1A43;
+}
+
 /*
 |--------------------------------------------------------------------------
 | UTILS
