@@ -42564,6 +42564,28 @@ img {
   color: #5f56c6;
 }
 
+.badge {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #5f56c6;
+  color: #ffffff;
+  padding: 0.8rem;
+}
+
+.badge--orange {
+  background-color: #f16543;
+}
+
+.badge--green {
+  background-color: #65B32E;
+}
+
+.badge--sm {
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
 /*
 |--------------------------------------------------------------------------
 | UTILS

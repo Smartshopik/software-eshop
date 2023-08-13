@@ -1,0 +1,18 @@
+.badge {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: get-color(primary, 500);
+    color: get-color(white, 500);
+    padding: 0.8rem;
+}
+.badge--orange {
+    background-color: get-color(orange, 500);
+}
+.badge--green {
+    background-color: get-color(green, 500);
+}
+.badge--sm {
+    font-size: 1rem;
+    padding: 0.7rem;
+}
