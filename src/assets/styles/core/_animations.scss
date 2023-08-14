@@ -9,3 +9,9 @@
         transform: none;
     }
 }
+
+@keyframes donut-spin {
+    to {
+        transform: rotate(1turn);
+    }
+}

@@ -14,6 +14,11 @@
     transform: none;
   }
 }
+@keyframes donut-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
 h1, .h1 {
   font-size: 4.2rem;
   line-height: 125%;
@@ -42317,11 +42322,6 @@ img {
   color: #333333;
 }
 
-@keyframes donut-spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
 .menu__link {
   position: relative;
 }
@@ -42594,38 +42594,32 @@ img {
   border: 1px solid;
   border-color: #65B32E;
   padding: 1.2rem;
-  margin: 0.8rem 0 0.8rem 0;
 }
-
-.alert--icon {
+.alert .alert--icon {
   display: flex;
   align-items: center;
 }
-
-.alert--icon p {
+.alert .alert--icon p {
   color: #65B32E;
 }
-
-.alert--icon i {
+.alert .alert--icon i {
   font-size: 1.6rem;
   color: #58a394;
-  margin: 0rem 0.8rem 0rem 0.8rem;
+  margin: 0rem 0.8rem;
 }
-
-.alert button {
+.alert .alert--btn {
   font-size: 2rem;
   border: 0rem solid;
   width: 24px;
   height: 24px;
   background-color: transparent;
   cursor: pointer;
-}
-.alert button:hover, .alert button:focus, .alert button:active {
-  background-color: #cbf4ba;
-}
-
-.alert--btn {
+  transition: background-color 0.3s;
   color: #58a394;
+}
+.alert .alert--btn:hover, .alert .alert--btn:focus, .alert .alert--btn:active {
+  background-color: #cbf4ba;
+  outline: none;
 }
 
 .alert--error {

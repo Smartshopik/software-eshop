@@ -2,42 +2,45 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: get-color(green,300);
+    background-color: get-color(green, 300);
     border: 1px solid;
     border-color: get-color(green, 500);
     padding: 1.2rem;
-    margin: 0.8rem 0 0.8rem 0;
-}
-.alert--icon {
-    display: flex;
-    align-items: center;
-}
-.alert--icon p {
-    color: get-color(green, 500);
-}
-.alert--icon i {
-    font-size: 1.6rem;
-    color: get-color(green,400);
-    margin: 0rem 0.8rem 0rem 0.8rem;
-}
-.alert button {
-    font-size: 2rem;
-    border: 0rem solid;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    cursor: pointer;
 
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: darken(get-color(green, 300),10%);
+    .alert--icon {
+        display: flex;
+        align-items: center;
+    }
+    
+    .alert--icon p {
+        color: get-color(green, 500);
+    }
+    
+    .alert--icon i {
+        font-size: 1.6rem;
+        color: get-color(green, 400);
+        margin: 0rem 0.8rem;
+    }
+    
+    .alert--btn {
+        font-size: 2rem;
+        border: 0rem solid;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: get-color(green, 400);
+    
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken(get-color(green, 300), 10%);
+            outline: none;
+        }
     }
 }
-.alert--btn {
-    color: get-color(green, 400);
-}
+
 .alert--error {
     background-color: get-color(red, 400);
     border-color: get-color(red, 500);
@@ -45,12 +48,13 @@
     .alert--icon p {
         color: get-color(red, 500);
     }
-    .alert--icon i {
-        color: get-color(red,500);
-    }
-    .alert--btn {
-        color: get-color(red,500);
 
+    .alert--icon i {
+        color: get-color(red, 500);
+    }
+
+    .alert--btn {
+        color: get-color(red, 500);
 
         &:hover,
         &:focus,
@@ -59,6 +63,7 @@
         }
     }
 }
+
 .alert--warning {
     background-color: get-color(orange, 300);
     border-color: get-color(orange, 500);
@@ -66,20 +71,22 @@
     .alert--icon p {
         color: get-color(orange, 500);
     }
-    .alert--icon i {
-        color: get-color(orange,500);
-    }
-    .alert--btn {
-        color: get-color(orange,500);
 
+    .alert--icon i {
+        color: get-color(orange, 500);
+    }
+
+    .alert--btn {
+        color: get-color(orange, 500);
 
         &:hover,
         &:focus,
         &:active {
-            background-color: darken(get-color(orange, 300),10%);
+            background-color: darken(get-color(orange, 300), 10%);
         }
     }
 }
+
 .alert--info {
     background-color: get-color(blue, 400);
     border-color: get-color(blue, 500);
@@ -87,12 +94,13 @@
     .alert--icon p {
         color: get-color(blue, 500);
     }
-    .alert--icon i {
-        color: get-color(blue,500);
-    }
-    .alert--btn {
-        color: get-color(blue,500);
 
+    .alert--icon i {
+        color: get-color(blue, 500);
+    }
+
+    .alert--btn {
+        color: get-color(blue, 500);
 
         &:hover,
         &:focus,
@@ -101,6 +109,3 @@
         }
     }
 }
-
-
-
