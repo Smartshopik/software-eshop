@@ -16,10 +16,12 @@
     color: get-color(green, 500);
 }
 .alert--icon i {
+    font-size: 1.6rem;
     color: get-color(green,400);
     margin: 0rem 0.8rem 0rem 0.8rem;
 }
 .alert button {
+    font-size: 2rem;
     border: 0rem solid;
     width: 24px;
     height: 24px;

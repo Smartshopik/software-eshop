@@ -42607,11 +42607,13 @@ img {
 }
 
 .alert--icon i {
+  font-size: 1.6rem;
   color: #58a394;
   margin: 0rem 0.8rem 0rem 0.8rem;
 }
 
 .alert button {
+  font-size: 2rem;
   border: 0rem solid;
   width: 24px;
   height: 24px;
