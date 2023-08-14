@@ -42639,6 +42639,43 @@ img {
 .alert--error .alert--btn {
   color: #FF1A43;
 }
+.alert--error .alert--btn:hover, .alert--error .alert--btn:focus, .alert--error .alert--btn:active {
+  background-color: #ffb5c2;
+}
+
+.alert--warning {
+  background-color: #FFF6E8;
+  border-color: #f16543;
+}
+.alert--warning .alert--icon p {
+  color: #f16543;
+}
+.alert--warning .alert--icon i {
+  color: #f16543;
+}
+.alert--warning .alert--btn {
+  color: #f16543;
+}
+.alert--warning .alert--btn:hover, .alert--warning .alert--btn:focus, .alert--warning .alert--btn:active {
+  background-color: #ffe2b5;
+}
+
+.alert--info {
+  background-color: rgba(164, 236, 251, 0.4235294118);
+  border-color: #00A1BE;
+}
+.alert--info .alert--icon p {
+  color: #00A1BE;
+}
+.alert--info .alert--icon i {
+  color: #00A1BE;
+}
+.alert--info .alert--btn {
+  color: #00A1BE;
+}
+.alert--info .alert--btn:hover, .alert--info .alert--btn:focus, .alert--info .alert--btn:active {
+  background-color: rgba(115, 226, 249, 0.4235294118);
+}
 
 /*
 |--------------------------------------------------------------------------
