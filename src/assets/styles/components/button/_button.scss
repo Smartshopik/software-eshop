@@ -10,6 +10,10 @@
     text-transform: uppercase;
     transition: background-color 0.3s, opacity 0.3s;
 
+    > span {
+        color: get-color(white, 500);
+    }
+
     &:hover,
     &:focus,
     &:active {

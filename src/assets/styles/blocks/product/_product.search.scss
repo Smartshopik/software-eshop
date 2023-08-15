@@ -1,0 +1,25 @@
+.product__search--card {
+    display: flex;
+    background-color: get-color(white, 500);
+    transition: background-color 0.3s, color 0.3s;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(black, 0.1);
+    }
+
+    &:hover,    
+    &:active,
+    &:focus {
+        color: get-color(black, 500);
+        background-color: get-color(white, 400);
+    }
+
+    .product__search--image {
+        max-width: 80px;
+        padding-right: 1.6rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}

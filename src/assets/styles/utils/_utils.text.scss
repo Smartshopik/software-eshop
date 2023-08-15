@@ -10,12 +10,27 @@
     font-weight: get-font(weight, regular) !important;
 }
 
+.text--lg {
+    font-size: 1.8rem;
+}
+
+.text--md {
+    font-size: 1.6rem;
+}
+
+.text--sm {
+    font-size: 1.4rem;
+}
+
+.text--xs {
+    font-size: 1.2rem;
+}
+
 // transform
 .text--uppercase {
     text-transform: uppercase !important;
 }
 
-// transform
 .text--notransform {
     text-transform: none !important;
 }
@@ -50,6 +65,11 @@
 
 .text--center {
     text-align: center;
+}
+
+.text--primary,
+.text--primary-500 {
+    color: get-color(primary, 500);
 }
 
 .text--white,
