@@ -14,6 +14,7 @@
         transition: 0.3s color;
 
         > .menu__link--title {
+            color: get-color(black, 500);
             font-size: 1.5rem !important;
             white-space: nowrap;
         }

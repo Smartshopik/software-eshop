@@ -39,7 +39,10 @@
 }
 
 .menu__box--icon {
+    color: get-color(black, 500);
+
     i, svg, img {
+        color: get-color(black, 500);
         font-size: 2rem;
         width: 2rem;
         height: 2rem;

@@ -42414,6 +42414,7 @@ img {
   transition: 0.3s color;
 }
 .menu__link > a > .menu__link--title, .menu__link button > .menu__link--title {
+  color: #333333;
   font-size: 1.5rem !important;
   white-space: nowrap;
 }
@@ -42549,7 +42550,11 @@ img {
   border-radius: 50%;
 }
 
+.menu__box--icon {
+  color: #333333;
+}
 .menu__box--icon i, .menu__box--icon svg, .menu__box--icon img {
+  color: #333333;
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
@@ -42591,6 +42596,7 @@ img {
 }
 
 .menu__dropdown--title {
+  color: #333333;
   font-size: 1.3rem;
   text-transform: capitalize;
 }
