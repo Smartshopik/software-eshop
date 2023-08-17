@@ -28,7 +28,7 @@
     }
 }
 
-@for $i from 0 through 1000 {
+@for $i from 0 through 1001 {
     .min-w-#{$i} {
         min-width: ($i + 0px) !important;
     }
@@ -120,6 +120,10 @@
 
         .d-#{$key}-none {
             display: none !important;
+        }
+
+        .border-#{$key}--right {
+            border-right: 1px solid rgba(black, 0.15) !important;
         }
     }
 }

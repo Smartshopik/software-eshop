@@ -1,0 +1,40 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+<section>
+    <!-- Sem přijde header -->
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row max-w-1000 mx-auto py-20">
+            <div class="w-100 w-md-50 py-24 px-md-42 border-md--right">
+                <form action="">
+                    <h3 class="mb-20 text--uppercase">Přihlášení</h3>
+                    <div class="input is-required mb-20">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input is-required mb-20">
+                        <label for="password">Heslo</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="d-flex align-center justify-between mb-20">
+                        <div class="input input--checkbox">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Zůstat přihlášený</label>
+                        </div>
+                        <a href="forgot-password.html">Zapomněli jste heslo?</a>
+                    </div>
+                    <button class="btn w-100">Přihlásit se</button>
+                </form>
+            </div>
+            <p class="text--divider d-flex d-md-none my-20">
+                <span class="px-20 text--bold text--uppercase">Nebo</span>
+            </p>
+            <div class="w-100 w-md-50 py-24 px-md-42 text--center">
+                <h3 class="mb-20 text--uppercase">Registrovat</h3>
+                <p class="mb-20">Nemáte ještě vytvořený účet? Zde se můžete zaregistrovat.</p>
+                <a href="register.html" class="btn btn--secondary">Registrovat se</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

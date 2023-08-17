@@ -10763,11 +10763,11 @@ var SearchResource_1 = __webpack_require__(/*! ./ajax/resources/SearchResource *
 var BillingInformationResource_1 = __webpack_require__(/*! ./ajax/resources/Cart/BillingInformationResource */ "./src/assets/scripts/ajax/resources/Cart/BillingInformationResource.ts");
 var CheckoutResource_1 = __webpack_require__(/*! ./ajax/resources/Cart/CheckoutResource */ "./src/assets/scripts/ajax/resources/Cart/CheckoutResource.ts");
 window.dump = function (value, options) {
-  if (config_1["default"].app.debug) console.debug(value, options || '');
+  if (config_1["default"].app.debug) console.debug(value, options || "");
 };
-connector_1["default"].init('js-id', '{name}::{type}@{event}#{id}');
-components_1.Carousel.init('carousel', {
-  type: 'slide',
+connector_1["default"].init("js-id", "{name}::{type}@{event}#{id}");
+components_1.Carousel.init("carousel", {
+  type: "slide",
   rewind: true,
   arrows: false,
   pagination: false,
@@ -10779,23 +10779,23 @@ components_1.Carousel.init('carousel', {
     }
   }
 });
-components_1.Modal.init('modal', {
+components_1.Modal.init("modal", {
   gallery: {
-    icon_close: 'far fa-times',
-    icon_left: 'far fa-chevron-left',
-    icon_right: 'far fa-chevron-right'
+    icon_close: "far fa-times",
+    icon_left: "far fa-chevron-left",
+    icon_right: "far fa-chevron-right"
   }
 });
-components_1.Input.init('input', {
+components_1.Input.init("input", {
   number: {
-    icon_up: 'far fa-chevron-up',
-    icon_down: 'far fa-chevron-down'
+    icon_up: "far fa-chevron-up",
+    icon_down: "far fa-chevron-down"
   },
   file: {
-    icon_file: 'far fa-file'
+    icon_file: "far fa-file"
   }
 });
-actions_1["default"].init('action', {
+actions_1["default"].init("action", {
   actions: {
     remove: actions_1.Remove,
     show: actions_1.Show,
@@ -10806,25 +10806,25 @@ actions_1["default"].init('action', {
     popup_message: actions_1.PopupMessage
   }
 });
-components_1.Header.init('header');
-components_1.Menu.init('menu');
-components_1.Dropdown.init('dropdown');
-components_1.Tabs.init('tab');
-Template_1.Template.init('template');
-Variable_1.Variable.init('variable');
-ajax_1["default"].init('ajax', {
+components_1.Header.init("header");
+components_1.Menu.init("menu");
+components_1.Dropdown.init("dropdown");
+components_1.Tabs.init("tab");
+Template_1.Template.init("template");
+Variable_1.Variable.init("variable");
+ajax_1["default"].init("ajax", {
   resources: {
-    'front.cart.products': ProductResource_1["default"],
-    'front.cart.gifts': GiftResource_1["default"],
-    'front.cart.checkout': CheckoutResource_1["default"],
-    'front.cart.billing-information': BillingInformationResource_1["default"],
-    'front.search': SearchResource_1["default"],
-    'front.wishlist': WishlistResource_1["default"],
-    'front.shop': ShopResource_1["default"]
+    "front.cart.products": ProductResource_1["default"],
+    "front.cart.gifts": GiftResource_1["default"],
+    "front.cart.checkout": CheckoutResource_1["default"],
+    "front.cart.billing-information": BillingInformationResource_1["default"],
+    "front.search": SearchResource_1["default"],
+    "front.wishlist": WishlistResource_1["default"],
+    "front.shop": ShopResource_1["default"]
   }
 });
-self.addEventListener('load', function () {
-  document.body.classList.remove('is-loading');
+self.addEventListener("load", function () {
+  document.body.classList.remove("is-loading");
 });
 
 /***/ }),
