@@ -1,7 +1,6 @@
 .breadcrumb {
     display: flex;
     align-items: center;
-    padding: 2.4rem 0 4.8rem;
 
     > li {
         position: relative;
@@ -26,6 +25,7 @@
         margin: 0 0.5rem;
         color: get-color(black, 300);
     }
+    
     @media only screen and (max-width: get-breakpoint(md)) {
         padding: 1.8rem 0 3.6rem;
     }  
