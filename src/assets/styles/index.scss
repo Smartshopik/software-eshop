@@ -24,6 +24,8 @@
 */
 @import "blocks/header/header";
 @import "blocks/footer/footer";
+@import "blocks/card/card";
+@import "blocks/product/product.search";
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +36,11 @@
 @import "components/menu/menu.link";
 @import "components/menu/menu.box";
 @import "components/menu/menu.dropdown";
+@import "components/menu/menu.search";
 @import "components/badge/badge";
 @import "components/alert/alert";
+@import "components/input/input";
+@import "components/input/input.search";
 
 /*
 |--------------------------------------------------------------------------

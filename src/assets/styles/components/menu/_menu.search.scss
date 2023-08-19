@@ -1,0 +1,18 @@
+.menu__search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: unset;
+    top: unset;
+    left: unset;
+    margin: 0;
+    transform: unset;
+    position: relative;
+    box-shadow: unset;
+    opacity: 1;
+    transform: translate(0, 0);
+    pointer-events: all;
+    transition: 0.3s opacity, 0.3s transform;
+    z-index: 1;
+    width: 100%;
+}

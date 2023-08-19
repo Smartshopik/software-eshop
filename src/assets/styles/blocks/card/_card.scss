@@ -1,0 +1,59 @@
+.card {
+    position: relative;
+    background-color: get-color(white, 500);
+    border-radius: 0.2rem;
+}
+
+.card--search {
+    border: unset;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin-top: 0;
+    box-shadow: get-shadow(secondary);
+    overflow: auto;
+    max-height: 500px;
+    transition: 0.3s opacity, 0.3s transform;
+
+    &.is-hidden {
+        display: block !important;
+        opacity: 0;
+        transform: translateY(10px);
+        pointer-events: none;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0px);
+        pointer-events: all;
+    }
+
+    > * {
+        max-width: 525px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: rgba(black, 0.05);
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background-color: darken(rgba(black, 0.1), 5%);
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: darken(rgba(black, 0.1), 10%);
+    }
+    
+    &::-webkit-scrollbar-thumb:active {
+        background-color: darken(rgba(black, 0.1), 15%);
+    }
+}

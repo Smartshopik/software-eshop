@@ -1,0 +1,45 @@
+.input--search {
+    position: relative;
+
+    input {
+        height: 4.2rem;
+        padding-left: 1.6rem;
+        padding-right: 4.8rem;
+        background-color: get-color(white, 500);
+        color: get-color(primary, 500);
+        min-width: 350px;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid rgba(black, 0.1);
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: get-color(black, 200);
+        }
+    }
+
+    a,
+    button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+        width: 4.8rem;
+        height: 4.2rem;
+        color: get-color(primary, 500);
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+}

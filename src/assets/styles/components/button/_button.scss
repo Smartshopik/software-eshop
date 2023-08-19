@@ -10,24 +10,31 @@
     text-transform: uppercase;
     transition: background-color 0.3s, opacity 0.3s;
 
+    > span {
+        color: get-color(white, 500);
+    }
+
     &:hover,
     &:focus,
     &:active {
-        background-color: darken(get-color(primary, 500),10%);
+        background-color: darken(get-color(primary, 500), 10%);
         color: get-color(white, 500);
     }
 }
+
 .btn.is-disabled, .btn:disabled {
     pointer-events: none;
     opacity: 0.7;
     user-select: none;
 }
+
 .btn.is-loading {
     pointer-events: none;
     opacity: 0.7;
     color: transparent;
     user-select: none;
 }
+
 .btn.is-loading::after {
     content: "";
     position: absolute;
@@ -40,10 +47,12 @@
     min-height: 16px;
     animation: donut-spin 1.2s linear infinite;
 }
+
 .btn--secondary.is-loading::after {
     border: 1px solid rgba(get-color(black, 500), 0.25);
     border-left-color: get-color(black, 500);
 }
+
 .btn--icon i:first-child:not(:last-child) {
     margin-right: 1.2rem;
 }
@@ -51,14 +60,17 @@
 .btn--icon i:last-child:not(:first-child) {
     margin-left: 1.2rem;
 }
+
 .btn--sm {
     font-size: 1.2rem;
     padding: 1rem 1.8rem;
 }
+
 .btn--lg {
     font-size: 1.6rem;
     padding: 1.5rem 2.2rem;
 }
+
 .btn--secondary {
     color: get-color(black, 500);
     background-color:get-color(white, 400);
@@ -66,12 +78,7 @@
     &:hover,
     &:focus,
     &:active {
-        background-color:  darken(get-color(white, 400),5%);
+        background-color:  darken(get-color(white, 400), 5%);
         color: get-color(black, 500);
-    }
-}
-@keyframes donut-spin {
-    to {
-        transform: rotate(1turn);
     }
 }
