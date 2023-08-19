@@ -85,3 +85,26 @@
 .text--black-200 {
     color: get-color(black, 200);
 }
+
+.text--divider {
+    display: flex;
+    align-items: center;
+
+
+    > span {
+        font-size: 16px;
+        color: get-color(black, 500);
+    }
+
+    &::before {
+        content: "";
+        flex: 1 0 0;
+        border-bottom: 1px solid rgba(black, 0.15);
+    }
+
+    &::after {
+        content: "";
+        flex: 1 0 0;
+        border-bottom: 1px solid rgba(black, 0.15);
+    }
+}
