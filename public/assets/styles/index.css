@@ -42371,10 +42371,6 @@ img {
   color: white;
   opacity: 1;
 }
-.section_header span:active {
-  text-decoration-line: underline;
-  text-decoration-color: #5f56c6;
-}
 
 .section_header--center {
   flex-direction: column;
@@ -42398,6 +42394,36 @@ img {
   opacity: 0.7;
   font-size: 2.5rem;
   color: #ffffff;
+}
+
+.section_header .step--active span::after {
+  width: 100%;
+}
+
+.black_line:active {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: 2px;
+  content: "";
+  background-color: #e2e2e2;
+}
+
+.header--right--icon {
+  position: relative;
+}
+
+.header--right--icon:active .black_line {
+  opacity: 1;
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /*
