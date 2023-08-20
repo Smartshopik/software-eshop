@@ -42992,6 +42992,20 @@ img {
   }
 }
 
+.basic--input {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input--input {
+  margin: 0 2rem;
+}
+
 /*
 |--------------------------------------------------------------------------
 | UTILS
