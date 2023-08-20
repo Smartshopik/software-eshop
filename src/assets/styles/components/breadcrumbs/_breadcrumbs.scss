@@ -4,13 +4,13 @@
 
     > li {
         position: relative;
-        padding-right: 1.2rem;
         text-transform: capitalize;
+        font-size: 1.6rem;
 
         a {
-            padding: 0;
             text-transform: capitalize;
             color: get-color(black, 300);
+            font-size: 1.6rem;
 
             &:hover,
             &:focus,

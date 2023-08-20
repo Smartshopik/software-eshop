@@ -42939,13 +42939,13 @@ img {
 }
 .breadcrumb > li {
   position: relative;
-  padding-right: 1.2rem;
   text-transform: capitalize;
+  font-size: 1.6rem;
 }
 .breadcrumb > li a {
-  padding: 0;
   text-transform: capitalize;
   color: #848484;
+  font-size: 1.6rem;
 }
 .breadcrumb > li a:hover, .breadcrumb > li a:focus, .breadcrumb > li a:active {
   color: #5f56c6;
