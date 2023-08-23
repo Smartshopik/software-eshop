@@ -42914,6 +42914,98 @@ img {
   background-color: rgba(115, 226, 249, 0.4235294118);
 }
 
+.wrapper--input {
+  width: 50%;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  pointer-events: all;
+  width: 100%;
+}
+.input label {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: 600;
+  color: #333333;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+}
+
+.basic--input {
+  display: flex;
+}
+
+.input--input {
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+.textarea {
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  min-height: 19rem;
+}
+
+.input--sbm {
+  border: none;
+  background-color: #F3F3F3;
+  color: #333333;
+  padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.basic--input input[type=text],
+.basic--input input[type=tel],
+.basic--input input[type=email],
+.basic--input input[type=message], textarea {
+  background-color: #ffffff;
+  border: 0.2rem solid rgba(132, 132, 132, 0.5);
+  border-radius: 0.4rem;
+  padding: 0 1.5rem;
+  max-width: 100%;
+  width: 100%;
+  height: 4.2rem;
+  opacity: 0.5;
+}
+.basic--input input[type=text]:hover, .basic--input input[type=text]:focus, .basic--input input[type=text]:active,
+.basic--input input[type=tel]:hover,
+.basic--input input[type=tel]:focus,
+.basic--input input[type=tel]:active,
+.basic--input input[type=email]:hover,
+.basic--input input[type=email]:focus,
+.basic--input input[type=email]:active,
+.basic--input input[type=message]:hover,
+.basic--input input[type=message]:focus,
+.basic--input input[type=message]:active, textarea:hover, textarea:focus, textarea:active {
+  background-color: #ffffff;
+  border: 0.2rem solid rgba(132, 132, 132, 0.5);
+  outline: none;
+}
+.basic--input input[type=text]:-moz-read-only, .basic--input input[type=tel]:-moz-read-only, .basic--input input[type=email]:-moz-read-only, .basic--input input[type=message]:-moz-read-only, textarea:-moz-read-only {
+  pointer-events: none;
+  border: 0.1rem solid #777777 !important;
+  background-color: #f7f7f7;
+  opacity: 0.5;
+}
+.basic--input input[type=text]:disabled, .basic--input input[type=text]:read-only,
+.basic--input input[type=tel]:disabled,
+.basic--input input[type=tel]:read-only,
+.basic--input input[type=email]:disabled,
+.basic--input input[type=email]:read-only,
+.basic--input input[type=message]:disabled,
+.basic--input input[type=message]:read-only, textarea:disabled, textarea:read-only {
+  pointer-events: none;
+  border: 0.1rem solid #777777 !important;
+  background-color: #f7f7f7;
+  opacity: 0.5;
+}
+
 .input--search {
   position: relative;
 }
@@ -42990,20 +43082,6 @@ img {
   .breadcrumb {
     padding: 1.2rem 0 2.4rem;
   }
-}
-
-.basic--input {
-  display: flex;
-  justify-content: center;
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-}
-
-.input--input {
-  margin: 0 2rem;
 }
 
 /*

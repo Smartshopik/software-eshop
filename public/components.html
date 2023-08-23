@@ -468,33 +468,38 @@
         </div>
         <hr class="my-12">
         <h3>Základní inputy (klasické textové pole a textarea)</h3>
-        <div>
-            <div class="basic--input">
+        <form action="">
+            <div class="wrapper--input">
+                <div class="basic--input">
+                    <div class="input input--input">
+                        <label for="order_id">Vaše jméno*</label>
+                        <input type="text" name="order_id" id="order_id" required oninvalid="setCustomValidity('Toto pole není vyplněné.')">
+                    </div>
+                    <div class="input input--input">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+    
+                </div>
+                
+                <div class="basic--input">
+                    <div class="input input--input">
+                        <label for="phone">Mobil*</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="input input--input">
+                        <label for="order_id">Číslo objednávky</label>
+                        <input type="text" name="order_id" id="order_id" required>
+                    </div>
+    
+                </div>
                 <div class="input input--input">
-                    <label for="order_id">Číslo objednávky</label>
-                    <input type="text" name="order_id" id="order_id">
+                    <label for="message">Zpráva</label>
+                    <textarea cols="40" rows="10" name="message" id="message"></textarea>
                 </div>
-                <div class="input">
-                    <label for="order_id">Číslo objednávky</label>
-                    <input type="text" name="order_id" id="order_id">
-                </div>
-
-            </div>
-            <div class="basic--input">
-                <div class="input input--input">
-                    <label for="order_id">Číslo objednávky</label>
-                    <input type="text" name="order_id" id="order_id">
-                </div>
-                <div class="input">
-                    <label for="order_id">Číslo objednávky</label>
-                    <input type="text" name="order_id" id="order_id">
-                </div>
-
-            </div>
-            <div class="">
-                <label for="message">Zpráva</label>
-                <textarea name="message" id="message"></textarea>
-            </div>
+                <input type="submit" value="Odeslat" class="input--sbm">
+        </form>
+        
 
 
 
