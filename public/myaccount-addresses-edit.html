@@ -325,38 +325,125 @@
 </header>
         <main>
             
-<section>
+<section class="mb-xs-24 mb-md-48">
     <!-- Sem přijde header -->
     <div class="container">
-        <div class="d-flex flex-column flex-md-row max-w-1000 mx-auto py-20">
-            <div class="w-100 w-md-50 py-24 px-md-42 border-md--right">
-                <form action="">
-                    <h3 class="mb-20 text--uppercase">Přihlášení</h3>
-                    <div class="input is-required mb-20">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
+        <div class="cols">
+            <div class="col 12-xs 3-md">
+                <div class="card card--secondary">
+                    <div class="card__header px-16 py-12">
+                        <h6 class="text--unset">Můj účet</h6>
                     </div>
-                    <div class="input is-required mb-20">
-                        <label for="password">Heslo</label>
-                        <input type="password" name="password" id="password">
+                    <div class="card__body">
+                        <ul>
+                            <li>
+                                <a href="myaccount.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-person-circle"></i>
+                                    Nástěnka
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-settings.html" class="link link--small is-active w-100 px-16 py-12">
+                                    <i class="bi bi-gear"></i>
+                                    Nastavení
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-addresses.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-person-badge"></i>
+                                    Adresář
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-orders.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-box2"></i>
+                                    Objednávky
+                                </a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="login.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Odhlásit se
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="d-flex align-center justify-between mb-20">
-                        <div class="input input--checkbox">
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember">Zůstat přihlášený</label>
-                        </div>
-                        <a href="forgot-password.html">Zapomněli jste heslo?</a>
-                    </div>
-                    <button class="btn w-100">Přihlásit se</button>
-                </form>
+                </div>
             </div>
-            <p class="text--divider d-flex d-md-none my-20">
-                <span class="px-20 text--bold text--uppercase">Nebo</span>
-            </p>
-            <div class="w-100 w-md-50 py-24 px-md-42 text--center">
-                <h3 class="mb-20 text--uppercase">Registrovat</h3>
-                <p class="mb-20">Nemáte ještě vytvořený účet? Zde se můžete zaregistrovat.</p>
-                <a href="register.html" class="btn btn--secondary">Registrovat se</a>
+            <div class="col 12-xs 9-md">
+                <div class="mb-16">
+                    <h3>Adresář</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="cols">
+                    <div class="col 12-xs">
+                        <div class="card card--secondary h-100">
+                            <div class="card__header px-16 py-12">
+                                <h6 class="text--white">Přidaní adresy</h6>
+                            </div>
+                            <div class="card__body p-xs-20 p-md-24">
+                                <div class="alert alert--error mb-xs-20 mb-md-24" shop-id="action#alert1112">
+                                    <div>
+                                        <i class="bi bi-exclamation-circle"></i>
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <button type="button" shop-id="action@click(remove)#alert1112">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="d-flex mb-xs-20 mb-md-24 mx-xs-n12">
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="first_name">Jméno</label>
+                                            <input type="text" name="first_name" id="first_name">
+                                        </div>
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="last_name">Přijmení</label>
+                                            <input type="text" name="last_name" id="last_name">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-xs-20 mb-md-24 mx-xs-n12">
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="email">E-mail</label>
+                                            <input type="text" name="email" id="email">
+                                        </div>
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="address">Adresa</label>
+                                            <input type="text" name="address" id="address">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-xs-20 mb-md-24 mx-xs-n12">
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="city">Město</label>
+                                            <input type="text" name="city" id="city">
+                                        </div>
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="zipcode">PSČ</label>
+                                            <input type="text" name="zipcode" id="zipcode">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-xs-20 mb-md-24 mx-xs-n12">
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="country">země</label>
+                                            <input type="text" name="country" id="country">
+                                        </div>
+                                        <div class="input is-required flex-grow mx-xs-12">
+                                            <label for="phone">Telefon</label>
+                                            <input type="text" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-center justify-between">
+                                        <a href="myaccount-addresses-edit.html" class="btn btn--outline btn--black">Zrušit</a>
+                                        <button type="submit" class="btn btn--black">Uložit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

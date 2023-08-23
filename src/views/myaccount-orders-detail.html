@@ -1,0 +1,285 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+<section class="mb-xs-24 mb-md-48">
+    <!-- Sem přijde header -->
+    <div class="container">
+        <div class="cols">
+            <div class="col 12-xs 3-md">
+                <div class="card card--secondary">
+                    <div class="card__header px-16 py-12">
+                        <h6 class="text--unset">Můj účet</h6>
+                    </div>
+                    <div class="card__body">
+                        <ul>
+                            <li>
+                                <a href="myaccount.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-person-circle"></i>
+                                    Nástěnka
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-settings.html" class="link link--small is-active w-100 px-16 py-12">
+                                    <i class="bi bi-gear"></i>
+                                    Nastavení
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-addresses.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-person-badge"></i>
+                                    Adresář
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-orders.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-box2"></i>
+                                    Objednávky
+                                </a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="login.html" class="link link--small w-100 px-16 py-12">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Odhlásit se
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12-xs 9-md">
+                <div class="mb-16">
+                    <h3>Detail objednávky č. 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="cols">
+                    <div class="col 12-xs">
+                        <div class="card card--secondary">
+                            <div class="card__header px-16 py-12">
+                                <h6 class="text--white">Detail</h6>
+                            </div>
+                            <div class="card__body">
+                                <div class="table__wrapper">
+                                    <table class="table table--secondary min-w-600">
+                                        <thead class="table__head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">Id</th>
+                                                <th class="table__cell">Vytvořená / Zaplacená</th>
+                                                <th class="table__cell">Doklad</th>
+                                                <th class="table__cell">Cena</th>
+                                                <th class="table__cell">Stav objednávky</th>
+                                                <th class="table__cell">Akce</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    <strong>#1</strong>
+                                                </td>
+                                                <td class="table__cell">
+                                                    26.09.2021 10:00
+                                                    <br>
+                                                    nezaplacená
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="d-flex align-center justify-center">
+                                                        <a href="" class="link link--medium link--regular link--blue mx-8" title="doklad">
+                                                            <i class="bi bi-filetype-pdf"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <strong>1 200 Kč</strong>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <span class="badge badge--default">nezaplacená</span>
+                                                </td>
+                                                <td class="table__cell">
+                                                    <div class="d-flex align-center justify-center">
+                                                        <a href="myaccount.orders.detail.html" class="link link--medium link--regular mx-8" title="detail">
+                                                            <i class="bi bi-search"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="p-xs-20 p-md-24">
+                                    <div class="cols">
+                                        <div class="col 12-xs 4-md">
+                                            <div class="card card--secondary h-100">
+                                                <div class="card__header px-12 py-8">
+                                                    <p class="text--bold text--white">Fakturační adresa</p>
+                                                </div>
+                                                <div class="card__body p-xs-12 p-md-16">
+                                                    <p class="text--bold">Pavel Novák</p>
+                                                    <p>pavelnova@gmial.ocm</p>
+                                                    <p>+420 744 456 478</p>
+                                                    <p>Praha, 717 78</p>
+                                                    <p>Lamblova 47/451</p>
+                                                    <p>Slovensko</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col 12-xs 4-md">
+                                            <div class="card card--secondary h-100">
+                                                <div class="card__header px-12 py-8">
+                                                    <p class="text--bold text--white">Dodací adresa</p>
+                                                </div>
+                                                <div class="card__body p-xs-12 p-md-16">
+                                                    <p class="text--bold">Pavel Novák</p>
+                                                    <p>pavelnova@gmial.ocm</p>
+                                                    <p>+420 744 456 478</p>
+                                                    <p>Olomouc, 779 00</p>
+                                                    <p>Hromova ulice 1875</p>
+                                                    <p>Česká republika</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col 12-xs 4-md">
+                                            <div class="card card--secondary h-100">
+                                                <div class="card__header px-12 py-8">
+                                                    <p class="text--bold text--white">Doprava a platba</p>
+                                                </div>
+                                                <div class="card__body p-xs-12 p-md-16">
+                                                    <div>
+                                                        <p class="text--bold mb-4">Doprava</p>
+                                                        <div class="d-flex align-center mb-6">
+                                                            <img src="https://eshop.efko.cz/image-cache/db-public/order-delivery-types_13_image_cp.png_40x30-q100.webp?1653476365" alt="" class="image--tiny mr-xs-12">
+                                                            <span>Česká počta</span>
+                                                        </div>
+                                                        <div class="d-flex align-center mb-6">
+                                                            <i class="bi bi-truck image--tiny color--black-200 mr-xs-12"></i>
+                                                            <span>Osobní odběr</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text--bold mb-4">Platba</p>
+                                                        <div class="d-flex align-center mb-6">
+                                                            <img src="https://eshop.efko.cz/image-cache/db-public/order-payment-types_10_image_visa-mastercard.png_18x23-q100.webp?1651050232" alt="" class="image--tiny mr-xs-12">
+                                                            <span>Platba online - karta</span>
+                                                        </div>
+                                                        <div class="d-flex align-center mb-6">
+                                                            <i class="bi bi-bank image--tiny color--black-200 mr-xs-12"></i>
+                                                            <span>Platba online - banka</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col 12-xs 12-md">
+                                            <div class="card card--secondary h-100">
+                                                <div class="card__header px-12 py-8">
+                                                    <p class="text--bold text--white">Poznámka</p>
+                                                </div>
+                                                <div class="card__body p-xs-12 p-md-16">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis exercitationem nesciunt?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col 12-xs">
+                                            <table class="table table--products">
+                                                <thead class="table__head" data-thead="Produkty">
+                                                    <tr class="table__row">
+                                                        <th class="table__cell fs-14 px-12 py-8 text--start">Produkt</th>
+                                                        <th class="table__cell fs-14 px-12 py-8 w-15">Cena za kus</th>
+                                                        <th class="table__cell fs-14 px-12 py-8 w-10">Množství</th>
+                                                        <th class="table__cell fs-14 px-12 py-8 w-15">Celkem</th>
+                                                        <th class="table__cell fs-14 px-12 py-8 w-10">Akce</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="table__body">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell p-xs-12 p-md-16">
+                                                            <div class="d-flex align-center">
+                                                                <a href="" class="w-20 mr-xs-12">
+                                                                    <img src="./assets/images/products/product1.png" alt="" class="w-100">
+                                                                </a>
+                                                                <a href="">Handbag Fringilla</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Cena za kus"><strong>285 Kč</strong></td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Množství">
+                                                            <strong>9</strong>
+                                                        </td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Celkem"><strong>2 565 Kč</strong></td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Akce">
+                                                            <a href="" class="link link--medium link--red link--regular">
+                                                                <i class="bi bi-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell p-xs-12 p-md-16">
+                                                            <div class="d-flex align-center">
+                                                                <a href="" class="w-20 mr-xs-12">
+                                                                    <img src="./assets/images/products/product1.png" alt="" class="w-100">
+                                                                </a>
+                                                                <a href="">Handbag Fringilla</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Cena za kus"><strong>285 Kč</strong></td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Množství">
+                                                            <strong>9</strong>
+                                                        </td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Celkem"><strong>2 565 Kč</strong></td>
+                                                        <td class="table__cell p-xs-12 p-md-16" data-th="Akce">
+                                                            <a href="" class="link link--medium link--red link--regular">
+                                                                <i class="bi bi-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell" colspan="100%">
+                                                            <div>
+                                                                <p><strong>Klíč 1:</strong> 2961740474-9050194495</p>
+                                                                <p><strong>Klíč 2:</strong> 2023761783-8337551994</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col 12-xs">
+                                            <div class="card card--secondary">
+                                                <div class="card__header px-12 py-8">
+                                                    <p class="text--bold text--white">Shrnutí</p>
+                                                </div>
+                                                <div class="card__body p-xs-12 p-md-16">
+                                                    <div class="d-flex align-center justify-between">
+                                                        <p class="text--bold">Mezisoučet</p>
+                                                        <p>21 554 Kč</p>
+                                                    </div>
+                                                    <div class="d-flex align-center justify-between">
+                                                        <p class="text--bold">Doprava</p>
+                                                        <p>0 Kč</p>
+                                                    </div>
+                                                    <hr class="my-xs-10 my-md-12"/>
+                                                    <div class="d-flex align-center justify-between">
+                                                        <p class="text--md text--bold">Celkem</p>
+                                                        <p class="text--md">21 554 Kč</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col 12-xs">
+                                            <div class="d-flex align-center justify-between">
+                                                <a href="myaccount.orders.html" class="btn btn--outline btn--black btn--small">Zpět</a>
+                                                <a href="payment.html" class="btn btn--black btn--small">Zaplatit objednávku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
