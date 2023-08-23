@@ -1,0 +1,36 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+
+    > li {
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+
+        a {
+            text-transform: capitalize;
+            color: get-color(black, 300);
+            font-size: 1.6rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: get-color(primary, 500);
+            }
+        }
+    }
+    
+    .breadcrumb--item:not(:last-of-type)::after {
+        content: '/';
+        margin: 0 0.5rem;
+        color: get-color(black, 300);
+    }
+    
+    @media only screen and (max-width: get-breakpoint(md)) {
+        padding: 1.8rem 0 3.6rem;
+    }  
+
+    @media only screen and (max-width: get-breakpoint(sm)) {
+        padding: 1.2rem 0 2.4rem;
+    }  
+}

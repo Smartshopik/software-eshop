@@ -80,8 +80,113 @@
                     <i class="bi bi-x"></i>               
                 </button>
             </div>
-            
         </div>
+        <hr class="my-12">
+        <h3>Breadcrumbs</h3>
+        <div>
+            <ul class="breadcrumb">
+                <li class="breadcrumb--item">
+                    <a href="">Domov</a>
+                </li>
+                <li class="breadcrumb--item">
+                    <a href="">Microsoft Office</a>
+                </li>
+                <li class="breadcrumb--item">
+                    Podnikatelia
+                </li>
+            </ul>
+        </div>
+
+        <hr class="my-12">
+        <h3>Section Header</h3>
+        <div>
+            <div class="section_header">
+                <a href="" class="header--icon">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+                <h1>Windows</h1>
+            </div>
+            <div class="section_header section_header--center">
+                <h1>Certifikáty</h1>
+                <ul class="breadcrumb breadcrumb--header">
+                    <li class="breadcrumb--item">
+                        <a href="">Domov</a>
+                    </li>
+                    <li class="breadcrumb--item">
+                        Certifikáty
+                    </li>
+                </ul>
+            </div>
+            <ul class="section_header">
+                <li>
+                    <a href="" class="header--right--icon">
+                        <span>Košík</span>
+                        <div class="black_line"></div>
+                    </a>
+                    <i class="bi bi-arrow-right"></i>
+                </li>
+                <li>
+                    <a href="" class="header--right--icon">
+                        <span>Dárky</span>
+                    </a>
+                    <i class="bi bi-arrow-right"></i>
+                </li>
+                <li>
+                    <a href="" class="header--right--icon is-disabled">
+                        <span>Fakturační údaje</span>
+                    </a>
+                    <i class="bi bi-arrow-right"></i>
+                </li>
+                <li class="header--right--icon is-disabled">
+                    <span>Dokončení objednávky</span>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-12">
+        <h3>Základní inputy (klasické textové pole a textarea)</h3>
+        <form action="">
+            <div class="wrapper--input">
+                <div class="basic--input">
+                    <div class="input input--input">
+                        <label for="order_id">Vaše jméno*</label>
+                        <input type="text" name="order_id" id="order_id" required oninvalid="setCustomValidity('Toto pole není vyplněné.')">
+                    </div>
+                    <div class="input input--input">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+    
+                </div>
+                
+                <div class="basic--input">
+                    <div class="input input--input">
+                        <label for="phone">Mobil*</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="input input--input">
+                        <label for="order_id">Číslo objednávky</label>
+                        <input type="text" name="order_id" id="order_id" required>
+                    </div>
+    
+                </div>
+                <div class="input input--input">
+                    <label for="message">Zpráva</label>
+                    <textarea cols="40" rows="10" name="message" id="message"></textarea>
+                </div>
+                <input type="submit" value="Odeslat" class="input--sbm">
+        </form>
+        
+
+
+
+
+
+
+
+
+
+        </div>
+
         <hr class="my-12">
         <h3>Ikonky</h3>
         <div>
