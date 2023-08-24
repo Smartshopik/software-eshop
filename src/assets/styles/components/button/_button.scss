@@ -9,6 +9,11 @@
     border:  none;
     text-transform: uppercase;
     transition: background-color 0.3s, opacity 0.3s;
+    font-weight: get-font(weight, bold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
 
     > span {
         color: get-color(white, 500);

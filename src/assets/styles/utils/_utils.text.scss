@@ -11,19 +11,19 @@
 }
 
 .text--lg {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
 }
 
 .text--md {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
 }
 
 .text--sm {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
 }
 
 .text--xs {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
 }
 
 // transform
@@ -74,21 +74,40 @@
 
 .text--primary,
 .text--primary-500 {
-    color: get-color(primary, 500);
+    color: get-color(primary, 500) !important;
 }
 
 .text--white,
 .text--white-500 {
-    color: get-color(white, 500);
+    color: get-color(white, 500) !important;
 }
 
+.text--black,
+.text--black-500 {
+    color: get-color(black, 500) !important;
+}
 
 .text--white-300 {
-    color: get-color(white, 300);
+    color: get-color(white, 300) !important;
 }
 
 .text--black-200 {
-    color: get-color(black, 200);
+    color: get-color(black, 200) !important;
+}
+
+.text--green,
+.text--green-500 {
+    color: get-color(green, 500) !important;
+}
+
+.text--blue,
+.text--blue-500 {
+    color: get-color(blue, 500);
+}
+
+.text--red,
+.text--red-500 {
+    color: get-color(red, 500);
 }
 
 .text--divider {
@@ -97,7 +116,7 @@
 
 
     > span {
-        font-size: 16px;
+        font-size: 1.6rem;
         color: get-color(black, 500);
     }
 

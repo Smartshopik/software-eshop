@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
@@ -336,23 +336,19 @@
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email">
                     </div>
-                    <div class="cols">
-                        <div class="col 6-md">
-                            <div class="input is-required mb-20">
-                                <label for="password">Heslo</label>
-                                <input type="password" name="password" id="password">
-                            </div>
+                    <div class="d-flex flex-column flex-sm-row mx-n10">
+                        <div class="input is-required flex-grow mb-20 mx-10">
+                            <label for="password">Heslo</label>
+                            <input type="password" name="password" id="password">
                         </div>
-                        <div class="col 6-md">
-                            <div class="input is-required mb-20">
-                                <label for="password_confirm">Heslo znova</label>
-                                <input type="password" name="password_confirm" id="password_confirm">
-                            </div>
+                        <div class="input is-required flex-grow mb-20 mx-10">
+                            <label for="password_confirm">Heslo znova</label>
+                            <input type="password" name="password_confirm" id="password_confirm">
                         </div>
                     </div>
                     <div class="input input--checkbox mb-20">
                         <input type="checkbox" name="remember" id="remember">
-                        <label for="remember">Souhlasím s <a href="">obchodními podmínkami</a></label>
+                        <label for="remember">Souhlasím s <a href="" class="link">obchodními podmínkami</a></label>
                     </div>
                     <button class="btn w-100">Registrovat se</button>
                 </form>
@@ -363,7 +359,7 @@
             <div class="w-100 w-md-50 py-24 px-md-42 text--center">
                 <h3 class="mb-20 text--uppercase">Přihlásit se</h3>
                 <p class="mb-20">Už máte vytvořený účet? Zde se k němu můžete přihlásit.</p>
-                <a href="login.html" class="btn btn--secondary">Přihlásit se</a>
+                <a href="login.html" class="btn btn--secondary mx-auto">Přihlásit se</a>
             </div>
         </div>
     </div>

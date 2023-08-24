@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
@@ -467,57 +467,59 @@
             </ul>
         </div>
         <hr class="my-12">
-        <h3>Základní inputy (klasické textové pole a textarea)</h3>
-        <form action="">
-            <div class="wrapper--input">
-                <div class="basic--input">
-                    <div class="input input--input">
-                        <label for="order_id">Vaše jméno*</label>
-                        <input type="text" name="order_id" id="order_id" required oninvalid="setCustomValidity('Toto pole není vyplněné.')">
-                    </div>
-                    <div class="input input--input">
-                        <label for="email">Email*</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-    
-                </div>
-                
-                <div class="basic--input">
-                    <div class="input input--input">
-                        <label for="phone">Mobil*</label>
-                        <input type="tel" name="phone" id="phone" required>
-                    </div>
-                    <div class="input input--input">
-                        <label for="order_id">Číslo objednávky</label>
-                        <input type="text" name="order_id" id="order_id" required>
-                    </div>
-    
-                </div>
-                <div class="input input--input">
-                    <label for="message">Zpráva</label>
-                    <textarea cols="40" rows="10" name="message" id="message"></textarea>
-                </div>
-                <input type="submit" value="Odeslat" class="input--sbm">
-        </form>
-        
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <hr class="my-12">
-        <h3>Ikonky</h3>
+        <h3>Inputy</h3>
         <div>
-            <!-- Tady přijdou elementy ikonek pro nastylování -->
-            <div class="d-flex align-center">
-                <i class="bi bi-person fs-24 mr-4"></i>
-                <p>uživatel</p>
+            <div class="input is-required">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="mate23.krenek@gmial.com">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" disabled>
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" readonly>
+            </div>
+            <div class="input">
+                <label for="note">Poznámka</label>
+                <textarea name="note" id="note" cols="30" rows="10" disabled></textarea>
+            </div>
+            <div class="input input--checkbox">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">Check</label>
+            </div>
+            <div class="input input--radio">
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Check</label>
+            </div>
+            <div class="input input--toggle">
+                <input type="checkbox" name="toggle" id="toggle">
+                <label for="toggle">Check</label>
+            </div>
+            <div class="input input--checkbox is-required">
+                <input type="checkbox" name="check2" id="check2" checked disabled>
+                <label for="check2">Check</label>
+            </div>
+            <div class="input input--radio">
+                <input type="radio" name="radio2" id="radio2" checked disabled>
+                <label for="radio2">Check</label>
+            </div>
+            <div class="input input--toggle">
+                <input type="checkbox" name="toggle2" id="toggle2" checked disabled>
+                <label for="toggle2">Check</label>
             </div>
         </div>
     </div>

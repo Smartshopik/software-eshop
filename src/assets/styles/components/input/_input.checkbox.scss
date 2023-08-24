@@ -1,0 +1,96 @@
+.input--checkbox {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    display: flex;
+
+    label {
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+        line-height: 18px;
+
+        &:first-child {
+            margin-right: 8px;
+        }
+        &:last-child {
+            margin-left: 8px;
+        }
+
+        a {
+            padding: 0;
+        }
+    }
+
+    input {
+        position: relative;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        border: 2px solid rgba(black, 0.1);
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            height: 5px;
+            width: 9px;
+            border-bottom: 2px solid get-color(white, 500);
+            border-left: 2px solid get-color(white, 500);
+            display: block;
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg) scale(0);
+            transition: transform 0.1s;
+        }
+
+        &:checked:before {
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+            border-color: get-color(white, 500);
+        }
+        &:checked {
+            border-color: get-color(primary, 500) !important;
+            background-color: get-color(primary, 500);
+        }
+
+        &:disabled {
+            border: 2px solid rgba(black, 0.25) !important;
+            background-color: get-color(white, 400);
+            opacity: 0.5;
+
+            &::before {
+                border-bottom: 2px solid rgba(black, 0.25) !important;
+                border-left: 2px solid rgba(black, 0.25) !important;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.is-invalid {
+        label {
+            color: get-color(red, 500) !important;
+        }
+
+        input {
+            &:checked {
+                border-color: get-color(primary, 500) !important;
+            }
+        }
+    }
+
+    &.is-required {
+        label {
+            &:first-child {
+                margin-right: 14px;
+            }
+            &::after {
+                content: "*";
+                position: absolute;
+                margin: 2px;
+                color: get-color(red, 500);
+            }
+        }
+    }
+}

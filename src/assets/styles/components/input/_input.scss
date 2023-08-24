@@ -1,78 +1,100 @@
-.wrapper--input {
-    width: 50%;
-}
 .input {
     position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     pointer-events: all;
-    width: 100%;
-    
 
     label {
         display: inline-block;
         font-size: 1.6rem;
         line-height: 100%;
-        font-weight: get-font(weight, bold);
-        color: get-color(black, 500);
-        text-transform: capitalize;
-        margin-bottom: 0.6rem;
+        font-weight: get-font(weight, regular);
+        color: get-color(black, 100);
+        margin-bottom: 6px;
     }
-}
 
-.basic--input {
-    display: flex;
-}
+    input, select, textarea {
+        flex-shrink: 0;
+    }
 
-.input--input {
-    margin: 0 1.5rem 1.5rem 0;
-}
-
-.textarea {
-    overflow: auto;
-    padding: 1rem 1.5rem;
-    min-height: 19rem;
-}
-
-.input--sbm {
-    border: none;
-    background-color: get-color(white, 200);
-    color: get-color(black, 500);
-    padding: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.basic--input input[type=text],
-.basic--input input[type=tel],
-.basic--input input[type=email],
-.basic--input input[type=message], textarea {
-    background-color: get-color(white, 500);
-    border: 0.2rem solid rgba(get-color(black, 300), 0.50);
-    border-radius: 0.4rem;
-    padding: 0 1.5rem;
-    max-width: 100%;
-    width: 100%;
-    height: 4.2rem;
-    opacity: 0.5;
-
-    &:hover,
-    &:focus,
-    &:active {
+    input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="range"]),
+    select,
+    textarea {
         background-color: get-color(white, 500);
-        border: 0.2rem solid rgba(get-color(black, 300), 0.50);
-        outline: none;
+        border-radius: 0.5rem;
+        color: inherit;
+        border: 2px solid rgba(black, 0.1);
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 0.8rem 1.6rem;
+        appearance: none;
+        width: 100%;
+        resize: none;
+        height: 4.2rem;
+
+
+        &[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        &:focus {
+            outline: none;
+            border: 2px solid get-color(primary, 500);
+        }
+
+        &::placeholder,
+        .placeholder {
+            color: rgba(black, 0.4);
+        }
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            appearance: none;
+        }
+
+        // &:-webkit-autofill,
+        // &:-webkit-autofill:hover, 
+        // &:-webkit-autofill:focus {
+        //     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        // }
+        
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &:disabled,
+        &:read-only {    
+            pointer-events: none;
+            border: 2px solid rgba(black, 0.25) !important;
+            background-color: get-color(white, 400);
+            opacity: 0.5;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border: 2px solid rgba(black, 0.25) !important;
+            }
+        }
     }
 
-    &:disabled,
-    &:read-only {
-        pointer-events: none;
-        border: 0.1rem solid get-color(black, 200) !important;
-        background-color: get-color(white, 400);
-        opacity: 0.5;
+    textarea {
+        min-height: 100px;
+    }
+
+    &.is-required {
+        label {
+            
+            &::after {
+                content: "*";
+                position: absolute;
+                margin: 0 4px;
+                color: get-color(red, 500);
+            }
+        }
     }
 }
-
-

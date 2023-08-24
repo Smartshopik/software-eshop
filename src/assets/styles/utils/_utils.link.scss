@@ -21,3 +21,14 @@
         color: get-color(black, 500);
     }
 }
+
+.link {
+    font-size: 1.4rem;
+    color: get-color(primary, 500);
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}
