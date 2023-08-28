@@ -8454,10 +8454,16 @@ var InputFile = /** @class */function (_super) {
   }
   InputFile.prototype.init = function () {
     var _this = this;
+    var config = document.body.dataset.input ? JSON.parse(document.body.dataset.input) : null;
+    if (config && config.file) {
+      if (config.file["icon_file"]) {
+        this.options.icon_file = config.file["icon_file"];
+      }
+    }
     this.defaults(this.options);
     this.connected.forEach(function (instance) {
-      if (!instance.element.hasAttribute('init')) {
-        instance.element.setAttribute('init', 'true');
+      if (!instance.element.hasAttribute("init")) {
+        instance.element.setAttribute("init", "true");
         _this.boot(instance);
       }
     });
@@ -8472,20 +8478,20 @@ var InputFile = /** @class */function (_super) {
     var input = instance.element.querySelector("input[type='file']");
     var _instance = __assign(__assign({}, instance), {
       value: null,
-      label: '',
+      label: "",
       multiple: false,
-      button: instance.data.button || 'Upload',
+      button: instance.data.button || "Upload",
       icon: instance.data.icon || null,
-      placeholder: ''
+      placeholder: ""
     });
-    if (input.multiple || input.hasAttribute('multi')) {
+    if (input.multiple || input.hasAttribute("multi")) {
       _instance.multiple = true;
     }
-    if (instance.element.querySelector('label')) {
-      _instance.label = instance.element.querySelector('label').innerText;
+    if (instance.element.querySelector("label")) {
+      _instance.label = instance.element.querySelector("label").innerText;
     }
-    if (input.hasAttribute('placeholder')) {
-      _instance.placeholder = input.getAttribute('placeholder');
+    if (input.hasAttribute("placeholder")) {
+      _instance.placeholder = input.getAttribute("placeholder");
     }
     this.instances.push(_instance);
     this.render(_instance);
@@ -8493,72 +8499,72 @@ var InputFile = /** @class */function (_super) {
   };
   InputFile.prototype.render = function (instance) {
     var input = instance.element.querySelector("input[type='file']");
-    var label = instance.element.querySelector('label');
+    var label = instance.element.querySelector("label");
     if (label) label.remove();
-    var file = document.createElement('label');
-    file.setAttribute('for', input.id);
-    file.classList.add('file');
+    var file = document.createElement("label");
+    file.setAttribute("for", input.id);
+    file.classList.add("file");
     file.tabIndex = 0;
-    file.innerHTML = "\n            ".concat(instance.label ? "<span class=\"file__label\">".concat(instance.label, "</span>") : '', "\n            <div class=\"file__input\">\n                <div class=\"file__button\">\n                    ").concat(instance.icon ? "<i class=\"".concat(instance.icon, "\"></i>") : '', "\n                    ").concat(instance.button, "\n                </div>\n                <div class=\"file__uploaded\">").concat(instance.placeholder, "</div>\n            </div>\n        ");
+    file.innerHTML = "\n            ".concat(instance.label ? "<span class=\"file__label\">".concat(instance.label, "</span>") : "", "\n            <div class=\"file__input\">\n                <div class=\"file__button\">\n                    ").concat(instance.icon ? "<i class=\"".concat(instance.icon, "\"></i>") : "", "\n                    ").concat(instance.button, "\n                </div>\n                <div class=\"file__uploaded\">").concat(instance.placeholder, "</div>\n            </div>\n        ");
     instance.faker = file;
     instance.element.prepend(instance.faker);
   };
   InputFile.prototype.handleEvent = function (instance) {
     var _this = this;
-    instance.faker.addEventListener('focus', function (e) {
+    instance.faker.addEventListener("focus", function (e) {
       return _this.onFocus(e, instance);
     });
-    instance.faker.addEventListener('blur', function (e) {
+    instance.faker.addEventListener("blur", function (e) {
       return _this.onBlur(e, instance);
     });
-    instance.faker.addEventListener('click', function (e) {
+    instance.faker.addEventListener("click", function (e) {
       return _this.onClick(e, instance);
     });
-    instance.element.querySelector("input[type='file']").addEventListener('change', function (e) {
+    instance.element.querySelector("input[type='file']").addEventListener("change", function (e) {
       return _this.onChange(e, instance);
     });
-    window.addEventListener('keydown', function (e) {
+    window.addEventListener("keydown", function (e) {
       return instance.isFocused && _this.onKeyDown(e, instance);
     });
   };
   InputFile.prototype.onClick = function (e, instance) {
-    var label = instance.faker.querySelector('.file__label');
-    var button = instance.faker.querySelector('.file__button');
+    var label = instance.faker.querySelector(".file__label");
+    var button = instance.faker.querySelector(".file__button");
     var target = e.target;
     if (target !== button && target !== label && !button.contains(target) && !label.contains(target)) e.preventDefault();
   };
   InputFile.prototype.onFocus = function (e, instance) {
-    instance.faker.classList.add('is-focused');
+    instance.faker.classList.add("is-focused");
     instance.isFocused = true;
   };
   InputFile.prototype.onBlur = function (e, instance) {
-    instance.faker.classList.remove('is-focused');
+    instance.faker.classList.remove("is-focused");
     instance.isFocused = false;
   };
   InputFile.prototype.onChange = function (e, instance) {
     var _this = this;
-    var width = instance.faker.querySelector('.file__uploaded').getBoundingClientRect().width - 20;
+    var width = instance.faker.querySelector(".file__uploaded").getBoundingClientRect().width - 20;
     instance.value = e.target.files;
-    instance.faker.querySelector('.file__uploaded').innerHTML = "\n            ".concat(Object.entries(instance.value).map(function (_a) {
+    instance.faker.querySelector(".file__uploaded").innerHTML = "\n            ".concat(Object.entries(instance.value).map(function (_a) {
       var index = _a[0],
         file = _a[1];
       var name = file.name;
-      var extension = name.split('.')[name.split('.').length - 1];
+      var extension = name.split(".")[name.split(".").length - 1];
       if (parseInt(index) + 1 > width / 100) return;
       return "\n                    <span class=\"file__uploaded--tag\">\n                        <i class=\"far fa-file-".concat(extension, "\"></i>\n                        ").concat(name, "\n                    </span>\n                ");
-    }).join(''), "\n        ");
-    instance.faker.querySelectorAll('.file__uploaded--tag i').forEach(function (i) {
-      if (getComputedStyle(i, ':before').content === 'none') {
+    }).join(""), "\n        ");
+    instance.faker.querySelectorAll(".file__uploaded--tag i").forEach(function (i) {
+      if (getComputedStyle(i, ":before").content === "none") {
         i.className = "".concat(_this.options.icon_file);
       }
     });
-    if (instance.faker.querySelectorAll('.file__uploaded--tag').length < instance.value.length) {
-      var tag = document.createElement('span');
-      tag.classList.add('file__uploaded--tag');
-      tag.innerText = "+".concat(instance.value.length - instance.faker.querySelectorAll('.file__uploaded--tag').length);
-      instance.faker.querySelector('.file__uploaded').append(tag);
+    if (instance.faker.querySelectorAll(".file__uploaded--tag").length < instance.value.length) {
+      var tag = document.createElement("span");
+      tag.classList.add("file__uploaded--tag");
+      tag.innerText = "+".concat(instance.value.length - instance.faker.querySelectorAll(".file__uploaded--tag").length);
+      instance.faker.querySelector(".file__uploaded").append(tag);
     }
-    if (!instance.value.length) instance.faker.querySelector('.file__uploaded').innerHTML = instance.placeholder;
+    if (!instance.value.length) instance.faker.querySelector(".file__uploaded").innerHTML = instance.placeholder;
   };
   InputFile.prototype.onKeyDown = function (e, instance) {
     switch (e.keyCode) {

@@ -1,6 +1,9 @@
 {
     "/assets/scripts/index.js": "/assets/scripts/index.js",
     "/assets/styles/index.css": "/assets/styles/index.css",
+    "/assets/images/carousel/slide1.jpg": "/assets/images/carousel/slide1.jpg",
+    "/assets/images/carousel/slide2.jpg": "/assets/images/carousel/slide2.jpg",
+    "/assets/images/carousel/slide3.jpg": "/assets/images/carousel/slide3.jpg",
     "/assets/images/flags/cz.png": "/assets/images/flags/cz.png",
     "/assets/images/flags/de.png": "/assets/images/flags/de.png",
     "/assets/images/flags/fr.png": "/assets/images/flags/fr.png",
@@ -8,6 +11,6 @@
     "/assets/images/flags/us.png": "/assets/images/flags/us.png",
     "/assets/images/logo-bezpecny-nakup.jpg": "/assets/images/logo-bezpecny-nakup.jpg",
     "/assets/images/logo.png": "/assets/images/logo.png",
-    "/assets/images/products/placeholder-image.jpg": "/assets/images/products/placeholder-image.jpg",
-    "/assets/images/payments.png": "/assets/images/payments.png"
+    "/assets/images/payments.png": "/assets/images/payments.png",
+    "/assets/images/products/placeholder-image.jpg": "/assets/images/products/placeholder-image.jpg"
 }

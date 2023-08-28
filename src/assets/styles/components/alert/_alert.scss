@@ -7,57 +7,43 @@
     border-color: get-color(green, 500);
     padding: 1.2rem;
     margin: 0.8rem 0 0.8rem 0;
-}
-.alert--icon {
-    display: flex;
-    align-items: center;
-}
-.alert--icon p {
-    color: get-color(green, 500);
-}
-.alert--icon i {
-    font-size: 1.6rem;
-    color: get-color(green,400);
-    margin: 0rem 0.8rem 0rem 0.8rem;
-}
-.alert button {
-    font-size: 2rem;
-    border: 0rem solid;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    cursor: pointer;
 
-    .alert--icon {
-        display: flex;
-        align-items: center;
-    }
-    
-    .alert--icon p {
+    * {
         color: get-color(green, 500);
     }
-    
-    .alert--icon i {
-        font-size: 1.6rem;
-        color: get-color(green, 400);
-        margin: 0rem 0.8rem;
+
+    > *:not(button):not(a) {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+
+        i {
+            margin-right: 8px;
+        }
     }
-    
-    .alert--btn {
+
+    > button, a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 2rem;
-        border: 0rem solid;
+        border: unset;
         width: 24px;
         height: 24px;
         background-color: transparent;
         cursor: pointer;
-        transition: background-color 0.3s;
-        color: get-color(green, 400);
-    
+        transition: 0.3s background-color;
+        
+        i {
+            font-size: 2rem;
+            color: get-color(green, 500);
+        }
+
         &:hover,
-        &:focus,
-        &:active {
-            background-color: darken(get-color(green, 300), 10%);
+        &:active,
+        &:focus {
             outline: none;
+            background-color: lighten(get-color(green, 500), 40%);
         }
     }
 }
@@ -66,44 +52,40 @@
     background-color: get-color(red, 400);
     border-color: get-color(red, 500);
 
-    .alert--icon p {
+    * {
         color: get-color(red, 500);
     }
 
-    .alert--icon i {
-        color: get-color(red, 500);
-    }
-
-    .alert--btn {
-        color: get-color(red, 500);
+    > button, a {
+        i {
+            color: get-color(red, 500);
+        }
 
         &:hover,
-        &:focus,
-        &:active {
-            background-color: darken(get-color(red, 400),10%);
+        &:active,
+        &:focus {
+            background-color: lighten(get-color(red, 500), 30%);
         }
     }
 }
 
 .alert--warning {
-    background-color: get-color(orange, 300);
+    background-color: get-color(orange, 400);
     border-color: get-color(orange, 500);
-    
-    .alert--icon p {
+
+    * {
         color: get-color(orange, 500);
     }
 
-    .alert--icon i {
-        color: get-color(orange, 500);
-    }
-
-    .alert--btn {
-        color: get-color(orange, 500);
+    > button, a {
+        i {
+            color: get-color(orange, 500);
+        }
 
         &:hover,
-        &:focus,
-        &:active {
-            background-color: darken(get-color(orange, 300), 10%);
+        &:active,
+        &:focus {
+            background-color: lighten(get-color(orange, 500), 30%);
         }
     }
 }
@@ -112,21 +94,19 @@
     background-color: get-color(blue, 400);
     border-color: get-color(blue, 500);
 
-    .alert--icon p {
+    * {
         color: get-color(blue, 500);
     }
 
-    .alert--icon i {
-        color: get-color(blue, 500);
-    }
-
-    .alert--btn {
-        color: get-color(blue, 500);
+    > button, a {
+        i {
+            color: get-color(blue, 500);
+        }
 
         &:hover,
-        &:focus,
-        &:active {
-            background-color: darken(get-color(blue, 400),10%);
+        &:active,
+        &:focus {
+            background-color: lighten(get-color(blue, 500), 45%);
         }
     }
 }

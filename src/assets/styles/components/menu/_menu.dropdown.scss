@@ -4,7 +4,8 @@
     align-items: center;
     height: 100%;
 
-    > a, button {
+    > a, 
+    > button {
         background-color: transparent;
         border: none;
         display: flex;
@@ -58,11 +59,19 @@
     padding: 1.2rem 2rem;
     transition: 0.3s opacity, 0.3s transform;
 
+    * {
+        pointer-events: all;
+    }
+
     &.is-hidden {
         display: block !important;
         opacity: 0;
         pointer-events: none;
         transform: translateY(10px);
+
+        * {
+            pointer-events: none;
+        }
     }
 }
 
@@ -93,5 +102,107 @@
         outline: none;
         text-decoration: none;
         color: get-color(primary, 500);
+    }
+}
+
+
+.menu__dropdown--tabs {
+    > a, 
+    > button {
+        background-color: get-color(white, 400);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        padding: 1.2rem;
+        font-weight: get-font(weight, bold);
+        color: get-color(black, 500);
+        transition: 0.3s opacity;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        font-size: 1.3rem;
+
+        > * {
+            color: get-color(black, 500);
+        }
+
+        i {
+            transition: 0.3s transform;
+        }
+
+        span:nth-child(1) {
+            margin-right: 0.8rem;
+        }
+    
+        span:nth-child(2) {
+            margin-left: 0.8rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color:  darken(get-color(white, 400), 5%);
+            color: get-color(black, 500);
+            opacity: 1;
+        }
+    }
+
+    .menu__dropdown--list {
+        top: calc(100% + 12px);
+        right: unset;
+        left: 0;
+    }
+}
+
+.menu__dropdown--filter {
+    position: static;
+
+    > a,
+    > button {
+        background-color: get-color(white, 400);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        padding: 1.2rem;
+        font-weight: get-font(weight, bold);
+        color: get-color(black, 500);
+        transition: 0.3s opacity;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        font-size: 1.3rem;
+
+        > * {
+            color: get-color(black, 500);
+        }
+
+        i {
+            transition: 0.3s transform;
+        }
+
+        span:nth-child(1) {
+            margin-right: 0.8rem;
+        }
+    
+        span:nth-child(2) {
+            margin-left: 0.8rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color:  darken(get-color(white, 400), 5%);
+            color: get-color(black, 500);
+            opacity: 1;
+        }
+    }
+
+    .menu__dropdown--list {
+        top: calc(100% + 12px);
+        padding: unset;
+        right: 0;
+        left: 0;
     }
 }

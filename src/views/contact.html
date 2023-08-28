@@ -1,0 +1,59 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+<section class="mb-48">
+    <div class="section__header mb-48">
+        <div class="container d-flex flex-column">
+            <div class="d-flex align-center justify-center mb-8">
+                <h3>Informace</h3>
+            </div>
+            <ul class="breadcrumb breadcrumb--light">
+                <li>
+                    <a href="">Domov</a>
+                </li>
+                <li>
+                    Informace
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex max-w-470 mx-auto">
+            <div class="py-24 w-100">
+                <form action="">
+                    <h5 class="mb-10 text--uppercase mb-20">Kontaktujte nás</h5>
+                    <div class="input input--select is-required mb-20" js-id="input::select#subject">
+                        <label for="subject">Předmět</label>
+                        <select name="subject" id="subject" placeholder="Vyberte předmět" js-id="action@change(show,subject_2)#order_id">
+                            <option value="subject_1" selected>Dotaz</option>
+                            <option value="subject_2" >Reklamace</option>
+                            <option value="subject_3">Velkoobchod</option>
+                        </select>
+                    </div>
+                    <div class="input mb-20 is-hidden" js-id="action#order_id">
+                        <label for="order_id">Číslo objednávky</label>
+                        <input type="text" name="order_id" id="order_id">
+                    </div>
+                    <div class="input is-required mb-20">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input input--file is-required mb-20" js-id="input::file#file" data-icon="bi bi-upload" data-button="Nahrát">
+                        <label for="file">Příloha</label>
+                        <input type="file" name="file" id="file" placeholder="Žádný soubor" multiple>
+                    </div>
+                    <div class="input input--file mb-10">
+                        <label for="message">Zpráva</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="input input--checkbox mb-20">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree" class="text--regular text--notransform">Souhlasím <a href="" class="link">se zpracováním osobních údajů</a></label>
+                    </div>
+                    <button type="submit" class="btn w-100">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

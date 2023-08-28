@@ -6,31 +6,57 @@
         position: relative;
         text-transform: capitalize;
         font-size: 1.6rem;
+        font-weight: get-font(weight, bold);
+        color: get-color(black, 500);
 
         a {
             text-transform: capitalize;
-            color: get-color(black, 300);
+            color: get-color(black, 200);
             font-size: 1.6rem;
+            font-weight: get-font(weight, regular);
+            transition: 0.3s color;
 
             &:hover,
             &:focus,
             &:active {
-                color: get-color(primary, 500);
+                color: darken(get-color(black, 200), 10%);
             }
         }
-    }
-    
-    .breadcrumb--item:not(:last-of-type)::after {
-        content: '/';
-        margin: 0 0.5rem;
-        color: get-color(black, 300);
-    }
-    
-    @media only screen and (max-width: get-breakpoint(md)) {
-        padding: 1.8rem 0 3.6rem;
-    }  
 
-    @media only screen and (max-width: get-breakpoint(sm)) {
-        padding: 1.2rem 0 2.4rem;
-    }  
+        &:not(:last-of-type)::after {
+            content: '/';
+            font-weight: get-font(weight, regular);
+            margin: 0 0.6rem;
+            color: get-color(black, 200);
+        }
+    }
+}
+
+.breadcrumb--light {
+    > li {
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        font-weight: get-font(weight, bold);
+        color: get-color(white, 500);
+        text-transform: uppercase;
+
+        a {
+            text-transform: capitalize;
+            color: get-color(white, 500);
+            font-size: 1.1rem;
+            font-weight: get-font(weight, bold);
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: darken(get-color(white, 500), 10%);
+            }
+        }
+
+        &:not(:last-of-type)::after {
+            color: get-color(white, 500);
+        }
+    }
 }

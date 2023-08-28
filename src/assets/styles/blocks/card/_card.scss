@@ -11,6 +11,14 @@
     }
 }
 
+.card--light {
+    border: 1px solid get-color(white, 200);
+}
+
+.card--rounded {
+    border-radius: 0.7rem;
+}
+
 .card--search {
     border: unset;
     position: absolute;

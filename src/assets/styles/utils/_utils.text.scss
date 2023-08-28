@@ -1,3 +1,7 @@
+.text--extraBold {
+    font-weight: get-font(weight, extraBold) !important;
+}
+
 .text--bold {
     font-weight: get-font(weight, bold) !important;
 }
@@ -93,6 +97,14 @@
 
 .text--black-200 {
     color: get-color(black, 200) !important;
+}
+
+.text--black-300 {
+    color: get-color(black, 300) !important;
+}
+
+.text--gray-300 {
+    color: get-color(gray, 300) !important;
 }
 
 .text--green,

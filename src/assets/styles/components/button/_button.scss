@@ -15,7 +15,7 @@
     justify-content: center;
     width: fit-content;
 
-    > span {
+    > * {
         color: get-color(white, 500);
     }
 
@@ -76,14 +76,81 @@
     padding: 1.5rem 2.2rem;
 }
 
+.btn--link {
+    background-color: transparent;
+    color: get-color(black, 500);
+
+    > * {
+        color: get-color(black, 500);
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        color: get-color(primary, 500);
+
+        > * {
+            color: get-color(primary, 500);
+        }
+    }
+}
+
 .btn--secondary {
     color: get-color(black, 500);
     background-color:get-color(white, 400);
+
+    > * {
+        color: get-color(black, 500);
+    }
 
     &:hover,
     &:focus,
     &:active {
         background-color:  darken(get-color(white, 400), 5%);
         color: get-color(black, 500);
+    }
+}
+
+.btn--red {
+    &.btn--link {
+        color: get-color(red, 500);
+
+        > * {
+            color: get-color(red, 500);
+        }
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken(get-color(red, 500), 10%);
+    
+            > * {
+                color: darken(get-color(red, 500), 10%);
+            }
+        }
+    }
+}
+
+.btn--pagination {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: get-color(white, 400);
+    color: get-color(black, 500);
+
+    > * {
+        color: get-color(black, 500);
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+        background-color: get-color(primary, 500);
+        color: get-color(white, 500);
+
+        > * {
+            color: get-color(white, 500);
+        }
     }
 }

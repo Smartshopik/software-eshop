@@ -9,7 +9,14 @@
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
 </head>
-<body class="is-loading">
+<body 
+    class="is-loading" 
+    data-input='{
+        "file": {
+            "icon_file": "bi bi-file"
+        }
+    }'
+>
     <div id="root">
         <header class="bg--white">
     <div class="container d-xs-none d-md-block">
@@ -87,7 +94,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -99,7 +106,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -111,7 +118,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -123,7 +130,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -135,7 +142,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -147,7 +154,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -325,8 +332,370 @@
 </header>
         <main>
             
-<section class="py-120 bg--primary" style="height: 1200px;">
+<section class="mb-48">
+    <div class="container--large px-0">
+        <div class="splide"
+            js-id="carousel#landing"
+            data-options='{ "perPage": 1, "autoplay": true, "interval": 5000, "pagination": true, "gap": 0, "type": "loop" }'
+        >
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide bg--shadow">
+                        <img src="./assets/images/carousel/slide1.jpg" class="object-fit--cover max-h-560" />
+                    </li>
+                    <li class="splide__slide bg--shadow">
+                        <img src="./assets/images/carousel/slide2.jpg" class="object-fit--cover max-h-560" />
+                    </li>
+                    <li class="splide__slide bg--shadow">
+                        <img src="./assets/images/carousel/slide3.jpg" class="object-fit--cover max-h-560" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mb-48">
     <div class="container">
+        <h4 class="text--center text--extraBold text--primary mb-12">Originálne elektronické licencie</h4>
+        <p class="text--center text--black text--lg mb-24">Windows, Microsoft Office, Antivírusy</p>
+        <div class="cols">
+            <div class="col 6-xs">
+                <div class="bg--shadow">
+                    <img src="./assets/images/carousel/slide1.jpg" class="w-100" />
+                </div>
+            </div>
+            <div class="col 6-xs">
+                <div class="bg--shadow">
+                    <img src="./assets/images/carousel/slide1.jpg" class="w-100" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mb-72">
+    <div class="container">
+        <h2 class="text--center mb-48">Operační systémy</h2>
+        <div class="cols">
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mb-48">
+    <div class="container">
+        <h2 class="text--center mb-48">Kancelářské aplikace</h2>
+        <div class="cols">
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 6-xs 3-md">
+                <div class="product__card mx-auto">
+                    <div class="product__card--preview">
+                        <div class="product__card--gallery">
+                            <a href="product.html" class="product__card--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product__card--badges">
+                            <span class="badge badge--green">
+                                Nová licence
+                            </span>
+                            <span class="badge badge--primary">
+                                Okamžité dodání
+                            </span>
+                            <span class="badge badge--orange">
+                                Druhotná licence
+                            </span>
+                        </div>
+                        <button type="button" class="product__card--button__wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                        <button type="button" class="product__card--button">
+                            <span class="product__card--button__text">Přidat do košíku</span>
+                            <i class="bi bi-cart product__card--button__icon"></i>
+                        </button>
+                    </div>
+                    <div class="product__card--name">
+                        <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                        <div class="d-flex align-center justify-between">
+                            <div class="text--center">
+                                <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                <span>s DPH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -341,18 +710,19 @@
                     </div>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Kategorie</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
-                        <li><a href="" class="link--white w-100 py-8">Microsoft Office</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Windows</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Antivirus</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Serverový software</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Vývojářské nástroje</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Aplikace Office</a></li>
+                        <li><a href="contact.html" class="link--white w-100 py-8">Kontakt</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">F&Q</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchodní podmínky</a></li>
+                        <li><a href="opening-hours.html" class="link--white w-100 py-8">Provozní doba</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchrana osobních údajů</a></li>
+                        <li><a href="reclamation.html" class="link--white w-100 py-8">Reklamace</a></li>
+                        <li><a href="wholesale.html" class="link--white w-100 py-8">Velkoobchod</a></li>
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Informace</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Výkup softwaru</a></li>
                         <li><a href="" class="link--white w-100 py-8">Pro firmy a školy</a></li>
@@ -363,7 +733,7 @@
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Zákaznický servis</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Zákaznický servis</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Obchodní podmínky</a></li>
                         <li><a href="" class="link--white w-100 py-8">Odstoupení od smlouvy</a></li>

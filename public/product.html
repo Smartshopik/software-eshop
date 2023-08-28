@@ -9,7 +9,14 @@
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
 </head>
-<body class="is-loading">
+<body 
+    class="is-loading" 
+    data-input='{
+        "file": {
+            "icon_file": "bi bi-file"
+        }
+    }'
+>
     <div id="root">
         <header class="bg--white">
     <div class="container d-xs-none d-md-block">
@@ -87,7 +94,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -99,7 +106,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -111,7 +118,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -123,7 +130,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -135,7 +142,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -147,7 +154,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -325,10 +332,198 @@
 </header>
         <main>
             
-<section class="my-xs-48">
+<section class="mb-48 mt-48">
     <div class="container">
-        <h1>Detail produktu</h1>
+        <div class="cols">
+            <div class="col 5-md">
+                <div class="p-relative">
+                    <div class="splide" js-id="carousel#product">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="" draggable="false">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-absolute top-0 right-0 d-flex flex-column align-end my-n2">
+                        <span class="badge badge--green my-2">
+                            Nová licence
+                        </span>
+                        <span class="badge badge--primary my-2">
+                            Okamžité dodání
+                        </span>
+                        <span class="badge badge--orange my-2">
+                            Druhotná licence
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col 7-md">
+                <div class="mb-12">
+                    <ul class="breadcrumb mb-12">
+                        <li>
+                            <a href="">Domov</a>
+                        </li>
+                        <li>
+                            <a href="">Microsoft Office</a>
+                        </li>
+                        <li>
+                            Podnikatelia
+                        </li>
+                    </ul>
+                    <div class="d-flex align-center justify-between mb-8">
+                        <h4>Nonstick Dishwasher PFOA</h4>
+                    </div>
+                    <p>
+                        <a href="" class="text--bold text--primary text--md">Accessories</a>
+                    </p>
+                </div>
+                <div class="d-flex align-center">
+                    <ul class="rating rating--stars mr-12">
+                        <li class="bi bi-star-fill is-active"></li>
+                        <li class="bi bi-star-fill is-active"></li>
+                        <li class="bi bi-star-fill is-active"></li>
+                        <li class="bi bi-star-fill is-active"></li>
+                        <li class="bi bi-star-fill"></li>
+                    </ul>
+                    <a href="" class="link--regular">+120 rezenzí</a>
+                </div>
+                <hr class="hr--light my-12">
+                <div class="mb-24">
+                    <span class="text--linethrough text--regular text--gray-300 mr-6 h5">99.90 €</span>
+                    <span class="text--primary mr-6 h4">69.90 €</span>
+                    <span class="text--regular h5">s DPH</span>
+                </div>
+                <div>
+                    <p class="text--green d-flex align-center">
+                        <i class="bi bi-check-circle mr-6"></i>
+                        skladem
+                    </p>
+                    <p class="text--red d-flex align-center">
+                        <i class="bi bi-x-circle mr-6"></i>
+                        není skladem
+                    </p>
+                    <p class="text--blue d-flex align-center">
+                        <i class="bi bi-info-circle mr-6"></i>
+                        dárek k objednávce ZDARMA
+                    </p>
+                    <p class="text--grey d-flex align-center">
+                        <i class="bi bi-truck mr-6"></i>
+                        expresní doručení
+                    </p>
+                    <p class="text--grey d-flex align-center">
+                        <i class="bi bi-shield mr-6"></i>
+                        bezpečná platba
+                    </p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur odit explicabo tempora quidem nostrum repudiandae harum natus, expedita eum, asperiores culpa earum dicta eos ipsa. Quia odit id quo amet sit quos.</p>
+                </div>
+                <div class="cols 6-xs 3-md">
+                    <div class="col">
+                        <div class="d-flex flex-column align-center justify-center h-100">
+                            <span class="text--bold mb-4">
+                                <i class="bi bi-clock fs-32"></i>
+                            </span>
+                            <span class="text--center text--bold">
+                                Rychlé doručení
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-center justify-center h-100">
+                            <span class="text--bold mb-4">
+                                <i class="bi bi-hand-thumbs-up fs-32"></i>
+                            </span>
+                            <span class="text--center text--bold">
+                                Záruka legality
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-center justify-center h-100">
+                            <span class="text--bold mb-4">
+                                <i class="bi bi-gift fs-32"></i>
+                            </span>
+                            <span class="text--center text--bold">
+                                Dárek k nákupu
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-center justify-center h-100">
+                            <span class="text--bold mb-4">
+                                <i class="bi bi-shield-check fs-32"></i>
+                            </span>
+                            <span class="text--center text--bold">
+                                Bezpečná platba
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-xs-20 my-sm-24">
+                <div class="d-flex flex-row mb-24">
+                    <div class="input input--number flex-row align-center mr-12 w-xs-35 w-lg-30" shop-id="input::number#product-quantity">
+                        <label for="quantity" class="text--regular mb-0 mr-12">Množství</label>
+                        <input type="number" id="quantity" name="quantity" class="shrink" min="1" max="10" value="1" shop-id="ajax#product1">
+                    </div>
+                    <div class="flex-grow d-flex align-center mx-n4">
+                        <button 
+                            type="button" 
+                            class="btn flex-grow mx-4" 
+                            shop-id="ajax@click(cart.product,add)#product1 action@click(fb_track,AddToCart)" 
+                            data-data='{"product_id": "123", "quantity": "{(input#quantity).value || 1}"}'
+                        >
+                            Přidat do košíku
+                        </button>
+                        <button 
+                            type="button" 
+                            class="btn btn--square btn--outline btn--white mx-4"
+                            shop-id="ajax@click(wishlist,add)#product_wishlist"
+                            data-data='{"product_id": "123"}'
+                        >
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+<section class="mb-48 py-xs-24 py-sm-48 bg--white-200">
+    <div class="tabs">
+        <div class="tabs__header">
+            <ul>
+                <li>
+                    <button type="button" class="is-active" js-id="tab::1@click#product-detail">Popis</button>
+                </li>
+                <li>
+                    <button type="button" js-id="tab::2@click#product-detail">Specifikace</button>
+                </li>
+                <li>
+                    <button type="button" js-id="tab::3@click#product-detail">Recenze (123)</button>
+                </li>
+
+            </ul>
+        </div>
+        <div class="container">
+            <div class="tabs__body">
+                <div class="tabs__item is-visible" js-id="tab::1#product-detail">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloremque impedit totam saepe repellendus voluptatem veniam, maxime minus. Porro, in earum libero nihil perferendis ratione quos minima, ullam error dolorem, inventore explicabo?</p>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, neque esse sed sit, laudantium corrupti laboriosam adipisci enim veniam dicta sapiente, temporibus harum dignissimos! Quia itaque a non sapiente veritatis adipisci eius enim nemo? Minus, adipisci reprehenderit! Cum est vel sed, ducimus fuga quaerat totam doloremque magni quisquam. Corporis, architecto quisquam sapiente doloribus necessitatibus itaque nam rerum dolores beatae sunt?</p>
+                </div>
+                <div class="tabs__item is-hidden" js-id="tab::2#product-detail">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id fugiat omnis sed? Itaque vero illo at magnam quos eos sapiente eligendi, ipsa optio iure deserunt, quam id animi enim aperiam. Maxime.</p>
+                </div>
+                <div class="tabs__item is-hidden" js-id="tab::3#product-detail">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum vero tempora iusto?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         </main>
         <footer class="bg--black-400">
@@ -341,18 +536,19 @@
                     </div>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Kategorie</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
-                        <li><a href="" class="link--white w-100 py-8">Microsoft Office</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Windows</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Antivirus</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Serverový software</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Vývojářské nástroje</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Aplikace Office</a></li>
+                        <li><a href="contact.html" class="link--white w-100 py-8">Kontakt</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">F&Q</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchodní podmínky</a></li>
+                        <li><a href="opening-hours.html" class="link--white w-100 py-8">Provozní doba</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchrana osobních údajů</a></li>
+                        <li><a href="reclamation.html" class="link--white w-100 py-8">Reklamace</a></li>
+                        <li><a href="wholesale.html" class="link--white w-100 py-8">Velkoobchod</a></li>
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Informace</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Výkup softwaru</a></li>
                         <li><a href="" class="link--white w-100 py-8">Pro firmy a školy</a></li>
@@ -363,7 +559,7 @@
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Zákaznický servis</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Zákaznický servis</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Obchodní podmínky</a></li>
                         <li><a href="" class="link--white w-100 py-8">Odstoupení od smlouvy</a></li>

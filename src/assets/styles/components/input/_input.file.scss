@@ -1,0 +1,126 @@
+.input--file {
+    input[type="file"] {
+        display: none;
+        padding: 0 !important;
+    }
+
+    .file {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        outline: none;
+
+        &.is-focused {
+            .file__input {
+                border: 2px solid get-color(primary, 500);
+            }
+        }
+    }
+
+    .file__label {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 100%;
+        font-weight: get-font(weight, regular);
+        color: get-color(black, 100);
+        margin-bottom: 6px;
+    }
+
+    .file__input {
+        background-color: get-color(white, 500);
+        border-radius: 0.5rem;
+        color: get-color(black, 500);
+        border: 2px solid rgba(black, 0.1);
+        appearance: none;
+        padding: 0.8rem 1.6rem;
+        width: 100%;
+        resize: none;
+        display: flex;
+        align-items: center;
+        height: 4.2rem;
+
+        .file__uploaded {
+            display: flex;
+            width: 100%;
+            font-size: 1.3rem;
+            font-weight: 400;
+            text-transform: none;
+            overflow: hidden;
+            color: get-color(black, 200);
+        }
+
+        .file__button {
+            display: flex;
+            align-items: center;
+            border: none;
+            padding: none;
+            background-color: transparent;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-right: 8px;
+            cursor: pointer;
+            padding: 0.25rem 0.6rem;
+            background-color: get-color(primary, 500);
+            color: get-color(white, 500);
+            border-radius: 0.5rem;
+            transition: 0.3s background-color;
+
+            &:hover {
+                background-color: darken(get-color(primary, 500), 10%);
+            }
+
+            i {
+                margin-right: 4px;
+                font-size: 1.2rem;
+
+                @media only screen and (min-width: get-breakpoint(sm)) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .file__uploaded--tag {
+        padding: 0.25rem 0.6rem;
+        font-size: 1.3rem;
+        display: block;
+        border-radius: 0.5rem;
+        background-color: get-color(white, 400);
+        color: get-color(black, 500);
+        max-width: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        i {
+            margin-right: 4px;
+            font-size: 1.2rem;
+
+            @media only screen and (min-width: get-breakpoint(sm)) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &.is-required {
+        label {
+            &::after {
+                content: none;
+            }
+        }
+
+        .file__label {
+            &::after {
+                content: "*";
+                position: absolute;
+                margin: 0 4px;
+                color: get-color(red, 500);
+            }
+        }
+    }
+}

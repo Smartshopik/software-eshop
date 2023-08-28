@@ -9,7 +9,14 @@
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
 </head>
-<body class="is-loading">
+<body 
+    class="is-loading" 
+    data-input='{
+        "file": {
+            "icon_file": "bi bi-file"
+        }
+    }'
+>
     <div id="root">
         <header class="bg--white">
     <div class="container d-xs-none d-md-block">
@@ -87,7 +94,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -99,7 +106,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -111,7 +118,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -123,7 +130,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -135,7 +142,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -147,7 +154,7 @@
                                     <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
                                 </div>
                                 <div>
-                                    <h4 class="mb-12">Microsoft Office 2021 Professional Plus</h4>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
                                     <p>
                                         <span class="text--md text--bold text--primary">49,90 €</span>
                                         <span class="text--xs">s DPH</span>
@@ -330,7 +337,7 @@
         <div class="d-flex text--center flex-column align-center justify-center">
             <div class="w-lg-50 w-md-70">
                 <i class="bi bi-clock fs-48 fs-sm-56 fs-lg-64 text--blue mb-12 d-block"></i>
-                <h2 class="mb-12 text--blue">Probíhající platba</h2>
+                <h4 class="mb-12 text--blue">Probíhající platba</h4>
                 <p class="mb-24">Pokud jste zvolili způsob platby: QR platba nebo běžný bankovní převod a strhli se Vám peníze z účtu, může chvílí trvat než se nám platba připíše z platební brány. Po připsání platby Vám budou produkty doručeny na Vaši e-mailovu adresu.</p>
                 <a href="catalog.html" class="btn btn--secondary mx-auto">Zpět do obchodu</a>
             </div>
@@ -349,18 +356,19 @@
                     </div>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Kategorie</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
-                        <li><a href="" class="link--white w-100 py-8">Microsoft Office</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Windows</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Antivirus</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Serverový software</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Vývojářské nástroje</a></li>
-                        <li><a href="" class="link--white w-100 py-8">Aplikace Office</a></li>
+                        <li><a href="contact.html" class="link--white w-100 py-8">Kontakt</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">F&Q</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchodní podmínky</a></li>
+                        <li><a href="opening-hours.html" class="link--white w-100 py-8">Provozní doba</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchrana osobních údajů</a></li>
+                        <li><a href="reclamation.html" class="link--white w-100 py-8">Reklamace</a></li>
+                        <li><a href="wholesale.html" class="link--white w-100 py-8">Velkoobchod</a></li>
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Informace</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Výkup softwaru</a></li>
                         <li><a href="" class="link--white w-100 py-8">Pro firmy a školy</a></li>
@@ -371,7 +379,7 @@
                     </ul>
                 </div>
                 <div class="col 12-xs 4-sm 3-md">
-                    <h6 class="text--white py-8">Zákaznický servis</h6>
+                    <h6 class="text--white text--md text--uppercase py-8">Zákaznický servis</h6>
                     <ul>
                         <li><a href="" class="link--white w-100 py-8">Obchodní podmínky</a></li>
                         <li><a href="" class="link--white w-100 py-8">Odstoupení od smlouvy</a></li>

@@ -9,7 +9,14 @@
     <script defer src="./assets/scripts/index.js"></script>
     <title>Software eshop šablona</title>
 </head>
-<body class="is-loading">
+<body 
+    class="is-loading" 
+    data-input='{
+        "file": {
+            "icon_file": "bi bi-file-earmark"
+        }
+    }'
+>
     <div id="root">
         {% include "blocks/header.html" %}
         <main>

@@ -1,0 +1,203 @@
+.product__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        .product__card--button {
+            transform: translateY(0);
+        }
+
+        .product__card--button__wishlist {
+            opacity: 1;
+        }
+    }
+}
+
+.product__card--preview {
+    position: relative;
+    overflow: hidden;
+}
+
+.product__card--gallery {
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.product__card--badges {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: -0.2rem;
+
+    > .badge {
+        margin: 0.2rem;
+    }
+}
+
+.product__card--button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: get-color(white, 500);
+    font-size: 1.3rem;
+    font-weight: get-font(weight, bold);
+    text-transform: uppercase;
+    background-color: rgba(get-color(primary, 500), 0.75);
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    transition: 0.3s background-color, 0.3s border, 0.3s transform;
+    transform: translateY(0%);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: get-color(primary, 500);
+
+        .product__card--button__text {
+            transform: translateY(-200%);
+        }
+
+        .product__card--button__icon {
+            transform: translateY(0%);
+        }
+    }
+
+    > * {
+        color: get-color(white, 500);
+        font-size: 1.3rem;
+        font-weight: get-font(weight, bold);
+
+    }
+
+    .product__card--button__text {
+        display: none;
+        transform: translateY(0%);
+        transition: 0.3s transform;
+    }
+
+    .product__card--button__icon {
+        position: relative;
+        font-size: 1.8rem;
+        transform: translateY(0%);
+        transition: 0.3s transform;
+    }
+
+    @media (min-width: get-breakpoint(lg)) {
+        transform: translateY(100%);
+        right: 0;
+
+        .product__card--button__text {
+            display: block;
+        }
+
+        .product__card--button__icon {
+            position: absolute;
+            transform: translateY(200%);
+        }
+
+        
+    }
+}
+
+.product__card--button__wishlist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.8rem;
+    color: rgba(get-color(red, 500), 0.25);
+    padding: 0.8rem 1.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    border: unset;
+    border-radius: 0.2rem;
+    left: 0.4rem;
+    top: 0.4rem;
+    background-color: get-color(white, 500);
+    box-shadow: get-shadow(secondary);
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s color, 0.3s opacity;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: get-color(red, 500);
+    }
+
+    &.is-active {
+        color: get-color(red, 500);
+    }
+
+    @media (min-width: get-breakpoint(lg)) {
+        opacity: 0;
+    }
+}
+
+.product__card--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+}
+
+// .product__card--name {
+
+//     > h3 > a {
+//         font-weight: get-font(weight, regular);
+//         font-size: 1.4rem;
+//         text-transform: capitalize;
+//         line-height: 140%;
+
+//         &:hover,
+//         &:active,
+//         &:focus {
+//             color: get-color(blue, 500);
+//         }
+//     }
+
+//     > p > a {
+//         font-size: 1.2rem;
+//         text-transform: uppercase;
+
+//         &:hover,
+//         &:active,
+//         &:focus {
+//             color: get-color(black, 500);
+//         }
+//     }
+// }
+
+// .product__card--preview {
+//     position: relative;
+// }
+
+// .product__card--badges {
+//     display: flex;
+//     align-items: center;
+//     position: absolute;
+//     top: -4px;
+//     left: -4px;
+
+//     > * {
+//         margin: 4px;
+//     }
+// }

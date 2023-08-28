@@ -45,38 +45,38 @@
         <h3>Alert</h3>
         <div>
             <div class="alert my-8" js-id="action#alert1">
-                <div class="alert--icon">
+                <div>
                     <i class="bi bi-check-circle"></i>
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
-                <button type="button" class="alert--btn" js-id="action@click(remove)#alert1">
+                <button type="button" js-id="action@click(remove)#alert1">
                     <i class="bi bi-x"></i>               
                 </button>
             </div>
             <div class="alert alert--error my-8" js-id="action#alert2">
-                <div class="alert--icon">
+                <div>
                     <i class="bi bi-x-circle"></i>
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
-                <button type="button" class="alert--btn" js-id="action@click(remove)#alert2">
+                <button type="button" js-id="action@click(remove)#alert2">
                     <i class="bi bi-x"></i>               
                 </button>
             </div>
             <div class="alert alert--warning my-8" js-id="action#alert3">
-                <div class="alert--icon">
+                <div>
                     <i class="bi bi-exclamation-triangle"></i>
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
-                <button type="button" class="alert--btn" js-id="action@click(remove)#alert3">
+                <button type="button" js-id="action@click(remove)#alert3">
                     <i class="bi bi-x"></i>               
                 </button>
             </div>
             <div class="alert alert--info my-8" js-id="action#alert4">
-                <div class="alert--icon">
+                <div>
                     <i class="bi bi-info-circle"></i>
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
-                <button type="button" class="alert--btn" js-id="action@click(remove)#alert4">
+                <button type="button" js-id="action@click(remove)#alert4">
                     <i class="bi bi-x"></i>               
                 </button>
             </div>
@@ -85,13 +85,13 @@
         <h3>Breadcrumbs</h3>
         <div>
             <ul class="breadcrumb">
-                <li class="breadcrumb--item">
+                <li>
                     <a href="">Domov</a>
                 </li>
-                <li class="breadcrumb--item">
+                <li>
                     <a href="">Microsoft Office</a>
                 </li>
-                <li class="breadcrumb--item">
+                <li>
                     Podnikatelia
                 </li>
             </ul>
@@ -100,47 +100,31 @@
         <hr class="my-12">
         <h3>Section Header</h3>
         <div>
-            <div class="section_header">
-                <a href="" class="header--icon">
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-                <h1>Windows</h1>
+            <div class="section__header mb-24">
+                <div class="container">
+                    <div class="d-flex align-center justify-center">
+                        <a href="" class="section__header--icon">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <h3>Windows</h3>
+                    </div>
+                </div>
             </div>
-            <div class="section_header section_header--center">
-                <h1>Certifikáty</h1>
-                <ul class="breadcrumb breadcrumb--header">
-                    <li class="breadcrumb--item">
-                        <a href="">Domov</a>
-                    </li>
-                    <li class="breadcrumb--item">
-                        Certifikáty
-                    </li>
-                </ul>
+            <div class="section__header mb-24">
+                <div class="container d-flex flex-column">
+                    <div class="d-flex align-center justify-center mb-8">
+                        <h3>Windows</h3>
+                    </div>
+                    <ul class="breadcrumb breadcrumb--light">
+                        <li>
+                            <a href="">Domov</a>
+                        </li>
+                        <li>
+                            Certifikáty
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="section_header">
-                <li>
-                    <a href="" class="header--right--icon">
-                        <span>Košík</span>
-                        <div class="black_line"></div>
-                    </a>
-                    <i class="bi bi-arrow-right"></i>
-                </li>
-                <li>
-                    <a href="" class="header--right--icon">
-                        <span>Dárky</span>
-                    </a>
-                    <i class="bi bi-arrow-right"></i>
-                </li>
-                <li>
-                    <a href="" class="header--right--icon is-disabled">
-                        <span>Fakturační údaje</span>
-                    </a>
-                    <i class="bi bi-arrow-right"></i>
-                </li>
-                <li class="header--right--icon is-disabled">
-                    <span>Dokončení objednávky</span>
-                </li>
-            </ul>
         </div>
         <hr class="my-12">
         <h3>Inputy</h3>
@@ -196,6 +180,47 @@
             <div class="input input--toggle">
                 <input type="checkbox" name="toggle2" id="toggle2" checked disabled>
                 <label for="toggle2">Check</label>
+            </div>
+        </div>
+        <hr class="my-12">
+        <h3>Produktové karty</h3>
+        <div class="cols">
+            <div class="product__card">
+                <div class="product__card--preview">
+                    <div class="product__card--gallery">
+                        <a href="product.html" class="product__card--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__card--badges">
+                        <span class="badge badge--green">
+                            Nová licence
+                        </span>
+                        <span class="badge badge--primary">
+                            Okamžité dodání
+                        </span>
+                        <span class="badge badge--orange">
+                            Druhotná licence
+                        </span>
+                    </div>
+                    <button type="button" class="product__card--button__wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <button type="button" class="product__card--button">
+                        <span class="product__card--button__text">Přidat do košíku</span>
+                        <i class="bi bi-cart product__card--button__icon"></i>
+                    </button>
+                </div>
+                <div class="product__card--name">
+                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                    <div class="d-flex align-center justify-between">
+                        <div>
+                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                            <span>s DPH</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
