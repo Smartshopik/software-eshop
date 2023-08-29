@@ -1,0 +1,25 @@
+.table {
+    width: 100%;
+    
+    .table__head {
+        .table__cell {
+            font-size: 1.6rem;
+            font-weight: get-font(weight, extraBold);
+            color: get-color(black, 500);
+            text-transform: uppercase;
+            text-align: start;
+            padding: 1.6rem 1.2rem;
+            border-bottom: 2px solid rgba(black, 0.1);
+        }
+
+
+    }
+
+    .table__body {
+        .table__cell {
+            padding: 1.6rem 1.2rem;
+            text-align: start;
+            border-bottom: 1px solid rgba(black, 0.1);
+        }
+    }
+}

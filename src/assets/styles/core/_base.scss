@@ -84,6 +84,10 @@ hr {
     &.hr--light {
         background-color: rgba(black, 0.05);
     }
+    
+    &.hr--darker {
+        background-color: rgba(black, 0.1);
+    }
 }
 
 hr.vr {
@@ -91,6 +95,10 @@ hr.vr {
     width: 1px;
     height: 100%;
     background-color: rgba(get-color(white, 500), 0.15);
+}
+
+table {
+    border-collapse: collapse;
 }
 
 img {

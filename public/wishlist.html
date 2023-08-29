@@ -1,1 +1,485 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <script defer src="./assets/scripts/index.js"></script>
+    <title>Software eshop šablona</title>
+</head>
+<body 
+    class="is-loading" 
+    data-input='{
+        "file": {
+            "icon_file": "bi bi-file-earmark"
+        }
+    }'
+>
+    <div id="root">
+        <header class="bg--white">
+    <div class="container d-xs-none d-md-block">
+        <div class="py-4 d-flex align-center justify-end mx-n8">
+            <div class="menu__dropdown" js-id="dropdown@click#currency">
+                <button type="button">
+                    <span class="menu__dropdown--icon">
+                        <img src="./assets/images/flags/cz.png" alt="">
+                    </span>
+                    <span class="menu__dropdown--title">Česko (CZK)</span>
+                </button>
+                <ul class="menu__dropdown--list right-0 is-hidden" js-id="dropdown#currency">
+                    <li>
+                        <a class="menu__dropdown--link" href="">
+                            <img src="./assets/images/flags/cz.png" alt="">
+                            Česko  (CZK)
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__dropdown--link" href="">
+                            <img src="./assets/images/flags/sk.png" alt="">
+                            Slovensko (EUR)
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__dropdown--link" href="">
+                            <img src="./assets/images/flags/de.png" alt="">
+                            Německo (EUR)
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__dropdown--link" href="">
+                            <img src="./assets/images/flags/fr.png" alt="">
+                            Francie (EUR)
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__dropdown--link" href="">
+                            <img src="./assets/images/flags/us.png" alt="">
+                            USA (USD)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="hr--light d-xs-none d-md-block">
+    <div class="container">
+        <div class="py-16 d-flex align-center justify-between">
+            <a href="./index.html" class="d-xs-flex d-md-block align-center justify-center w-xs-100 w-md-unset mr-xs-0 mr-md-30">
+                <img src="./assets/images/logo.png" alt="" class="image--md">
+            </a>
+            <div class="d-xs-none d-md-flex align-center justify-between flex-grow">
+                <div class="d-flex align-center">
+                    <i class="bi bi-headset fs-24 mr-6"></i>
+                    <a href="tel:+420787323654" class="link--primary text--bold fs-16 mr-4">+420 787 323 654</a>
+                    <span class="fs-16 text--black-200">Po - Ne: 9:00 - 18:00</span>
+                </div>
+                <div>
+                    <div class="menu__search">
+                        <form class="w-100">
+                            <div class="input input--search">
+                                <input type="text" name="q" autocomplete="off" placeholder="Vyhledejte produkt..." js-id="action@load(writing_effect)" data-write="Office 2021 Pro; Windows 11 Pro">
+                                <button type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="card card--search is-hidden">
+                            <div class="p-16">
+                                <p>Zadali jste nesprávný výraz</p>
+                            </div>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./product.html" class="product__search--card p-16">
+                                <div class="product__search--image">
+                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                </div>
+                                <div>
+                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <p>
+                                        <span class="text--md text--bold text--primary">49,90 €</span>
+                                        <span class="text--xs">s DPH</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr--light d-xs-none d-md-block">
+    <div class="container d-xs-none d-md-block">
+        <div class="d-flex align-center justify-between py-10">
+            <nav class="p-relative">
+                <ul class="d-flex flex-wrap mx-n8">
+                    <li>
+                        <div class="menu__link">
+                            <a href="" js-id="dropdown@hover#menu1">
+                                <span class="menu__link--title">Microsoft Office</span>
+                                <i class="bi bi-chevron-down fs-10"></i>
+                            </a>
+                            <ul class="menu__link--dropdown is-hidden" js-id="dropdown#menu1">
+                                <li>
+                                    <a href="">
+                                        Podnikatelé
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Studenti a domácnost
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MAC OS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Výhodné balíčky
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="" js-id="dropdown@hover#menu2">
+                                <span class="menu__link--title">Windows</span>
+                                <i class="bi bi-chevron-down fs-10"></i>
+                            </a>
+                            <ul class="menu__link--dropdown is-hidden" js-id="dropdown#menu2">
+                                <li>
+                                    <a href="">
+                                        Windows 11
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Windows 10
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Windows 8
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Windows 7
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="" js-id="dropdown@hover#menu3">
+                                <span class="menu__link--title">Antivirus</span>
+                                <i class="bi bi-chevron-down fs-10"></i>
+                            </a>
+                            <ul class="menu__link--dropdown is-hidden" js-id="dropdown#menu3">
+                                <li>
+                                    <a href="">
+                                        Avast
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Eset
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        AVG
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="" js-id="dropdown@hover#menu5">
+                                <span class="menu__link--title">Aplikace Office</span>
+                                <i class="bi bi-chevron-down fs-10"></i>
+                            </a>
+                            <ul class="menu__link--dropdown is-hidden" js-id="dropdown#menu5">
+                                <li>
+                                    <a href="">
+                                        Microsoft Visio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Microsoft Project
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="">
+                                <span class="menu__link--title">Pro firmy a školy</span>
+                                <span class="menu__link--badge menu__link--badge--green">spolupráce</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="">
+                                <span class="menu__link--title">Časté otázky</span>
+                                <span class="menu__link--badge menu__link--badge--blue">nějaké kecy</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu__link">
+                            <a href="">
+                                <span class="menu__link--title">Certifikáty</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex align-center justify-end">
+                <div class="menu__box">
+                    <a href="login.html" title="Můj účet">
+                        <span class="menu__box--icon">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu__box">
+                    <a href="" title="Seznam přání">
+                        <span class="menu__box--icon">
+                            <i class="bi bi-heart"></i>
+                        </span>
+                    </a>
+                    <span class="menu__box--quantity">4</span>
+                </div>
+                <div class="menu__box">
+                    <button type="button" title="Košík">
+                        <span class="menu__box--icon">
+                            <i class="bi bi-bag"></i>
+                        </span>
+                    </button>
+                    <span class="menu__box--quantity">40</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main>
+            
+<section class="mb-48">
+    <div class="section__header mb-48">
+        <div class="container">
+            <div class="d-flex align-center justify-center">
+                <ul class="section__header--stepper">
+                    <li class="is-active">
+                        <a href="cart.html">
+                            <span>Košík</span>
+                        </a>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li>
+                        <a href="cart-gifts.html">
+                            <span>Dárky</span>
+                        </a>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li>
+                        <span>Fakturační údaje</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li>
+                        <span>Dokončení objednávky</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cols">
+            <div class="col 12-lg">
+                <div class="card p-24">
+                    <div class="d-flex text--center flex-column align-center justify-center">
+                        <div class="w-lg-50 w-md-70">
+                            <i class="bi bi-heart fs-64"></i>
+                            <p>V seznamu přání se nenacházejí žádné produkty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="table table--products">
+                    <thead class="table__head">
+                        <tr class="table__row">
+                            <th class="table__cell text--start">Produkt</th>
+                            <th class="table__cell w-15">Cena</th>
+                            <th class="table__cell w-10">Přidat</th>
+                            <th class="table__cell w-10">Odebrat</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__row">
+                            <td class="table__cell">
+                                <div class="d-flex align-center w-100">
+                                    <a href="product.html" class="w-20 mr-xs-12 min-w-80">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
+                                    </a>
+                                    <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
+                                </div>
+                            </td>
+                            <td class="table__cell" data-th="Cena">
+                                <span class="text--sm text--black-200">285 Kč</span>
+                            </td>
+                            <td class="table__cell text--end" data-th="Přidat">
+                                <a href="" class="btn">
+                                    Koupit
+                                </a>
+                            </td>
+                            <td class="table__cell text--end" data-th="Odebrat">
+                                <a href="" class="btn btn--red">
+                                    <i class="bi bi-heart-fill"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
 
+        </main>
+        <footer class="bg--black-400">
+    <div class="container">
+        <div class="py-20">
+            <div class="cols">
+                <div class="col 12-xs 3-md">
+                    <div class="d-flex align-center justify-center h-100 pr-xs-0 pr-md-64 mb-xs-24 mb-md-0">
+                        <img src="./assets/images/logo-bezpecny-nakup.jpg" alt="Logo bezpečný nákup" class="image--lg">
+                    </div>
+                </div>
+                <div class="col 12-xs 4-sm 3-md">
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
+                    <ul>
+                        <li><a href="contact.html" class="link--white w-100 py-8">Kontakt</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">F&Q</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchodní podmínky</a></li>
+                        <li><a href="opening-hours.html" class="link--white w-100 py-8">Provozní doba</a></li>
+                        <li><a href="privacypolicy.html" class="link--white w-100 py-8">Obchrana osobních údajů</a></li>
+                        <li><a href="reclamation.html" class="link--white w-100 py-8">Reklamace</a></li>
+                        <li><a href="wholesale.html" class="link--white w-100 py-8">Velkoobchod</a></li>
+                    </ul>
+                </div>
+                <div class="col 12-xs 4-sm 3-md">
+                    <h6 class="text--white text--md text--uppercase py-8">Informace</h6>
+                    <ul>
+                        <li><a href="" class="link--white w-100 py-8">Výkup softwaru</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Pro firmy a školy</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Časté otázky</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Můj účet</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Blog</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col 12-xs 4-sm 3-md">
+                    <h6 class="text--white text--md text--uppercase py-8">Zákaznický servis</h6>
+                    <ul>
+                        <li><a href="" class="link--white w-100 py-8">Obchodní podmínky</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Odstoupení od smlouvy</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Doprava a platba</a></li>
+                        <li><a href="" class="link--white w-100 py-8">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="py-20">
+            <div class="cols">
+                <div class="col 12-xs 6-sm">
+                    <div class="d-flex align-center justify-xs-center justify-sm-start text-xs--center text-sm--start h-100">
+                        <span class="text--white-300">Vygenerované za 0.306s</span>
+                    </div>
+                </div>
+                <div class="col 12-xs 6-sm">
+                    <div class="d-flex align-center justify-xs-center justify-sm-end text-xs--center text-sm--end h-100">
+                        <span class="text--white-300">Tento obchod funguje na systému <a href="https://www.patrikbudai.com/nemas-svoj-eshop" target="_blank" class="link--white">Smartshopik.sk</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div id="modal">
+        
+        
+    </div>
+</body>
+</html>

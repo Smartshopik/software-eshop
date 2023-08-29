@@ -1,0 +1,196 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+<section class="mb-48">
+    <div class="section__header mb-48">
+        <div class="container">
+            <div class="d-flex align-center justify-center">
+                <ul class="section__header--stepper">
+                    <li>
+                        <a href="cart.html">
+                            <span>Košík</span>
+                        </a>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li>
+                        <a href="cart-gifts.html">
+                            <span>Dárky</span>
+                        </a>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li class="is-active">
+                        <a href="cart-billing.html">
+                            <span>Fakturační údaje</span>
+                        </a>
+                        <i class="bi bi-arrow-right"></i>
+                    </li>
+                    <li>
+                        <a href="cart-checkout.html">
+                            <span>Dokončení objednávky</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="cols">
+                <div class="col 8-lg">
+                    <div>
+                        <h5 class="mb-10 text--uppercase mb-20">Fakturační údaje</h5>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-12">
+                                <label for="first_name">Jméno</label>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+                            <div class="input is-required w-100 mx-12">
+                                <label for="last_name">Příjmení</label>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-12">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input is-required w-100 mx-12">
+                                <label for="address">Adresa</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-12">
+                                <label for="city">Město</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div class="input is-required w-100 mx-12">
+                                <label for="zipcode">PSČ</label>
+                                <input type="text" name="zipcode" id="zipcode" >
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input input--select is-required w-100 mx-12" js-id="input::select#country">
+                                <label for="country">Stát</label>
+                                <select name="country" id="subject" placeholder="Vyberte stát">
+                                    <option value="cz" data-img="./assets/images/flags/cz.png">Česko</option>
+                                    <option value="sk" data-img="./assets/images/flags/sk.png">Slovensko</option>
+                                    <option value="en" data-img="./assets/images/flags/us.png">Anglie</option>
+                                </select>
+                            </div>
+                            <div class="input is-required mx-xs-12 w-100">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-disabled input--checkbox mx-xs-12 w-100">
+                                <input type="checkbox" name="company_enable" id="company_enable" js-id="action@change(show,true)#company_info">
+                                <label for="company_enable">Firemní údaje</label>
+                            </div>
+                            <div class="input input--checkbox mx-xs-12 w-100">
+                                <input type="checkbox" name="delivery_enable" id="delivery_enable" js-id="action@change(show,true)#billing_info">
+                                <label for="delivery_enable">Jiná dodací adresa</label>
+                            </div>
+                        </div>
+                        <div class="is-hidden" js-id="action#company_info">
+                            <div class="d-flex mb-24 mx-n12">
+                                <div class="input is-required w-100 mx-12">
+                                    <label for="text">Název firmy</label>
+                                    <input type="text" name="company" id="company">
+                                </div>
+                                <div class="input is-required w-100 mx-12">
+                                    <label for="text">IČO</label>
+                                    <input type="text" name="ico" id="ico">
+                                </div>
+                            </div>
+                            <div class="d-flex mb-24 mx-n12">
+                                <div class="input is-required w-100 mx-12">
+                                    <label for="text">DIČ</label>
+                                    <input type="text" name="dic" id="dic">
+                                </div>
+                                <div class="input w-100 mx-12">
+                                    <label for="text">IČ DPH</label>
+                                    <input type="text" name="ico_dph" id="ico_dph">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="note">Poznámka</label>
+                            <textarea name="note" id="note"></textarea>
+                        </div>
+                    </div>
+                    <div class="is-hidden mt-24"  js-id="action#billing_info">
+                        <h5 class="mb-10 text--uppercase mb-20">Dodací adresa</h5>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-12">
+                                <label for="first_name">Jméno</label>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+                            <div class="input is-required w-100 mx-12">
+                                <label for="last_name">Příjmení</label>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-12">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input is-required w-100 mx-12">
+                                <label for="address">Adresa</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input is-required w-100 mx-xs-12">
+                                <label for="city">Město</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div class="input is-required w-100 mx-xs-12">
+                                <label for="zipcode">PSČ</label>
+                                <input type="text" name="zipcode" id="zipcode">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-24 mx-n12">
+                            <div class="input input--select is-required w-100 mx-12" js-id="input::select#country">
+                                <label for="country">Stát</label>
+                                <select name="country" id="subject" placeholder="Vyberte stát">
+                                    <option value="cz" data-img="./assets/images/flags/cz.png">Česko</option>
+                                    <option value="sk" data-img="./assets/images/flags/sk.png">Slovensko</option>
+                                    <option value="en" data-img="./assets/images/flags/us.png">Anglie</option>
+                                </select>
+                            </div>
+                            <div class="input is-required mx-12 w-100">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col 4-lg">
+                    <div class="card p-24 ml-24">
+                        <h5 class="mb-12">Shrnutí</h5>
+                        <div class="d-flex align-center justify-between">
+                            <p class="text--bold text--black">Mezisoučet</p>
+                            <p>21 554 Kč</p>
+                        </div>
+                        <div class="d-flex align-center justify-between">
+                            <p class="text--bold text--black">Doprava</p>
+                            <p>0 Kč</p>
+                        </div>
+                        <hr class="my-12 hr--darker"/>
+                        <div class="d-flex align-center justify-between">
+                            <p class="text--md text--bold text--black">Celkem</p>
+                            <p class="text--md">21 554 Kč</p>
+                        </div>
+                        <div class="d-flex align-center justify-end mt-24">
+                            <a href="cart-checkout.html" class="btn w-100">Pokračovat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

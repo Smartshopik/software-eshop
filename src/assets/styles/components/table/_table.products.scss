@@ -1,0 +1,82 @@
+.table--products {
+    .table__head {
+        display: block;
+
+        > * {
+            display: none;
+        }
+
+        @media only screen and (min-width: get-breakpoint(md)) {
+            display: table-header-group;
+
+            > * {
+                display: table-row;
+            }
+
+            &::before {
+                content: unset;
+            }
+           
+        } 
+    }
+
+    .table__body {
+        display: block;
+
+        .table__cell:first-child {
+            border-bottom: none;
+        }
+
+        .table__cell:not(:first-child):not(:last-child) {
+            border-bottom: 1px dashed rgba(black, 0.1);
+
+        }
+
+        .table__row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .table__cell {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 1.2rem;
+
+            &::before {
+                content: attr(data-th);
+                font-size: 1.4rem;
+                font-family: get-font(family, primary);
+                font-weight: get-font(weight, bold);
+            }
+        }
+
+        @media only screen and (min-width: get-breakpoint(md)) {
+            display: table-row-group;
+
+            .table__cell:first-child {
+                border-bottom: 1px solid rgba(black, 0.1);
+            }
+    
+            .table__cell:not(:first-child):not(:last-child) {
+                border-bottom: 1px solid rgba(black, 0.1);
+    
+            }
+
+            .table__row {
+                display: table-row;
+            }
+
+            .table__cell {
+                width: unset;
+                display: table-cell;
+                padding: 1.6rem 1.2rem;
+
+                &::before {
+                    content: unset;
+                }
+            }
+        } 
+    }
+}

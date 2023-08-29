@@ -27,3 +27,86 @@
         }
     }
 }
+
+.section__header--stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > li {
+        color: get-color(white, 500);
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        display: none;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: center;
+        line-height: 150%;
+
+        > * {
+            color: rgba(get-color(white, 500), 0.5);
+            font-size: 2.2rem;
+        }
+
+        > a {
+            color: rgba(get-color(white, 500), 0.5);
+            font-size: 2.2rem;
+            transition: 0.3s color;
+            position: relative;
+
+            > * {
+                color: rgba(get-color(white, 500), 0.5);
+                font-size: 2.2rem;
+                transition: 0.3s color;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: rgba(get-color(white, 500), 1);
+
+                > * {
+                    color: rgba(get-color(white, 500), 1);
+                }
+            }
+
+        }
+
+        > i {
+            margin: 0 1.6rem;
+            display: none;
+        }
+
+        &.is-active {
+            display: flex !important;
+
+            > a {
+                color: rgba(get-color(white, 500), 1);
+
+                > * {
+                    color: rgba(get-color(white, 500), 1);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: get-color(primary, 500);
+                }
+            }
+        }
+
+        
+        @media (min-width: get-breakpoint(md)) {
+            display: flex;
+
+            > i {
+                display: block;
+            }
+        }
+    }
+}
