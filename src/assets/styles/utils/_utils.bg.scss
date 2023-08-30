@@ -11,6 +11,22 @@
     background-color: get-color(black, 400);
 }
 
+.bg--black-200 {
+    background-color: get-color(black, 200) !important;
+}
+
+.bg--black-300 {
+    background-color: get-color(black, 300) !important;
+}
+
+.bg--white-300 {
+    background-color: get-color(white, 300) !important;
+}
+
+.bg--gray-300 {
+    background-color: get-color(gray, 300) !important;
+}
+
 .bg--shadow {
     position: relative;
 

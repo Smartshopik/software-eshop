@@ -7,12 +7,20 @@
     padding: 0.8rem;
 }
 
+.badge--gray {
+    background-color: get-color(gray, 300);
+}
+
 .badge--orange {
     background-color: get-color(orange, 500);
 }
 
 .badge--green {
     background-color: get-color(green, 400);
+}
+
+.badge--blue {
+    background-color: get-color(blue, 500);
 }
 
 .badge--sm {

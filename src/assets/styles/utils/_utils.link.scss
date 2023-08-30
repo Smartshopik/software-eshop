@@ -1,11 +1,29 @@
 .link {
     font-size: 1.4rem;
     color: get-color(primary, 500);
+    display: flex;
+    align-items: center;
+
+    > i:first-child:not(:last-child) {
+        margin-right: 0.8rem;
+    }
+
+    > i:last-child:not(:first-child) {
+        margin-left: 0.8rem;
+    }
 
     &:hover,
     &:focus,
     &:active {
         text-decoration: underline;
+    }
+}
+
+.link--nounderline {
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
     }
 }
 
@@ -26,10 +44,19 @@
     transition: color 0.3s;
     font-size: 1.4rem;
 
+    * {
+        color: get-color(primary, 500);
+        transition: color 0.3s;
+    }
+
     &:hover,
     &:focus,
     &:active {
-        color: get-color(black, 500);
+        color: darken(get-color(primary, 500), 5%);
+
+        * {
+            color: darken(get-color(primary, 500), 5%);
+        }
     }
 }
 
@@ -45,4 +72,37 @@
 
 .link--md {
     font-size: 1.6rem;
+}
+
+.link--side {
+    font-size: 1.4rem;
+    font-weight: get-font(weight, bold);
+    color: get-color(black, 500);
+    display: flex;
+    align-items: center;
+    background-color: get-color(white, 500);
+    border-radius: 0.5rem;
+    transition: 0.3s background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken(get-color(white, 500), 2%);
+    }
+
+    &.is-active {
+        background-color: darken(get-color(white, 500), 4%);
+    }
+
+    i {
+        font-size: 1.6rem;
+        margin-right: 0.8rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: get-color(black, 500);
+        text-decoration: none;
+    }
 }

@@ -67,8 +67,8 @@
 }
 
 .btn--sm {
-    font-size: 1.2rem;
-    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.6rem;
 }
 
 .btn--lg {
@@ -113,6 +113,20 @@
 }
 
 .btn--red {
+    color: get-color(white, 500);
+    background-color: get-color(red, 500);
+
+    > * {
+        color: get-color(white, 500);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color:  darken(get-color(red, 500), 5%);
+        color: get-color(white, 500);
+    }
+
     &.btn--link {
         color: get-color(red, 500);
 
@@ -137,6 +151,11 @@
     height: 4.2rem;
     background-color: get-color(white, 400);
     color: get-color(black, 500);
+
+    &.btn--sm {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
 
     > * {
         color: get-color(black, 500);

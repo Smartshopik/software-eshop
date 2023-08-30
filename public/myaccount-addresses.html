@@ -332,46 +332,61 @@
 </header>
         <main>
             
-<section class="mb-xs-24 mb-md-48">
-    <!-- Sem přijde header -->
+<section class="mb-48">
+    <div class="section__header mb-48">
+        <div class="container d-flex flex-column">
+            <div class="d-flex align-center justify-center mb-8">
+                <h3>Můj účet</h3>
+            </div>
+            <ul class="breadcrumb breadcrumb--light">
+                <li>
+                    <a href="">Domov</a>
+                </li>
+                <li>
+                    Můj účet
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="cols">
-            <div class="col 12-xs 3-md">
-                <div class="card card--secondary">
-                    <div class="card__header px-16 py-12">
-                        <h6 class="text--unset">Můj účet</h6>
+            <div class="col 12-xs 3-md pr-24">
+                <div>
+                    <div>
+                        <h6 class="text--uppercase text--lg px-16 pb-12">Můj účet</h6>
                     </div>
-                    <div class="card__body">
+                    <hr class="hr--darker">
+                    <div>
                         <ul>
                             <li>
-                                <a href="myaccount.html" class="link link--small w-100 px-16 py-12">
+                                <a href="myaccount.html" class="link link--side w-100 px-16 py-12">
                                     <i class="bi bi-person-circle"></i>
                                     Nástěnka
                                 </a>
                             </li>
                             <li>
-                                <a href="myaccount-settings.html" class="link link--small is-active w-100 px-16 py-12">
+                                <a href="myaccount-settings.html" class="link link--side w-100 px-16 py-12">
                                     <i class="bi bi-gear"></i>
                                     Nastavení
                                 </a>
                             </li>
                             <li>
-                                <a href="myaccount-addresses.html" class="link link--small w-100 px-16 py-12">
+                                <a href="myaccount-addresses.html" class="link link--side is-active w-100 px-16 py-12">
                                     <i class="bi bi-person-badge"></i>
                                     Adresář
                                 </a>
                             </li>
                             <li>
-                                <a href="myaccount-orders.html" class="link link--small w-100 px-16 py-12">
+                                <a href="myaccount-orders.html" class="link link--side w-100 px-16 py-12">
                                     <i class="bi bi-box2"></i>
                                     Objednávky
                                 </a>
                             </li>
                             <li>
-                                <hr>
+                                <hr class="hr--darker">
                             </li>
                             <li>
-                                <a href="login.html" class="link link--small w-100 px-16 py-12">
+                                <a href="login.html" class="link link--side w-100 px-16 py-12">
                                     <i class="bi bi-box-arrow-right"></i>
                                     Odhlásit se
                                 </a>
@@ -380,120 +395,118 @@
                     </div>
                 </div>
             </div>
-            <div class="col 12-xs 9-md">
-                <div class="mb-16">
-                    <h3>Adresář</h3>
+            <div class="col 12-xs 9-md pl-24">
+                <div class="mb-24">
+                    <h4 class="mb-8">Adresář</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
                 <div class="cols">
                     <div class="col 12-xs">
-                        <div class="card card--secondary h-100">
-                            <div class="card__header px-16 py-12">
-                                <h6 class="text--white">Adresy</h6>
-                                <a href="myaccount.addresses.add.html" class="text--notransform link--white py-xs-0">
-                                    <i class="bi bi-plus-lg mr-4"></i>
-                                    Přidat adresu
+                        <div class="card card--shadow p-24 h-100">
+                            <div class="d-flex align-center justify-between mb-24">
+                                <p class="text--md text--black text--bold">Adresy</p>
+                                <a href="myaccount-addresses-add.html" class="link link--nounderline link--primary">
+                                    <i class="bi bi-plus-lg"></i>
+                                    <span>Přidat adresu</span>
                                 </a>
                             </div>
-                            <div class="card__body p-xs-20 p-md-24">
-                                <div class="cols 12-xs 6-lg">
-                                    <div class="col">
-                                        <div class="card p-xs-20 p-md-24">
-                                            <div class="cols 6-xs">
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Jméno</span>
-                                                    <span>Matěj</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Přijemní</span>
-                                                    <span>Křenek</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">E-mail</span>
-                                                    <span class="text--ellipsis" title="mate23.krenek@gmail.com">mate23.krenek@gmail.com</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Adresa</span>
-                                                    <span>Labilova 85</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Město</span>
-                                                    <span>Hradob</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">PSČ</span>
-                                                    <span>784 45</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Stát</span>
-                                                    <span>Česká republika</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Telefon</span>
-                                                    <span>+420 457 748 004</span>
-                                                </div>
-                                                <div class="col">
-                                                    <a href="myaccount.addresses.add.html" class="btn btn--black btn--small">
-                                                        <i class="bi bi-pen"></i>
-                                                        <span>Upravit</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a href="" class="btn btn--red btn--small">
-                                                        <i class="bi bi-trash"></i>
-                                                        <span>Odstranit</span>
-                                                    </a>
-                                                </div>
+                            <div class="cols 12-xs 6-lg">
+                                <div class="col">
+                                    <div class="card p-24">
+                                        <div class="cols 6-xs">
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Jméno</span>
+                                                <span>Matěj</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Přijemní</span>
+                                                <span>Křenek</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">E-mail</span>
+                                                <span class="text--ellipsis" title="mate23.krenek@gmail.com">mate23.krenek@gmail.com</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Adresa</span>
+                                                <span>Labilova 85</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Město</span>
+                                                <span>Hradob</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">PSČ</span>
+                                                <span>784 45</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Stát</span>
+                                                <span>Česká republika</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Telefon</span>
+                                                <span>+420 457 748 004</span>
+                                            </div>
+                                            <div class="col">
+                                                <a href="myaccount-addresses-add.html" class="btn btn--sm btn--icon">
+                                                    <i class="bi bi-pen"></i>
+                                                    <span>Upravit</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="" class="btn btn--sm btn--icon btn--red">
+                                                    <i class="bi bi-trash"></i>
+                                                    <span>Odstranit</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card p-xs-20 p-md-24">
-                                            <div class="cols 6-xs">
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Jméno</span>
-                                                    <span>Matěj</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Přijemní</span>
-                                                    <span>Křenek</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">E-mail</span>
-                                                    <span class="text--ellipsis" title="mate23.krenek@gmail.com">mate23.krenek@gmail.com</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Adresa</span>
-                                                    <span>Labilova 85</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Město</span>
-                                                    <span>Hradob</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">PSČ</span>
-                                                    <span>784 45</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Stát</span>
-                                                    <span>Česká republika</span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="text--bold d-block">Telefon</span>
-                                                    <span>+420 457 748 004</span>
-                                                </div>
-                                                <div class="col">
-                                                    <a href="myaccount.addresses.add.html" class="btn btn--black btn--small">
-                                                        <i class="bi bi-pen"></i>
-                                                        <span>Upravit</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a href="" class="btn btn--red btn--small">
-                                                        <i class="bi bi-trash"></i>
-                                                        <span>Odstranit</span>
-                                                    </a>
-                                                </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-24">
+                                        <div class="cols 6-xs">
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Jméno</span>
+                                                <span>Matěj</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Přijemní</span>
+                                                <span>Křenek</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">E-mail</span>
+                                                <span class="text--ellipsis" title="mate23.krenek@gmail.com">mate23.krenek@gmail.com</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Adresa</span>
+                                                <span>Labilova 85</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Město</span>
+                                                <span>Hradob</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">PSČ</span>
+                                                <span>784 45</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Stát</span>
+                                                <span>Česká republika</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="text--black text--bold d-block">Telefon</span>
+                                                <span>+420 457 748 004</span>
+                                            </div>
+                                            <div class="col">
+                                                <a href="myaccount-addresses-add.html" class="btn btn--sm btn--icon">
+                                                    <i class="bi bi-pen"></i>
+                                                    <span>Upravit</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="" class="btn btn--sm btn--icon btn--red">
+                                                    <i class="bi bi-trash"></i>
+                                                    <span>Odstranit</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

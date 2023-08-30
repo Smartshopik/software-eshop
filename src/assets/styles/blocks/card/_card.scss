@@ -11,6 +11,11 @@
     }
 }
 
+.card--shadow {
+    box-shadow: get-shadow(secondary);
+    border: unset;
+}
+
 .card--light {
     border: 1px solid get-color(white, 200);
 }
