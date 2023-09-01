@@ -27,6 +27,7 @@
 @import "blocks/card/card";
 @import "blocks/product/product.search";
 @import "blocks/product/product.card";
+@import "blocks/product/product.cart";
 @import "blocks/section/section.header";
 
 /*
@@ -50,10 +51,13 @@
 @import "components/input/input.range";
 @import "components/input/input.select";
 @import "components/input/input.file";
+@import "components/input/input.number";
 @import "components/rating/rating";
 @import "components/breadcrumbs/breadcrumbs";
 @import "components/table/table";
 @import "components/table/table.products";
+@import "components/tabs/tabs";
+@import "components/modal/modal";
 
 /*
 |--------------------------------------------------------------------------

@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    white-space: nowrap;
 
     > * {
         color: get-color(white, 500);
@@ -59,11 +60,13 @@
 }
 
 .btn--icon i:first-child:not(:last-child) {
-    margin-right: 1.2rem;
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
 }
 
 .btn--icon i:last-child:not(:first-child) {
-    margin-left: 1.2rem;
+    font-size: 1.4rem;
+    margin-left: 0.8rem;
 }
 
 .btn--sm {
@@ -123,7 +126,7 @@
     &:hover,
     &:focus,
     &:active {
-        background-color:  darken(get-color(red, 500), 5%);
+        background-color:  darken(get-color(red, 500), 15%);
         color: get-color(white, 500);
     }
 
@@ -143,6 +146,16 @@
                 color: darken(get-color(red, 500), 10%);
             }
         }
+    }
+}
+
+.btn--square {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    &.btn--sm {
+        width: 3.6rem;
+        height: 3.6rem;
     }
 }
 

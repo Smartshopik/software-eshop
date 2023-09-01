@@ -144,3 +144,17 @@
         border-bottom: 1px solid rgba(black, 0.15);
     }
 }
+
+.heading--underline {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 40px;
+        left: 0;
+        bottom: 0;
+        background-color: get-color(primary, 500);
+    }
+}

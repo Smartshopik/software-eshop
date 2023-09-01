@@ -8634,10 +8634,19 @@ var InputNumber = /** @class */function (_super) {
   }
   InputNumber.prototype.init = function () {
     var _this = this;
+    var config = document.body.dataset.input ? JSON.parse(document.body.dataset.input) : null;
+    if (config && config.number) {
+      if (config.number["icon_up"]) {
+        this.options.icon_up = config.number["icon_up"];
+      }
+      if (config.number["icon_down"]) {
+        this.options.icon_down = config.number["icon_down"];
+      }
+    }
     this.defaults(this.options);
     this.connected.forEach(function (instance) {
-      if (!instance.element.hasAttribute('init')) {
-        instance.element.setAttribute('init', 'true');
+      if (!instance.element.hasAttribute("init")) {
+        instance.element.setAttribute("init", "true");
         _this.boot(instance);
       }
     });
@@ -8649,13 +8658,13 @@ var InputNumber = /** @class */function (_super) {
     this.init();
   };
   InputNumber.prototype.boot = function (instance) {
-    var input = instance.element.querySelector('input');
+    var input = instance.element.querySelector("input");
     var inputInstance = __assign(__assign({}, instance), {
       min: 0,
       max: 100,
       step: 1,
-      icon_up: instance.data['iconUp'] ? instance.data['iconUp'] : this.options.icon_up,
-      icon_down: instance.data['iconDown'] ? instance.data['iconDown'] : this.options.icon_down,
+      icon_up: instance.data["iconUp"] ? instance.data["iconUp"] : this.options.icon_up,
+      icon_down: instance.data["iconDown"] ? instance.data["iconDown"] : this.options.icon_down,
       value: 0
     });
     if (input.step) inputInstance.step = parseInt(input.step);
@@ -8668,28 +8677,28 @@ var InputNumber = /** @class */function (_super) {
     this.handleEvent(inputInstance);
   };
   InputNumber.prototype.render = function (instance) {
-    var input = document.createElement('div');
-    input.classList.add('input');
-    input.append(instance.element.querySelector('input'));
+    var input = document.createElement("div");
+    input.classList.add("input");
+    input.append(instance.element.querySelector("input"));
     input.innerHTML += "\n            <div class=\"input__buttons\">\n                <button type=\"button\">\n                    <i class=\"".concat(instance.icon_up, "\"></i>\n                </button>\n                <button type=\"button\">\n                    <i class=\"").concat(instance.icon_down, "\"></i>\n                </button>\n            </div>\n        ");
     instance.faker = input;
     instance.element.append(instance.faker);
   };
   InputNumber.prototype.handleEvent = function (instance) {
     var _this = this;
-    var buttons = instance.faker.querySelectorAll('button');
-    buttons[0].addEventListener('click', function (e) {
+    var buttons = instance.faker.querySelectorAll("button");
+    buttons[0].addEventListener("click", function (e) {
       return _this.handleIncrease(e, instance);
     });
-    buttons[1].addEventListener('click', function (e) {
+    buttons[1].addEventListener("click", function (e) {
       return _this.handleDecrease(e, instance);
     });
-    instance.faker.querySelector('input').addEventListener('change', function (e) {
+    instance.faker.querySelector("input").addEventListener("change", function (e) {
       return _this.handleChange(e, instance);
     });
   };
   InputNumber.prototype.rerender = function (instance) {
-    instance.faker.querySelector('input').value = instance.value.toString();
+    instance.faker.querySelector("input").value = instance.value.toString();
   };
   InputNumber.prototype.handleChange = function (e, instance) {
     var value = parseInt(e.target.value);
@@ -8699,12 +8708,12 @@ var InputNumber = /** @class */function (_super) {
   InputNumber.prototype.handleIncrease = function (e, instance) {
     if (instance.value < instance.max) instance.value += instance.step;
     this.rerender(instance);
-    instance.element.querySelector('input[type=number]').dispatchEvent(new CustomEvent('change'));
+    instance.element.querySelector("input[type=number]").dispatchEvent(new CustomEvent("change"));
   };
   InputNumber.prototype.handleDecrease = function (e, instance) {
     if (instance.value > instance.min) instance.value -= instance.step;
     this.rerender(instance);
-    instance.element.querySelector('input[type=number]').dispatchEvent(new CustomEvent('change'));
+    instance.element.querySelector("input[type=number]").dispatchEvent(new CustomEvent("change"));
   };
   return InputNumber;
 }(component_1["default"]);
@@ -9575,7 +9584,7 @@ Object.defineProperty(exports, "__esModule", ({
 var component_1 = __webpack_require__(/*! ../component */ "./src/assets/scripts/components/component.ts");
 var connector_1 = __webpack_require__(/*! ../../connector */ "./src/assets/scripts/connector/index.ts");
 var ModalGallery_component_1 = __webpack_require__(/*! ./ModalGallery.component */ "./src/assets/scripts/components/Modal/ModalGallery.component.ts");
-var ModalEvents = ['close', 'toggle', 'open'];
+var ModalEvents = ["close", "toggle", "open"];
 var Modal = /** @class */function (_super) {
   __extends(Modal, _super);
   function Modal() {
@@ -9587,11 +9596,11 @@ var Modal = /** @class */function (_super) {
       options = {};
     }
     this.options = options;
-    this.wrapper = document.querySelector(options.wrapper ? options.wrapper : '#modal');
+    this.wrapper = document.querySelector(options.wrapper ? options.wrapper : "#modal");
     if (!this.wrapper) return;
-    this.wrapper.addEventListener('click', function (e) {
+    this.wrapper.addEventListener("click", function (e) {
       if (e.target === _this.wrapper) {
-        connector_1["default"].get('modal', {
+        connector_1["default"].get("modal", {
           type: null,
           event: null
         }).forEach(function (item) {
@@ -9601,19 +9610,20 @@ var Modal = /** @class */function (_super) {
     });
   };
   Modal.prototype.booted = function () {
-    ModalGallery_component_1["default"].register(connector_1["default"].get('modal', {
-      type: 'gallery'
+    ModalGallery_component_1["default"].register(connector_1["default"].get("modal", {
+      type: "gallery"
     }), this.options ? this.options.gallery : null);
   };
   Modal.prototype.handleEvent = function (instance) {
     var _this = this;
     var params = instance.event.params;
     switch (instance.event.event) {
-      case 'click':
+      case "click":
         instance.element.addEventListener(instance.event.event, function (e) {
           e.preventDefault();
+          console.log(instance, params);
           if (!params[0]) return;
-          connector_1["default"].get('modal', {
+          connector_1["default"].get("modal", {
             id: instance.id,
             type: null,
             event: null
@@ -9624,21 +9634,27 @@ var Modal = /** @class */function (_super) {
       default:
         break;
     }
-    document.addEventListener('click', function (e) {
-      if (e.target !== _this.wrapper && e.target !== instance.element && !instance.element.contains(e.target) && _this.isOpen(instance)) {
-        connector_1["default"].get('modal', {
-          id: instance.id,
-          type: null,
-          event: null
-        }).forEach(function (connected) {
-          _this.close(connected);
-        });
-      }
-    });
+    // document.addEventListener("click", (e) => {
+    //   if (
+    //     e.target !== this.wrapper &&
+    //     e.target !== instance.element &&
+    //     !instance.element.contains(e.target as HTMLElement) &&
+    //     this.isOpen(instance)
+    //   ) {
+    //     Connector.get("modal", {
+    //       id: instance.id,
+    //       type: null,
+    //       event: null,
+    //     }).forEach((connected: ConnectorItem) => {
+    //       this.close(connected);
+    //     });
+    //   }
+    // });
   };
+
   Modal.prototype.isOpen = function (instance) {
     var _this = this;
-    return !connector_1["default"].get('modal', {
+    return !connector_1["default"].get("modal", {
       id: instance.id,
       type: null,
       event: null
@@ -9647,41 +9663,41 @@ var Modal = /** @class */function (_super) {
     }).includes(false);
   };
   Modal.prototype.toggle = function (instance) {
-    if (instance.element.classList.contains('is-active')) {
+    if (instance.element.classList.contains("is-active")) {
       this.close(instance);
     } else {
       this.open(instance);
     }
   };
   Modal.prototype.close = function (instance) {
-    document.body.classList.remove('is-overlay');
+    document.body.classList.remove("is-overlay");
     this.removeActive(instance.element);
-    connector_1["default"].get('modal', {
-      type: 'visible',
+    connector_1["default"].get("modal", {
+      type: "visible",
       id: instance.id
     }).forEach(function (conn) {
-      conn.element.style.removeProperty('z-index');
+      conn.element.style.removeProperty("z-index");
     });
   };
   Modal.prototype.setMaxHeight = function (element) {
-    element.style.maxHeight = "calc(100vh - ".concat(element.getBoundingClientRect().top + parseInt(getComputedStyle(element).getPropertyValue('margin-top').replace('px', '')), "px)");
+    element.style.maxHeight = "calc(100vh - ".concat(element.getBoundingClientRect().top + parseInt(getComputedStyle(element).getPropertyValue("margin-top").replace("px", "")), "px)");
   };
   Modal.prototype.open = function (instance) {
     var _this = this;
-    connector_1["default"].get('modal', {
+    connector_1["default"].get("modal", {
       type: null,
       event: null
     }).forEach(function (connected) {
       if (connected !== instance) _this.close(connected);
     });
-    connector_1["default"].get('modal', {
-      type: 'visible',
+    connector_1["default"].get("modal", {
+      type: "visible",
       id: instance.id
     }).forEach(function (conn) {
       if (!_this.wrapper) return;
       conn.element.style.zIndex = (parseInt(getComputedStyle(_this.wrapper).zIndex) + 1).toString();
     });
-    document.body.classList.add('is-overlay');
+    document.body.classList.add("is-overlay");
     this.setActive(instance.element);
     this.setMaxHeight(instance.element);
   };
@@ -10266,34 +10282,34 @@ var Component = /** @class */function () {
   Component.prototype.collapse = function (head, body) {
     var _this = this;
     if (!this.isCollapsing(body)) {
-      body.style.display = 'block';
+      body.style.display = "block";
       var height_1 = body.clientHeight;
       if (!this.isActive(head)) {
         setTimeout(function () {
-          body.style.height = height_1 + 'px';
-          body.style.display = '';
+          body.style.height = height_1 + "px";
+          body.style.display = "";
         }, 1);
         this.setCollapse(body);
         this.setCollapsing(body);
         setTimeout(function () {
           _this.removeCollapsing(body);
           _this.setCollapse(body);
-          body.style.height = '';
-          body.style.display = '';
-        }, parseFloat(getComputedStyle(body)['transitionDuration']) * 1000);
+          body.style.height = "";
+          body.style.display = "";
+        }, parseFloat(getComputedStyle(body)["transitionDuration"]) * 1000);
       } else {
-        body.style.height = height_1 + 'px';
+        body.style.height = height_1 + "px";
         this.removeCollapse(body);
         this.setCollapsing(body);
         setTimeout(function () {
-          body.style.height = '0';
+          body.style.height = "0";
         }, 1);
         setTimeout(function () {
           _this.removeCollapsing(body);
           _this.setCollapse(body);
-          body.style.height = '';
-          body.style.display = '';
-        }, parseFloat(getComputedStyle(body)['transitionDuration']) * 1000);
+          body.style.height = "";
+          body.style.display = "";
+        }, parseFloat(getComputedStyle(body)["transitionDuration"]) * 1000);
       }
       this.toggleActive(head);
     }

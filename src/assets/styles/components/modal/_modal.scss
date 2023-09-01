@@ -1,0 +1,44 @@
+#modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+    pointer-events: none;
+    background-color: transparent;
+    transition: 0.3s background-color;
+
+    * {
+        pointer-events: none;
+    }
+
+    .is-overlay & {
+        pointer-events: all;
+        background-color: rgba(get-color(black, 500), 0.5);
+
+        * {
+            pointer-events: all;
+        }
+    }
+}
+
+.modal__drawer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: white;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.5s transform, 0.5s visibility;
+
+    &.is-active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.modal__drawer--minicart {
+    max-width: 350px;
+}

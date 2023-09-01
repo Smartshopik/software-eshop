@@ -1,8 +1,8 @@
 .table {
     width: 100%;
     
-    .table__head {
-        .table__cell {
+    thead {
+        tr > th {
             font-size: 1.6rem;
             font-weight: get-font(weight, extraBold);
             color: get-color(black, 500);
@@ -10,15 +10,17 @@
             text-align: start;
             padding: 1.6rem 1.2rem;
             border-bottom: 2px solid rgba(black, 0.1);
+            font-size: 1.6rem;
         }
 
 
     }
 
-    .table__body {
-        .table__cell {
+    tbody {
+        tr > td {
             padding: 1.6rem 1.2rem;
             text-align: start;
+            font-size: 1.6rem;
             border-bottom: 1px solid rgba(black, 0.1);
         }
     }
@@ -29,8 +31,8 @@
 }
 
 .table--sm {
-    .table__head {
-        .table__cell {
+    thead {
+        tr > th {
             font-size: 1.2rem;
             font-weight: get-font(weight, extraBold);
             color: get-color(black, 500);
@@ -43,8 +45,8 @@
 
     }
 
-    .table__body {
-        .table__cell {
+    tbody {
+        tr > td {
             padding: 1.2rem 0.8rem;
             text-align: start;
             border-bottom: 1px solid rgba(black, 0.1);

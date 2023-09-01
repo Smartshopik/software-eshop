@@ -3,6 +3,10 @@
     color: get-color(primary, 500);
     display: flex;
     align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
     > i:first-child:not(:last-child) {
         margin-right: 0.8rem;
@@ -104,5 +108,24 @@
     &:active {
         color: get-color(black, 500);
         text-decoration: none;
+    }
+}
+
+.link--circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: get-color(black, 500);
+    transition: 0.3s background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: get-color(white, 500);
     }
 }

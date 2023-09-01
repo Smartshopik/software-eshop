@@ -14,6 +14,10 @@
     data-input='{
         "file": {
             "icon_file": "bi bi-file-earmark"
+        },
+        "number": {
+            "icon_up": "bi bi-plus-lg",
+            "icon_down": "bi bi-dash-lg"
         }
     }'
 >
@@ -64,103 +68,105 @@
         </div>
     </div>
     <hr class="hr--light d-xs-none d-md-block">
-    <div class="container">
-        <div class="py-16 d-flex align-center justify-between">
-            <a href="./index.html" class="d-xs-flex d-md-block align-center justify-center w-xs-100 w-md-unset mr-xs-0 mr-md-30">
-                <img src="./assets/images/logo.png" alt="" class="image--md">
-            </a>
-            <div class="d-xs-none d-md-flex align-center justify-between flex-grow">
-                <div class="d-flex align-center">
-                    <i class="bi bi-headset fs-24 mr-6"></i>
-                    <a href="tel:+420787323654" class="link--primary text--bold fs-16 mr-4">+420 787 323 654</a>
-                    <span class="fs-16 text--black-200">Po - Ne: 9:00 - 18:00</span>
-                </div>
-                <div>
-                    <div class="menu__search">
-                        <form class="w-100">
-                            <div class="input input--search">
-                                <input type="text" name="q" autocomplete="off" placeholder="Vyhledejte produkt..." js-id="action@load(writing_effect)" data-write="Office 2021 Pro; Windows 11 Pro">
-                                <button type="submit">
-                                    <i class="bi bi-search"></i>
-                                </button>
+    <div class="bg--white" js-id="header::sticky">
+        <div class="container">
+            <div class="py-16 d-flex align-center justify-between">
+                <a href="./index.html" class="d-xs-flex d-md-block align-center justify-center w-xs-100 w-md-unset mr-xs-0 mr-md-30">
+                    <img src="./assets/images/logo.png" alt="" class="image--md">
+                </a>
+                <div class="d-xs-none d-md-flex align-center justify-between flex-grow">
+                    <div class="d-flex align-center">
+                        <i class="bi bi-headset fs-24 mr-6"></i>
+                        <a href="tel:+420787323654" class="link--primary text--bold fs-16 mr-4">+420 787 323 654</a>
+                        <span class="fs-16 text--black-200">Po - Ne: 9:00 - 18:00</span>
+                    </div>
+                    <div>
+                        <div class="menu__search">
+                            <form class="w-100">
+                                <div class="input input--search">
+                                    <input type="text" name="q" autocomplete="off" placeholder="Vyhledejte produkt..." js-id="action@load(writing_effect)" data-write="Office 2021 Pro; Windows 11 Pro">
+                                    <button type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="card card--search is-hidden">
+                                <div class="p-16">
+                                    <p>Zadali jste nesprávný výraz</p>
+                                </div>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./product.html" class="product__search--card p-16">
+                                    <div class="product__search--image">
+                                        <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                        <p>
+                                            <span class="text--md text--bold text--primary">49,90 €</span>
+                                            <span class="text--xs">s DPH</span>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </form>
-                        <div class="card card--search is-hidden">
-                            <div class="p-16">
-                                <p>Zadali jste nesprávný výraz</p>
-                            </div>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="./product.html" class="product__search--card p-16">
-                                <div class="product__search--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                                </div>
-                                <div>
-                                    <h4 class="mb-12 text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                    <p>
-                                        <span class="text--md text--bold text--primary">49,90 €</span>
-                                        <span class="text--xs">s DPH</span>
-                                    </p>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +317,7 @@
                     </a>
                 </div>
                 <div class="menu__box">
-                    <a href="" title="Seznam přání">
+                    <a href="wishlist.html" title="Seznam přání">
                         <span class="menu__box--icon">
                             <i class="bi bi-heart"></i>
                         </span>
@@ -319,7 +325,7 @@
                     <span class="menu__box--quantity">4</span>
                 </div>
                 <div class="menu__box">
-                    <button type="button" title="Košík">
+                    <button type="button" title="Košík" js-id="modal@click(open)#minicart">
                         <span class="menu__box--icon">
                             <i class="bi bi-bag"></i>
                         </span>
@@ -396,12 +402,13 @@
                                 <span class="text--sm text--black-200">285 Kč</span>
                             </td>
                             <td class="table__cell text--end" data-th="Přidat">
-                                <a href="" class="btn">
-                                    Koupit
+                                <a href="" class="btn btn--icon">
+                                    <i class="bi bi-bag"></i>
+                                    <span>Přidat do košíku</span>
                                 </a>
                             </td>
                             <td class="table__cell text--end" data-th="Odebrat">
-                                <a href="" class="btn btn--red">
+                                <a href="" class="btn btn--red btn--square">
                                     <i class="bi bi-heart-fill"></i>
                                 </a>
                             </td>
@@ -479,6 +486,116 @@
     </div>
     <div id="modal">
         
+            <div class="modal__drawer modal__drawer--minicart" js-id="modal#minicart">
+                <div class="d-flex align-center justify-between px-24 py-12">
+                    <h3 class="text--lg">Nákupní košík</h3>
+                    <a href="" class="link text--lg" js-id="modal@click(close)#minicart">
+                        <i class="bi bi-x-lg"></i>
+                    </a>
+                </div>
+                <hr class="hr--light">
+                <div class="overflow-auto no-scrollbar h-80">
+                    <a href="./product.html" class="product__cart--card p-16">
+                        <div class="product__search--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                        </div>
+                        <div>
+                            <div class="d-flex align-start justify-between mb-8">
+                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                <button type="button" class="link link--circle no-shrink">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <span>
+                                <span class="text--xs">12 x</span>
+                                <span class="text--xs text--bold text--primary">49,90 €</span>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./product.html" class="product__cart--card p-16">
+                        <div class="product__search--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                        </div>
+                        <div>
+                            <div class="d-flex align-start justify-between mb-8">
+                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                <button type="button" class="link link--circle no-shrink">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <span>
+                                <span class="text--xs">12 x</span>
+                                <span class="text--xs text--bold text--primary">49,90 €</span>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./product.html" class="product__cart--card p-16">
+                        <div class="product__search--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                        </div>
+                        <div>
+                            <div class="d-flex align-start justify-between mb-8">
+                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                <button type="button" class="link link--circle no-shrink">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <span>
+                                <span class="text--xs">12 x</span>
+                                <span class="text--xs text--bold text--primary">49,90 €</span>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./product.html" class="product__cart--card p-16">
+                        <div class="product__search--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                        </div>
+                        <div>
+                            <div class="d-flex align-start justify-between mb-8">
+                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                <button type="button" class="link link--circle no-shrink">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <span>
+                                <span class="text--xs">12 x</span>
+                                <span class="text--xs text--bold text--primary">49,90 €</span>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./product.html" class="product__cart--card p-16">
+                        <div class="product__search--image">
+                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                        </div>
+                        <div>
+                            <div class="d-flex align-start justify-between mb-8">
+                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                <button type="button" class="link link--circle no-shrink">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <span>
+                                <span class="text--xs">12 x</span>
+                                <span class="text--xs text--bold text--primary">49,90 €</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <hr class="hr--light">
+
+                <div class="px-24 py-12">
+                    <div class="d-flex align-center justify-between mb-12">
+                        <span class="text--black text--bold text--lg">Cena: </span>
+                        <span class="text--lg">$128.00</span>
+                    </div>
+                    <div>
+                        <a href="cart.html" class="btn btn--icon w-100">
+                            <i class="bi bi-bag"></i>
+                            <span>Zobrazit košík</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         
     </div>
 </body>

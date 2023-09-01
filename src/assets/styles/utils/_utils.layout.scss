@@ -207,3 +207,15 @@ $layout--sm-gaps: 12px;
 .min-h-full {
     min-height: 100%;
 }
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

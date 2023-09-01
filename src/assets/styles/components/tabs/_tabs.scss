@@ -1,0 +1,56 @@
+.tabs {
+    background-color: get-color(white, 500);
+    border-radius: 0.2rem;
+}
+
+.tabs__header {
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li a,
+        li button {
+            position: relative;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 2.4rem 1.2rem 1.2rem;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: get-font(weight, bold);
+            color: get-color(black, 500);
+            opacity: 0.5;
+            transition: 0.3s opacity, 0.3s border;
+            text-transform: uppercase;
+
+
+            &:hover,
+            &:hover,
+            &:hover {
+                opacity: 1;
+                color: get-color(black, 500);
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: -1px;
+                background-color: transparent;
+                transition: 0.3s background-color;
+            }
+
+            &.is-active {
+                opacity: 1;
+
+                &::before {
+                    background-color: get-color(primary, 500);
+                }
+            }
+        }
+    }
+}

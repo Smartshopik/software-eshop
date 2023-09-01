@@ -2,6 +2,10 @@
     background-color: get-color(primary, 500);
 }
 
+.bg--white {
+    background-color: get-color(white, 500);
+}
+
 .bg--black,
 .bg--black-500 {
     background-color: get-color(black, 500);
