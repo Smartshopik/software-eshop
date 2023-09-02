@@ -43678,7 +43678,7 @@ img {
 }
 .menu__box > a, .menu__box button {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   border: 0;
   padding: 1.2rem 0.8rem;
   background-color: transparent;
@@ -43717,6 +43717,16 @@ img {
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
+}
+
+.menu__box--text {
+  color: #333333;
+}
+.menu__box--text:last-child:not(:first-child) {
+  margin-left: 0.4rem;
+}
+.menu__box--text:first-child:not(:last-child) {
+  margin-right: 0.4rem;
 }
 
 .menu__dropdown {
@@ -45059,6 +45069,12 @@ img {
 
 .modal__drawer--minicart {
   max-width: 350px;
+}
+
+.modal__drawer--menu {
+  max-width: 300px;
+  left: 0;
+  transform: translateX(-100%);
 }
 
 /*

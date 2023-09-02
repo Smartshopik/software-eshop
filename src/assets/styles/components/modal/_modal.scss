@@ -42,3 +42,9 @@
 .modal__drawer--minicart {
     max-width: 350px;
 }
+
+.modal__drawer--menu {
+    max-width: 300px;
+    left: 0;
+    transform: translateX(-100%);
+}

@@ -30,6 +30,120 @@
     </div>
     <div id="modal">
         {% block modal %}
+            <div class="modal__drawer modal__drawer--menu" js-id="modal#menu">
+                <div class="d-flex justify-end">
+                    <a href="" class="link text--lg" js-id="modal@click(close)#menu">
+                        <i class="bi bi-x-lg"></i>
+                    </a>
+                </div>     
+                <div class="d-flex align-center justify-center my-12">
+                    <small class="text--capitalize mr-xs-12">sledujte nás:</small>
+                    <ul class="d-flex">
+                        <li class="mx-xs-8">
+                            <a href="https://facebook.com" target="__blank" class="link link--regular">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="mx-xs-8">
+                            <a href="https://facebook.com" target="__blank" class="link link--regular">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-xs-8">
+                            <a href="https://facebook.com" target="__blank" class="link link--regular">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu" shop-id="menu::recursive#main">
+                    <li>
+                        <a href="">
+                            <span>Sekce 1</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 1.1</span>
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span>Sekce 1.1.1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>Sekce 1.1.2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 1.2</span>
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span>Sekce 1.1.1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>Sekce 1.1.2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Sekce 2</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 2.1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 2.2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 2.3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Sekce 3</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>Sekce 3.1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Sekce 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="modal__drawer modal__drawer--minicart" js-id="modal#minicart">
                 <div class="d-flex align-center justify-between px-24 py-12">
                     <h3 class="text--lg">Nákupní košík</h3>

@@ -3,7 +3,7 @@
 
     > a, button {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         border: 0;
         padding: 1.2rem 0.8rem;
         background-color: transparent;
@@ -46,5 +46,17 @@
         font-size: 2rem;
         width: 2rem;
         height: 2rem;
+    }
+}
+
+.menu__box--text {
+    color: get-color(black, 500);
+
+    &:last-child:not(:first-child) {
+        margin-left: 0.4rem;
+    }
+
+    &:first-child:not(:last-child) {
+        margin-right: 0.4rem;
     }
 }
