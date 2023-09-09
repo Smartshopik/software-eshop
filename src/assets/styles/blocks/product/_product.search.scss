@@ -2,6 +2,8 @@
     display: flex;
     background-color: get-color(white, 500);
     transition: background-color 0.3s, color 0.3s;
+    max-width: unset;
+    width: 100%;
 
     &:not(:last-child) {
         border-bottom: 1px solid rgba(black, 0.1);

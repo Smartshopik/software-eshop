@@ -132,6 +132,7 @@
 
     &.btn--link {
         color: get-color(red, 500);
+        background-color: transparent;
 
         > * {
             color: get-color(red, 500);
@@ -141,7 +142,8 @@
         &:focus,
         &:active {
             color: darken(get-color(red, 500), 10%);
-    
+            background-color:  transparent;
+
             > * {
                 color: darken(get-color(red, 500), 10%);
             }

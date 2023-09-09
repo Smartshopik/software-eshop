@@ -1,7 +1,7 @@
 @use "sass:math";
 
 $layout--columns: 12;
-$layout--gaps: 15px;
+$layout--gaps: 16px;
 $layout--sm-gaps: 12px;
 
 @each $key, $value in $breakpoints {    
@@ -55,7 +55,7 @@ $layout--sm-gaps: 12px;
     margin: 0 auto; 
 
     @media only screen and (min-width: get-breakpoint(xl)) {
-        max-width: calc(1140px + $layout--gaps);
+        max-width: calc(1240px + $layout--gaps);
     }   
 }
 

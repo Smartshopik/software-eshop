@@ -38,7 +38,7 @@
             <div class="col 8-lg">
                 <div class="cols">
                     <div class="col 4-xs">
-                        <div class="card p-12 h-100">
+                        <div class="card card--shadow p-12 h-100">
                             <div class="d-flex align-center justify-between mb-12">
                                 <p class="text--md text--black text--bold">Fakturační údaje</p>
                                 <a href="cart-billing.html" class="link link--primary">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col 4-xs">
-                        <div class="card p-12 h-100">
+                        <div class="card card--shadow p-12 h-100">
                             <div class="d-flex align-center justify-between mb-12">
                                 <p class="text--md text--black text--bold">Dodací adresa</p>
                                 <a href="cart-billing.html" class="link link--primary">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col 4-xs">
-                        <div class="card p-12 h-100">
+                        <div class="card card--shadow p-12 h-100">
                             <div class="d-flex align-center justify-between mb-12">
                                 <p class="text--md text--black text--bold">Poznámka</p>
                                 <a href="cart-billing.html" class="link link--primary">
@@ -81,62 +81,102 @@
                         </div>
                     </div>
                     <div class="col">
-                        <table class="table table--products">
-                            <thead class="table__head">
-                                <tr class="table__row">
-                                    <th class="table__cell text--start">Produkt</th>
-                                    <th class="table__cell w-15">Cena</th>
-                                    <th class="table__cell w-10">Množství</th>
-                                    <th class="table__cell w-15">Celkem</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table__body">
-                                <tr class="table__row">
-                                    <td class="table__cell">
-                                        <div class="d-flex align-center w-100">
-                                            <a href="product.html" class="w-20 mr-xs-12 min-w-80">
-                                                <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
-                                            </a>
-                                            <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
-                                        </div>
-                                    </td>
-                                    <td class="table__cell" data-th="Cena">
-                                        <span class="text--sm text--black-200">285 Kč</span>
-                                    </td>
-                                    <td class="table__cell" data-th="Množství">
-                                        <span class="text--sm text--black">1</span>
-                                    </td>
-                                    <td class="table__cell" data-th="Celkem"><strong class="text--md text--primary">2 565 Kč</strong></td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">
-                                        <div class="d-flex align-center w-100">
-                                            <a href="product.html" class="w-20 mr-xs-12 min-w-80">
-                                                <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
-                                            </a>
-                                            <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
-                                        </div>
-                                    </td>
-                                    <td class="table__cell" data-th="Cena">
-                                        <span class="text--sm text--black-200">285 Kč</span>
-                                    </td>
-                                    <td class="table__cell" data-th="Množství">
-                                        <span class="text--sm text--black">1</span>
-                                    </td>
-                                    <td class="table__cell" data-th="Celkem"><strong class="text--md text--primary">2 565 Kč</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="card card--shadow">
+                            <table class="table table--products">
+                                <thead class="table__head">
+                                    <tr class="table__row">
+                                        <th class="table__cell text--start">Produkt</th>
+                                        <th class="table__cell w-15">Cena</th>
+                                        <th class="table__cell w-10">Množství</th>
+                                        <th class="table__cell w-15">Celkem</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <div class="d-flex align-center w-100">
+                                                <a href="product.html" class="w-20 mr-xs-12 min-w-80">
+                                                    <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
+                                                </a>
+                                                <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell" data-th="Cena">
+                                            <span class="text--sm text--black-200">285 Kč</span>
+                                        </td>
+                                        <td class="table__cell" data-th="Množství">
+                                            <span class="text--sm text--black">1</span>
+                                        </td>
+                                        <td class="table__cell" data-th="Celkem"><strong class="text--md text--primary">2 565 Kč</strong></td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">
+                                            <div class="d-flex align-center w-100">
+                                                <a href="product.html" class="w-20 mr-xs-12 min-w-80">
+                                                    <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
+                                                </a>
+                                                <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell" data-th="Cena">
+                                            <span class="text--sm text--black-200">285 Kč</span>
+                                        </td>
+                                        <td class="table__cell" data-th="Množství">
+                                            <span class="text--sm text--black">1</span>
+                                        </td>
+                                        <td class="table__cell" data-th="Celkem"><strong class="text--md text--primary">2 565 Kč</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="col 6-md 12-xs">
-                        <div class="card p-24 h-100">
+                    <div class="col 12-xs">
+                        <div class="card card--shadow p-24 h-100">
+                            <p class="text--md text--black text--bold mb-24">Doplňkové služby</p>
+                            <div class="input input--checkbox mb-xs-12">
+                                <input type="checkbox" name="service[0]" id="service[0]">
+                                <label for="service[0]" class="w-100">
+                                    <div class="d-flex align-start">
+                                        <i class="bi bi-lightning image--tn text--black-300 mx-xs-8"></i>
+                                        <div>
+                                            <div class="d-flex align-center">
+                                                <span>Zrychlená reklamace <strong class="text--black">(35 Kč)</strong></span>
+                                                <span class="badge badge--green badge--sm ml-8">Doporučujeme</span>
+                                            </div>
+                                            <p class="text--xs text--gray-300 mt-4">Zákonná lhůta pro vyřízení reklamace může být až 30 dní. V případě, že objednaný klíč bude vadný či nefunkční a k objednávce budete mít přidanou tuto "Premium" službu, reklamaci Vám vyřídíme do 1 pracovního dne. V případě kladného vyřízení Vám ihned zašleme náhradní klíč nebo vrátíme plnou částku z nákupu.</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="input input--checkbox">
+                                <input type="checkbox" name="service[1]" id="service[1]">
+                                <label for="service[1]" class="w-100">
+                                    <div class="d-flex align-start">
+                                        <i class="bi bi-lightning image--tn text--black-300 mx-xs-8"></i>
+                                        <div>
+                                            <div class="d-flex align-center">
+                                                <span>Zrychlená reklamace <strong class="text--black">(35 Kč)</strong></span>
+                                                <span class="badge badge--green badge--sm ml-8">Doporučujeme</span>
+                                            </div>
+                                            <p class="text--xs text--gray-300 mt-4">Zákonná lhůta pro vyřízení reklamace může být až 30 dní. V případě, že objednaný klíč bude vadný či nefunkční a k objednávce budete mít přidanou tuto "Premium" službu, reklamaci Vám vyřídíme do 1 pracovního dne. V případě kladného vyřízení Vám ihned zašleme náhradní klíč nebo vrátíme plnou částku z nákupu.</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col 12-xs">
+                        <div class="card card--shadow p-24 h-100">
                             <p class="text--md text--black text--bold mb-24">Způsob platby</p>
                             <div class="input input--radio mb-xs-12">
                                 <input type="radio" name="payment" id="payment[0]">
                                 <label for="payment[0]" class="w-100">
-                                    <div class="d-flex align-center">
+                                    <div class="d-flex align-start">
                                         <i class="bi bi-cash-coin image--tn text--black-300 mx-xs-8"></i>
-                                        <span>Dobírkou <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Dobírkou <strong class="text--black">(Zdarma)</strong></span>
+                                            <p class="text--xs text--gray-300 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sequi sed voluptatem.</p>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -145,7 +185,10 @@
                                 <label for="payment[1]" class="w-100">
                                     <div class="d-flex align-center">
                                         <img src="https://eshop.efko.cz/image-cache/db-public/order-payment-types_10_image_visa-mastercard.png_18x23-q100.webp?1651050232" alt="" class="image--tn mx-xs-8">
-                                        <span>Platba online - karta <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Platba online - karta <strong class="text--black">(Zdarma)</strong></span>
+                                            <p class="text--xs text--gray-300 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sequi sed voluptatem.</p>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -154,21 +197,25 @@
                                 <label for="payment[2]" class="w-100">
                                     <div class="d-flex align-center">
                                         <i class="bi bi-bank image--tn text--black-300 mx-xs-8"></i>
-                                        <span>Platba online - banka <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Platba online - banka <strong class="text--black">(Zdarma)</strong></span>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="col 6-md 12-xs">
-                        <div class="card p-24 h-100">
+                    <div class="col 12-xs">
+                        <div class="card card--shadow p-24 h-100">
                             <p class="text--md text--black text--bold mb-24">Způsob dopravy</p>
                             <div class="input input--radio mb-12">
                                 <input type="radio" name="delivery" id="delivery[0]">
                                 <label for="delivery[0]" class=" w-100">
                                     <div class="d-flex align-center">
                                         <img src="https://eshop.efko.cz/image-cache/db-public/order-delivery-types_17_image_cp-balikovna.png_40x7-q100.webp?1653915394" alt="" class="image--tn mx-xs-12">
-                                        <span>Česká počta - Balíkovna <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Česká počta - Balíkovna <strong class="text--black">(Zdarma)</strong></span>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -177,7 +224,9 @@
                                 <label for="delivery[1]" class="w-100">
                                     <div class="d-flex align-center">
                                         <img src="https://eshop.efko.cz/image-cache/db-public/order-delivery-types_13_image_cp.png_40x30-q100.webp?1653476365" alt="" class="image--tn mx-xs-12">
-                                        <span>Česká počta <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Česká počta <strong class="text--black">(Zdarma)</strong></span>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -186,7 +235,9 @@
                                 <label for="delivery[2]" class="w-100">
                                     <div class="d-flex align-center">
                                         <i class="bi bi-truck image--tn text--black-300 mx-xs-12"></i>
-                                        <span>Osobní odběr na prodejně <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>Osobní odběr na prodejně <strong class="text--black">(Zdarma)</strong></span>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -195,14 +246,16 @@
                                 <label for="delivery[3]" class="w-100">
                                     <div class="d-flex align-center">
                                         <img src="https://eshop.efko.cz/image-cache/db-public/order-delivery-types_16_image_ppl.png_40x14-q100.webp?1653476446" alt="" class="image--tn mx-xs-12">
-                                        <span>PPL kurýr <strong class="text--black">(Zdarma)</strong></span>
+                                        <div>
+                                            <span>PPL kurýr <strong class="text--black">(Zdarma)</strong></span>
+                                        </div>
                                     </div>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="col 12-xs">
-                        <div class="card p-24 h-100">
+                        <div class="card card--shadow p-24 h-100">
                             <p class="text--md text--black text--bold mb-24">Potvrzení</p>
                             <div>
                                 <div class="input input--checkbox my-12">
@@ -223,7 +276,7 @@
                 </div>
             </div>
             <div class="col 4-lg">
-                <div class="card p-24 ml-24">
+                <div class="card card--shadow p-24 ml-24">
                     <h5 class="mb-12">Shrnutí</h5>
                     <div class="d-flex align-center justify-between">
                         <p class="text--bold text--black">Mezisoučet</p>
@@ -233,7 +286,7 @@
                         <p class="text--bold text--black">Doprava</p>
                         <p>0 Kč</p>
                     </div>
-                    <hr class="my-12 hr--darker"/>
+                    <hr class="my-12 hr--light"/>
                     <div class="d-flex align-center justify-between">
                         <p class="text--md text--bold text--black">Celkem</p>
                         <p class="text--md">21 554 Kč</p>

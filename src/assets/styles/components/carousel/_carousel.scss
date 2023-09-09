@@ -73,8 +73,19 @@
     display: none;
 }
 
+.splide__arrows {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .splide__arrow {
-    position: absolute !important;
     z-index: 2;
     top: 50%;
     transform: translateY(-50%);
@@ -95,11 +106,9 @@
 }
 
 .splide__arrow--prev {
-    left: -12px;
     transform: translateX(-10px);
 }
 
 .splide__arrow--next {
-    right: -12px;
     transform: translateX(10px);
 }

@@ -31,70 +31,54 @@
     <div id="modal">
         {% block modal %}
             <div class="modal__drawer modal__drawer--menu" js-id="modal#menu">
-                <div class="d-flex justify-end">
+                <div class="d-flex align-center justify-between px-24 py-12">
+                    <h3 class="text--lg">Menu</h3>
                     <a href="" class="link text--lg" js-id="modal@click(close)#menu">
                         <i class="bi bi-x-lg"></i>
                     </a>
                 </div>     
-                <div class="d-flex align-center justify-center my-12">
-                    <small class="text--capitalize mr-xs-12">sledujte nás:</small>
-                    <ul class="d-flex">
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="menu" shop-id="menu::recursive#main">
+                <hr class="hr--light">
+                <ul class="menu menu--nowrapper px-12" js-id="menu::recursive#main">
                     <li>
                         <a href="">
-                            <span>Sekce 1</span>
+                            <span>
+                                Antiviry a zabezpečení
+                            </span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 1.1</span>
+                                    <span>Avast</span>
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
-                                <ul>
+                                <ul class="is-collapse">
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.1</span>
+                                            <span>Windows</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.2</span>
+                                            <span>Alza</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 1.2</span>
+                                    <span>Lenovo</span>
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
-                                <ul>
+                                <ul class="is-collapse">
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.1</span>
+                                            <span>Eset</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.2</span>
+                                            <span>AVG</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -103,154 +87,320 @@
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 2</span>
+                            <span>Zálohování a obnova dat</span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.1</span>
+                                    <span>Avast</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.2</span>
+                                    <span>AVG</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.3</span>
+                                    <span>Piriform</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 3</span>
+                            <span>Zrychlení a optimalizace</span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 3.1</span>
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 4</span>
+                            <span>Operační systémy</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Kancelářské aplikace</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>VPN</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Hry</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>XBOX</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>PC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Playstation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Náhodné klíče</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Výhodné balíčky</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="modal__drawer modal__drawer--minicart" js-id="modal#minicart">
-                <div class="d-flex align-center justify-between px-24 py-12">
-                    <h3 class="text--lg">Nákupní košík</h3>
-                    <a href="" class="link text--lg" js-id="modal@click(close)#minicart">
-                        <i class="bi bi-x-lg"></i>
-                    </a>
-                </div>
-                <hr class="hr--light">
-                <div class="overflow-auto no-scrollbar h-80">
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <hr class="hr--light">
-
-                <div class="px-24 py-12">
-                    <div class="d-flex align-center justify-between mb-12">
-                        <span class="text--black text--bold text--lg">Cena: </span>
-                        <span class="text--lg">$128.00</span>
-                    </div>
-                    <div>
-                        <a href="cart.html" class="btn btn--icon w-100">
-                            <i class="bi bi-bag"></i>
-                            <span>Zobrazit košík</span>
+                <div class="d-flex flex-column h-100">
+                    <div class="d-flex align-center justify-between px-24 py-12">
+                        <h3 class="text--lg">Nákupní košík</h3>
+                        <a href="" class="link text--lg" js-id="modal@click(close)#minicart">
+                            <i class="bi bi-x-lg"></i>
                         </a>
+                    </div>
+                    <hr class="hr--light">
+                    <div class="flex-grow overflow-auto no-scrollbar">
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="hr--light">
+                    <div class="px-24 py-12">
+                        <div class="d-flex align-center justify-between mb-12">
+                            <span class="text--black text--bold text--lg">Cena: </span>
+                            <span class="text--lg">$128.00</span>
+                        </div>
+                        <div>
+                            <a href="cart.html" class="btn btn--icon w-100">
+                                <i class="bi bi-bag"></i>
+                                <span>Zobrazit košík</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

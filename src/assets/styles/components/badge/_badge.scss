@@ -5,10 +5,15 @@
     background-color: get-color(primary, 500);
     color: get-color(white, 500);
     padding: 0.8rem;
+
+    > i {
+        font-size: 1.6rem;
+    }
 }
 
 .badge--gray {
-    background-color: get-color(gray, 300);
+    background-color: rgba(black, 0.1);
+    color: get-color(black, 500);
 }
 
 .badge--orange {
@@ -25,5 +30,14 @@
 
 .badge--sm {
     font-size: 1rem;
-    padding: 0.7rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.badge--rounded {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

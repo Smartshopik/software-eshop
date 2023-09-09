@@ -3,13 +3,14 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: get-color(green, 300);
+    background-color: get-color(success, 500);
     border: 1px solid;
-    border-color: get-color(green, 500);
+    border-color: get-color(success, 500);
+    border-radius: 0.5rem;
     padding: 0.8rem 1.2rem;
 
     * {
-        color: get-color(green, 500);
+        color: get-color(white, 500);
     }
 
     > *:not(button):not(a) {
@@ -18,6 +19,7 @@
         font-size: 1.4rem;
 
         i {
+            font-size: 1.8rem;
             margin-right: 8px;
         }
     }
@@ -32,81 +34,33 @@
         height: 24px;
         background-color: transparent;
         cursor: pointer;
-        transition: 0.3s background-color;
+        transition: 0.3s background-color, 0.3s opacity;
         
         i {
             font-size: 2rem;
-            color: get-color(green, 500);
+            color: get-color(white, 500);
         }
 
         &:hover,
         &:active,
         &:focus {
             outline: none;
-            background-color: lighten(get-color(green, 500), 40%);
+            opacity: 0.7;
         }
     }
 }
 
 .alert--error {
-    background-color: get-color(red, 400);
-    border-color: get-color(red, 500);
-
-    * {
-        color: get-color(red, 500);
-    }
-
-    > button, a {
-        i {
-            color: get-color(red, 500);
-        }
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: lighten(get-color(red, 500), 30%);
-        }
-    }
+    background-color: get-color(error, 500);
+    border-color: get-color(error, 500);
 }
 
 .alert--warning {
-    background-color: get-color(orange, 400);
-    border-color: get-color(orange, 500);
-
-    * {
-        color: get-color(orange, 500);
-    }
-
-    > button, a {
-        i {
-            color: get-color(orange, 500);
-        }
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: lighten(get-color(orange, 500), 30%);
-        }
-    }
+    background-color: get-color(warning, 500);
+    border-color: get-color(warning, 500);
 }
 
 .alert--info {
-    background-color: get-color(blue, 400);
-    border-color: get-color(blue, 500);
-
-    * {
-        color: get-color(blue, 500);
-    }
-
-    > button, a {
-        i {
-            color: get-color(blue, 500);
-        }
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: lighten(get-color(blue, 500), 45%);
-        }
-    }
+    background-color: get-color(info, 500);
+    border-color: get-color(info, 500);
 }

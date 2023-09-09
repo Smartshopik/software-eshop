@@ -32,7 +32,7 @@
     <div class="container">
         <div class="cols">
             <div class="col 12-lg">
-                <div class="card p-24">
+                <div class="card card--shadow p-24">
                     <div class="d-flex text--center flex-column align-center justify-center">
                         <div class="w-lg-50 w-md-70">
                             <i class="bi bi-heart fs-64"></i>
@@ -42,42 +42,44 @@
                 </div>
             </div>
             <div class="col">
-                <table class="table table--products">
-                    <thead class="table__head">
-                        <tr class="table__row">
-                            <th class="table__cell text--start">Produkt</th>
-                            <th class="table__cell w-15">Cena</th>
-                            <th class="table__cell w-10">Přidat</th>
-                            <th class="table__cell w-10">Odebrat</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table__body">
-                        <tr class="table__row">
-                            <td class="table__cell">
-                                <div class="d-flex align-center w-100">
-                                    <a href="product.html" class="w-20 mr-xs-12 min-w-80">
-                                        <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
+                <div class="card card--shadow">
+                    <table class="table table--products">
+                        <thead class="table__head">
+                            <tr class="table__row">
+                                <th class="table__cell text--start">Produkt</th>
+                                <th class="table__cell w-15">Cena</th>
+                                <th class="table__cell w-10">Přidat</th>
+                                <th class="table__cell w-10">Odebrat</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="table__row">
+                                <td class="table__cell">
+                                    <div class="d-flex align-center w-100">
+                                        <a href="product.html" class="w-20 mr-xs-12 min-w-80">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="" class="image--sm">
+                                        </a>
+                                        <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
+                                    </div>
+                                </td>
+                                <td class="table__cell" data-th="Cena">
+                                    <span class="text--sm text--black-200">285 Kč</span>
+                                </td>
+                                <td class="table__cell text--end" data-th="Přidat">
+                                    <a href="" class="btn btn--icon">
+                                        <i class="bi bi-bag"></i>
+                                        <span>Přidat do košíku</span>
                                     </a>
-                                    <a href="product.html" class="text--sm text--bold">Microsoft Exchange Server Enterprise 2019</a>
-                                </div>
-                            </td>
-                            <td class="table__cell" data-th="Cena">
-                                <span class="text--sm text--black-200">285 Kč</span>
-                            </td>
-                            <td class="table__cell text--end" data-th="Přidat">
-                                <a href="" class="btn btn--icon">
-                                    <i class="bi bi-bag"></i>
-                                    <span>Přidat do košíku</span>
-                                </a>
-                            </td>
-                            <td class="table__cell text--end" data-th="Odebrat">
-                                <a href="" class="btn btn--red btn--square">
-                                    <i class="bi bi-heart-fill"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </td>
+                                <td class="table__cell text--end" data-th="Odebrat">
+                                    <a href="" class="btn btn--red btn--square">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

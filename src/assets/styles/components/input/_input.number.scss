@@ -58,12 +58,14 @@
                 border-bottom-left-radius: 0.5rem;
             }
 
-            &:hover,
-            &:focus {
+            &:hover {
                 background-color: get-color(primary, 500);
                 border-color: get-color(primary, 500);
                 color: get-color(white, 500);
-    
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 2px rgba(get-color(primary, 500), 0.2);
             }
         }
     }

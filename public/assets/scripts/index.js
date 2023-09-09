@@ -8272,25 +8272,25 @@ var Header = /** @class */function (_super) {
   Header.prototype.boot = function (instance) {
     var _this = this;
     setTimeout(function () {
-      instance.element.classList.remove('is-sticky');
+      instance.element.classList.remove("is-sticky");
       _this.offsetTop = instance.element.offsetTop + instance.element.parentElement.offsetTop;
       _this.height = instance.element.offsetHeight;
-      if (instance.type === 'sticky') {
-        if (window.scrollY >= _this.offsetTop && !instance.element.classList.contains('is-sticky')) {
-          instance.element.classList.add('is-sticky');
+      if (instance.type === "sticky") {
+        if (window.scrollY >= _this.offsetTop && !instance.element.classList.contains("is-sticky")) {
+          instance.element.classList.add("is-sticky");
           document.body.style.marginTop = "".concat(_this.height, "px");
         } else if (window.scrollY < _this.offsetTop) {
-          instance.element.classList.remove('is-sticky');
+          instance.element.classList.remove("is-sticky");
           document.body.style.marginTop = "0px";
         }
       }
-      document.addEventListener('scroll', function (e) {
-        if (instance.type === 'sticky') {
-          if (window.scrollY >= _this.offsetTop && !instance.element.classList.contains('is-sticky')) {
-            instance.element.classList.add('is-sticky');
+      document.addEventListener("scroll", function (e) {
+        if (instance.type === "sticky") {
+          if (window.scrollY >= _this.offsetTop && !instance.element.classList.contains("is-sticky")) {
+            instance.element.classList.add("is-sticky");
             document.body.style.marginTop = "".concat(_this.height, "px");
           } else if (window.scrollY < _this.offsetTop) {
-            instance.element.classList.remove('is-sticky');
+            instance.element.classList.remove("is-sticky");
             document.body.style.marginTop = "0px";
           }
         }

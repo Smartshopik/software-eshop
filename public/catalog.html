@@ -117,20 +117,58 @@
         </div>
     </div>
     <hr class="hr--light d-xs-none d-lg-block">
-    <div class="bg--white d-xs-none d-lg-block" js-id="header::sticky">
-        <div class="container">
-            <div class="py-16 d-flex align-center justify-between">
-                <a href="./index.html" class="d-xs-flex d-md-block align-center justify-center w-xs-100 w-md-unset mr-xs-0 mr-md-30">
-                    <img src="./assets/images/logo.png" alt="" class="image--md">
-                </a>
-                <div class="d-xs-none d-md-flex align-center justify-between flex-grow">
-                    <div class="d-flex align-center">
-                        <i class="bi bi-headset fs-24 mr-6"></i>
-                        <a href="tel:+420787323654" class="link--primary text--bold fs-16 mr-4">+420 787 323 654</a>
-                        <span class="fs-16 text--black-200">Po - Ne: 9:00 - 18:00</span>
+    <div class="bg--white" js-id="header::sticky">
+        <div class="container d-xs-block d-lg-none">
+            <div class="py-8">
+                <div class="cols">
+                    <div class="col 4-xs">
+                        <div class="d-flex align-center justify-start">
+                            <div class="menu__box">
+                                <a href="login.html" title="Můj účet" js-id="modal@click(open)#menu">
+                                    <span class="menu__box--icon">
+                                        <i class="bi bi-list fs-24"></i>
+                                    </span>
+                                    <span class="menu__box--text text--bold">
+                                        Menu
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="menu__search">
+                    <div class="col 4-xs">
+                        <a href="./index.html" class="d-flex align-center justify-center h-100 w-100">
+                            <img src="./assets/images/logo.png" alt="" class="image--md">
+                        </a>
+                    </div>
+                    <div class="col 4-xs">
+                        <div class="d-flex align-center justify-end">
+                            <div class="menu__box">
+                                <a href="login.html" title="Můj účet">
+                                    <span class="menu__box--icon">
+                                        <i class="bi bi-person-circle"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="menu__box">
+                                <a href="wishlist.html" title="Seznam přání">
+                                    <span class="menu__box--icon">
+                                        <i class="bi bi-heart"></i>
+                                    </span>
+                                </a>
+                                <span class="menu__box--quantity">4</span>
+                            </div>
+                            <div class="menu__box">
+                                <button type="button" title="Košík" js-id="modal@click(open)#minicart">
+                                    <span class="menu__box--icon">
+                                        <i class="bi bi-bag"></i>
+                                    </span>
+                                </button>
+                                <span class="menu__box--quantity">40</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="menu__search" js-id="modal#search">
                             <form class="w-100">
                                 <div class="input input--search">
                                     <input type="text" name="q" autocomplete="off" placeholder="Vyhledejte produkt..." js-id="action@load(writing_effect)" data-write="Office 2021 Pro; Windows 11 Pro">
@@ -221,59 +259,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="bg--white d-xs-block d-lg-none" js-id="header::sticky">
-        <div class="container">
-            <div class="py-8">
-                <div class="cols">
-                    <div class="col 4-xs">
-                        <div class="d-flex align-center justify-start">
-                            <div class="menu__box">
-                                <a href="login.html" title="Můj účet" js-id="modal@click(open)#menu">
-                                    <span class="menu__box--icon">
-                                        <i class="bi bi-list fs-24"></i>
-                                    </span>
-                                    <span class="menu__box--text text--bold">
-                                        Menu
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
+        <div class="container d-xs-none d-lg-block">
+            <div class="py-16 d-flex align-center justify-between">
+                <a href="./index.html" class="d-xs-flex d-md-block align-center justify-center w-xs-100 w-md-unset mr-xs-0 mr-md-30">
+                    <img src="./assets/images/logo.png" alt="" class="image--md">
+                </a>
+                <div class="d-xs-none d-md-flex align-center justify-between flex-grow">
+                    <div class="d-flex align-center">
+                        <i class="bi bi-headset fs-24 mr-6"></i>
+                        <a href="tel:+420787323654" class="link--primary text--bold fs-16 mr-4">+420 787 323 654</a>
+                        <span class="fs-16 text--black-200">Po - Ne: 9:00 - 18:00</span>
                     </div>
-                    <div class="col 4-xs">
-                        <a href="./index.html" class="d-flex align-center justify-center h-100 w-100">
-                            <img src="./assets/images/logo.png" alt="" class="image--md">
-                        </a>
-                    </div>
-                    <div class="col 4-xs">
-                        <div class="d-flex align-center justify-end">
-                            <div class="menu__box">
-                                <a href="login.html" title="Můj účet">
-                                    <span class="menu__box--icon">
-                                        <i class="bi bi-person-circle"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="menu__box">
-                                <a href="wishlist.html" title="Seznam přání">
-                                    <span class="menu__box--icon">
-                                        <i class="bi bi-heart"></i>
-                                    </span>
-                                </a>
-                                <span class="menu__box--quantity">4</span>
-                            </div>
-                            <div class="menu__box">
-                                <button type="button" title="Košík" js-id="modal@click(open)#minicart">
-                                    <span class="menu__box--icon">
-                                        <i class="bi bi-bag"></i>
-                                    </span>
-                                </button>
-                                <span class="menu__box--quantity">40</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="menu__search" js-id="modal#search">
+                    <div>
+                        <div class="menu__search">
                             <form class="w-100">
                                 <div class="input input--search">
                                     <input type="text" name="q" autocomplete="off" placeholder="Vyhledejte produkt..." js-id="action@load(writing_effect)" data-write="Office 2021 Pro; Windows 11 Pro">
@@ -544,510 +542,814 @@
 </section>
 <section class="mb-48">
     <div class="container">
-        <div class="mb-24">
-            <ul class="breadcrumb">
-                <li>
-                    <a href="">Domov</a>
-                </li>
-                <li>
-                    <a href="">Microsoft Office</a>
-                </li>
-                <li>
-                    Podnikatelia
-                </li>
-            </ul>
-        </div>
-        <div class="card card--light card--rounded py-24 px-32 text--center mb-24">
-            <p><strong class="text--primary">Microsoft Office Professional</strong> vhodný pre podnikateľov do kancelárie alebo samozrejme pre náročných užívateľov aj do domácnosti. Verzia Professional Plus je obohatená o ďalšie nadštandardné aplikácie, ktoré môžete využiť pri práci v kancelárii. Všetky aplikácie, ktoré sú súčasťou balíka nájdete priamo v detaile produktu.</p>
-        </div>
-        <div class="mb-24 d-flex align-center justify-between p-relative">
-            <div class="d-none d-lg-flex">
-                <a href="" class="btn mr-12">Top</a>
-                <a href="?sort=sales" class="btn btn--secondary mr-12">Nejprodávanější</a>
-                <a href="?sort=price_desc" class="btn btn--secondary mr-12">Nejdražší</a>
-                <a href="?sort=price_asc" class="btn btn--secondary mr-12">Nejlevnější</a>
+        <div class="cols">
+            <div class="col 3-xs d-xs-none d-lg-block">
+                <ul class="menu mb-24" js-id="menu::recursive#main">
+                    <li>
+                        <a href="catalog.html">
+                            <span>
+                                Antiviry a zabezpečení
+                            </span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Avast</span>
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="is-collapse">
+                                    <li>
+                                        <a href="catalog.html">
+                                            <span>Windows</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">
+                                            <span>Alza</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Lenovo</span>
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="is-collapse">
+                                    <li>
+                                        <a href="catalog.html">
+                                            <span>Eset</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">
+                                            <span>AVG</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Zálohování a obnova dat</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="catalog.html">
+                            <span>Zrychlení a optimalizace</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Operační systémy</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Kancelářské aplikace</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>VPN</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Hry</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>XBOX</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>PC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Playstation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Náhodné klíče</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Výhodné balíčky</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card card--shadow">
+                    <div class="p-12 d-flex align-center justify-center">
+                        <img src="https://www.bomshop.cz/assets/images/comparators/1.svg" alt="" class="image--sm">
+                    </div>
+                    <hr class="hr--light">
+                    <div class="d-flex flex-column p-12 my-n10">
+                        <div class="my-10">
+                            <div class="d-flex align-center justify-between mb-8">
+                                <div class="d-flex align-center">
+                                    <span class="badge badge--rounded badge--gray mr-8">
+                                        <i class="bi bi-person-fill text--black-300"></i>
+                                    </span>
+                                    <p class="text--sm text--bold text--black">Matěj Křenek</p>
+                                </div>
+                                <ul class="rating rating--stars rating--sm">
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                </ul>
+                            </div>
+                            <div class="bg--light p-12 rounded">
+                                <p class="text--sm text--black">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <div class="d-flex align-center justify-between mb-8">
+                                <div class="d-flex align-center">
+                                    <span class="badge badge--rounded badge--gray mr-8">
+                                        <i class="bi bi-person-fill text--black-300"></i>
+                                    </span>
+                                    <p class="text--sm text--bold text--black">Matěj Křenek</p>
+                                </div>
+                                <ul class="rating rating--stars rating--sm">
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                </ul>
+                            </div>
+                            <div class="bg--light p-12 rounded">
+                                <p class="text--sm text--black">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <div class="d-flex align-center justify-between mb-8">
+                                <div class="d-flex align-center">
+                                    <span class="badge badge--rounded badge--gray mr-8">
+                                        <i class="bi bi-person-fill text--black-300"></i>
+                                    </span>
+                                    <p class="text--sm text--bold text--black">Matěj Křenek</p>
+                                </div>
+                                <ul class="rating rating--stars rating--sm">
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                </ul>
+                            </div>
+                            <div class="bg--light p-12 rounded">
+                                <p class="text--sm text--black">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <div class="d-flex align-center justify-between mb-8">
+                                <div class="d-flex align-center">
+                                    <span class="badge badge--rounded badge--gray mr-8">
+                                        <i class="bi bi-person-fill text--black-300"></i>
+                                    </span>
+                                    <p class="text--sm text--bold text--black">Matěj Křenek</p>
+                                </div>
+                                <ul class="rating rating--stars rating--sm">
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                </ul>
+                            </div>
+                            <div class="bg--light p-12 rounded">
+                                <p class="text--sm text--black">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="my-10">
+                            <div class="d-flex align-center justify-between mb-8">
+                                <div class="d-flex align-center">
+                                    <span class="badge badge--rounded badge--gray mr-8">
+                                        <i class="bi bi-person-fill text--black-300"></i>
+                                    </span>
+                                    <p class="text--sm text--bold text--black">Matěj Křenek</p>
+                                </div>
+                                <ul class="rating rating--stars rating--sm">
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill is-active"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                </ul>
+                            </div>
+                            <div class="bg--light p-12 rounded">
+                                <p class="text--sm text--black">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr--light">
+                    <div>
+                        <a href="https://obchody.heureka.cz/bomshop-cz/recenze/" class="link link--nounderline link--primary p-12 d-flex align-center justify-center"><span>Zobrazit více</span> <i class="bi bi-chevron-right fs-12"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="d-lg-none">
-                <div class="menu__dropdown menu__dropdown--tabs">
-                    <button type="button" js-id="dropdown@click#filter-sort">
-                        <span>Top</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <ul class="menu__dropdown--list is-hidden" js-id="dropdown#filter-sort">
+            <div class="col 12-xs 9-lg">
+                <div class="mb-24">
+                    <ul class="breadcrumb">
                         <li>
-                            <a href="" class="menu__dropdown--link">Top</a>
+                            <a href="">Domov</a>
                         </li>
                         <li>
-                            <a href="?sort=sales" class="menu__dropdown--link">Nejprodávanější</a>
+                            <a href="">Microsoft Office</a>
                         </li>
                         <li>
-                            <a href="?sort=price_desc" class="menu__dropdown--link">Nejdražší</a>
+                            Podnikatelia
+                        </li>
+                    </ul>
+                </div>
+                <div class="card card--light card--rounded py-24 px-32 text--center mb-24">
+                    <p><strong class="text--primary">Microsoft Office Professional</strong> vhodný pre podnikateľov do kancelárie alebo samozrejme pre náročných užívateľov aj do domácnosti. Verzia Professional Plus je obohatená o ďalšie nadštandardné aplikácie, ktoré môžete využiť pri práci v kancelárii. Všetky aplikácie, ktoré sú súčasťou balíka nájdete priamo v detaile produktu.</p>
+                </div>
+                <div class="mb-24 d-flex align-center justify-between p-relative">
+                    <div class="d-none d-lg-flex">
+                        <a href="" class="btn mr-12">Top</a>
+                        <a href="?sort=sales" class="btn btn--secondary mr-12">Nejprodávanější</a>
+                        <a href="?sort=price_desc" class="btn btn--secondary mr-12">Nejdražší</a>
+                        <a href="?sort=price_asc" class="btn btn--secondary mr-12">Nejlevnější</a>
+                    </div>
+                    <div class="d-lg-none">
+                        <div class="menu__dropdown menu__dropdown--tabs">
+                            <button type="button" js-id="dropdown@click#filter-sort">
+                                <span>Top</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <ul class="menu__dropdown--list is-hidden" js-id="dropdown#filter-sort">
+                                <li>
+                                    <a href="" class="menu__dropdown--link">Top</a>
+                                </li>
+                                <li>
+                                    <a href="?sort=sales" class="menu__dropdown--link">Nejprodávanější</a>
+                                </li>
+                                <li>
+                                    <a href="?sort=price_desc" class="menu__dropdown--link">Nejdražší</a>
+                                </li>
+                                <li>
+                                    <a href="?sort=price_asc" class="menu__dropdown--link">Nejlevnější</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu__dropdown menu__dropdown--filter">
+                            <button type="button" js-id="dropdown@click#filter">
+                                <i class="bi bi-funnel"></i>
+                                <span>Filtrace</span>
+                            </button>
+                            <div class="menu__dropdown--list is-hidden" js-id="dropdown#filter">
+                                <div class="p-24">
+                                    <div class="cols 12-xs 6-tn 4-md">
+                                        <div class="col">
+                                            <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
+                                            <div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[112]" id="param[112]">
+                                                    <label for="param[112]" class="text--regular">categorie 1 (6)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[2]" id="param[2]">
+                                                    <label for="param[2]" class="text--regular">categorie 2 (12)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[3]" id="param[3]">
+                                                    <label for="param[3]" class="text--regular">categorie 3 (2)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[4]" id="param[4]">
+                                                    <label for="param[4]" class="text--regular">categorie 4 (1)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[5]" id="param[5]">
+                                                    <label for="param[5]" class="text--regular">categorie 5 (15)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
+                                            <div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[112]" id="param[112]">
+                                                    <label for="param[112]" class="text--regular">categorie 1 (6)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[2]" id="param[2]">
+                                                    <label for="param[2]" class="text--regular">categorie 2 (12)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[3]" id="param[3]">
+                                                    <label for="param[3]" class="text--regular">categorie 3 (2)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[4]" id="param[4]">
+                                                    <label for="param[4]" class="text--regular">categorie 4 (1)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[5]" id="param[5]">
+                                                    <label for="param[5]" class="text--regular">categorie 5 (15)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
+                                            <div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[112]" id="param[112]">
+                                                    <label for="param[112]" class="text--regular">categorie 1 (6)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[2]" id="param[2]">
+                                                    <label for="param[2]" class="text--regular">categorie 2 (12)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[3]" id="param[3]">
+                                                    <label for="param[3]" class="text--regular">categorie 3 (2)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[4]" id="param[4]">
+                                                    <label for="param[4]" class="text--regular">categorie 4 (1)</label>
+                                                </div>
+                                                <div class="input input--checkbox my-12">
+                                                    <input type="checkbox" name="param[5]" id="param[5]">
+                                                    <label for="param[5]" class="text--regular">categorie 5 (15)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="text--uppercase text--bold mb-12 text--sm">Cena</h6>
+                                            <div>
+                                                <div class="input input--range" js-id="input::range#price" data-unit="Kč">
+                                                    <input type="range" name="min_price" step="0.5" min="118" max="3499" data-label="od">
+                                                    <input type="range" name="max_price" step="0.5" min="118" max="3499" data-label="do">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col flex-grow">
+                                            <div class="d-flex align-end justify-end h-100">
+                                                <button class="btn btn--link btn--icon btn--red text--unset">
+                                                    <i class="bi bi-trash3"></i>
+                                                    <span>Vymazat filter</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="cols">
+                        <div class="cold">
+                            <div class="card card--shadow p-24">
+                                <div class="d-flex text--center flex-column align-center justify-center">
+                                    <div class="w-lg-50 w-md-70">
+                                        <i class="bi bi-funnel fs-64"></i>
+                                        <h4 class="mb-12">Žádné produkty</h3>
+                                        <p>Litujeme, na základě vašeho vyhledávání nebyly nalezeny žádné produkty.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6-xs 3-md">
+                            <div class="product__card mx-auto">
+                                <div class="product__card--preview">
+                                    <div class="product__card--gallery">
+                                        <a href="product.html" class="product__card--image">
+                                            <img src="./assets/images/products/placeholder-image.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product__card--badges">
+                                        <span class="badge badge--green">
+                                            Nová licence
+                                        </span>
+                                        <span class="badge badge--primary">
+                                            Okamžité dodání
+                                        </span>
+                                        <span class="badge badge--orange">
+                                            Druhotná licence
+                                        </span>
+                                    </div>
+                                    <button type="button" class="product__card--button__wishlist">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                    <button type="button" class="product__card--button">
+                                        <span class="product__card--button__text">Přidat do košíku</span>
+                                        <i class="bi bi-cart product__card--button__icon"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card--name">
+                                    <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
+                                    <div class="d-flex align-center justify-between">
+                                        <div class="text--center">
+                                            <span class="text--linethrough text--rg text--grey">99.90 €</span>
+                                            <span class="text--bold text--md text--primary mr-4">69.90 €</span>
+                                            <span>s DPH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="d-flex align-center justify-center">
+                        <li>
+                            <a href="?page=1" class="btn btn--pagination mx-6">
+                                <i class="bi bi-chevron-double-left"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="?sort=price_asc" class="menu__dropdown--link">Nejlevnější</a>
+                            <a href="?page=1" class="btn btn--pagination mx-6 is-active">1</a>
+                        </li>
+                        <li>
+                            <a href="?page=2" class="btn btn--pagination mx-6">2</a>
+                        </li>
+                        <li>
+                            <a href="?page=3" class="btn btn--pagination mx-6">3</a>
+                        </li>
+                        <li>
+                            <span class="mx-6">...</span>
+                        </li>
+                        <li>
+                            <a href="?page=3" class="btn btn--pagination mx-6">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <div class="menu__dropdown menu__dropdown--filter">
-                    <button type="button" js-id="dropdown@click#filter">
-                        <i class="bi bi-funnel"></i>
-                        <span>Filtrace</span>
-                    </button>
-                    <div class="menu__dropdown--list is-hidden" js-id="dropdown#filter">
-                        <div class="p-24">
-                            <div class="cols 12-xs 6-tn 4-md">
-                                <div class="col">
-                                    <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
-                                    <div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[112]" id="param[112]">
-                                            <label for="param[112]" class="text--regular">categorie 1 (6)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[2]" id="param[2]">
-                                            <label for="param[2]" class="text--regular">categorie 2 (12)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[3]" id="param[3]">
-                                            <label for="param[3]" class="text--regular">categorie 3 (2)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[4]" id="param[4]">
-                                            <label for="param[4]" class="text--regular">categorie 4 (1)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[5]" id="param[5]">
-                                            <label for="param[5]" class="text--regular">categorie 5 (15)</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
-                                    <div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[112]" id="param[112]">
-                                            <label for="param[112]" class="text--regular">categorie 1 (6)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[2]" id="param[2]">
-                                            <label for="param[2]" class="text--regular">categorie 2 (12)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[3]" id="param[3]">
-                                            <label for="param[3]" class="text--regular">categorie 3 (2)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[4]" id="param[4]">
-                                            <label for="param[4]" class="text--regular">categorie 4 (1)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[5]" id="param[5]">
-                                            <label for="param[5]" class="text--regular">categorie 5 (15)</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="text--uppercase text--bold mb-12 text--sm">Typ licence</h6>
-                                    <div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[112]" id="param[112]">
-                                            <label for="param[112]" class="text--regular">categorie 1 (6)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[2]" id="param[2]">
-                                            <label for="param[2]" class="text--regular">categorie 2 (12)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[3]" id="param[3]">
-                                            <label for="param[3]" class="text--regular">categorie 3 (2)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[4]" id="param[4]">
-                                            <label for="param[4]" class="text--regular">categorie 4 (1)</label>
-                                        </div>
-                                        <div class="input input--checkbox my-12">
-                                            <input type="checkbox" name="param[5]" id="param[5]">
-                                            <label for="param[5]" class="text--regular">categorie 5 (15)</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="text--uppercase text--bold mb-12 text--sm">Cena</h6>
-                                    <div>
-                                        <div class="input input--range" js-id="input::range#price" data-unit="Kč">
-                                            <input type="range" name="min_price" step="0.5" min="118" max="3499" data-label="od">
-                                            <input type="range" name="max_price" step="0.5" min="118" max="3499" data-label="do">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col flex-grow">
-                                    <div class="d-flex align-end justify-end h-100">
-                                        <button class="btn btn--link btn--icon btn--red text--unset">
-                                            <i class="bi bi-trash3"></i>
-                                            <span>Vymazat filter</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mb-24">
-            <div class="cols">
-                <div class="cold">
-                    <div class="card p-24">
-                        <div class="d-flex text--center flex-column align-center justify-center">
-                            <div class="w-lg-50 w-md-70">
-                                <i class="bi bi-funnel fs-64"></i>
-                                <h4 class="mb-12">Žádné produkty</h3>
-                                <p>Litujeme, na základě vašeho vyhledávání nebyly nalezeny žádné produkty.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col 6-xs 3-md">
-                    <div class="product__card mx-auto">
-                        <div class="product__card--preview">
-                            <div class="product__card--gallery">
-                                <a href="product.html" class="product__card--image">
-                                    <img src="./assets/images/products/placeholder-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="product__card--badges">
-                                <span class="badge badge--green">
-                                    Nová licence
-                                </span>
-                                <span class="badge badge--primary">
-                                    Okamžité dodání
-                                </span>
-                                <span class="badge badge--orange">
-                                    Druhotná licence
-                                </span>
-                            </div>
-                            <button type="button" class="product__card--button__wishlist">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                            <button type="button" class="product__card--button">
-                                <span class="product__card--button__text">Přidat do košíku</span>
-                                <i class="bi bi-cart product__card--button__icon"></i>
-                            </button>
-                        </div>
-                        <div class="product__card--name">
-                            <a href="products.detail.html" class="text--md text--center text--bold mb-8">Microsoft Office 2021 Professional Plus</a>
-                            <div class="d-flex align-center justify-between">
-                                <div class="text--center">
-                                    <span class="text--linethrough text--rg text--grey">99.90 €</span>
-                                    <span class="text--bold text--md text--primary mr-4">69.90 €</span>
-                                    <span>s DPH</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <ul class="d-flex align-center justify-center">
-                <li>
-                    <a href="?page=1" class="btn btn--pagination mx-6">
-                        <i class="bi bi-chevron-double-left"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="?page=1" class="btn btn--pagination mx-6 is-active">1</a>
-                </li>
-                <li>
-                    <a href="?page=2" class="btn btn--pagination mx-6">2</a>
-                </li>
-                <li>
-                    <a href="?page=3" class="btn btn--pagination mx-6">3</a>
-                </li>
-                <li>
-                    <span class="mx-6">...</span>
-                </li>
-                <li>
-                    <a href="?page=3" class="btn btn--pagination mx-6">
-                        <i class="bi bi-chevron-double-right"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 </section>
@@ -1119,142 +1421,54 @@
     <div id="modal">
         
             <div class="modal__drawer modal__drawer--menu" js-id="modal#menu">
-                <div class="d-flex justify-end">
+                <div class="d-flex align-center justify-between px-24 py-12">
+                    <h3 class="text--lg">Menu</h3>
                     <a href="" class="link text--lg" js-id="modal@click(close)#menu">
                         <i class="bi bi-x-lg"></i>
                     </a>
                 </div>     
-                <div class="my-12">
-                    <ul class="menu__list d-flex justify-center">
-                        <li>
-                            <div class="menu__dropdown" js-id="dropdown@click#myaccount2">
-                                <a href="login.html">
-                                    <span class="menu__dropdown--icon">
-                                        <i class="bi bi-person-fill"></i>
-                                    </span>
-                                    <span class="menu__dropdown--title">můj účet</span>
-                                </a>
-                                <ul class="menu__dropdown--list is-hidden" js-id="dropdown#myaccount2">
-                                    <li>
-                                        <a class="menu__dropdown--link" href="myaccount.index.html">
-                                            přehled
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            adresář
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            objednávky
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            odhlásit se
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu__dropdown" js-id="dropdown@click#currency2">
-                                <button type="button">
-                                    <span class="menu__dropdown--icon">
-                                        <img src="./assets/images/flags/cz.png" alt="">
-                                    </span>
-                                    <span class="menu__dropdown--title">Česko (CZK)</span>
-                                </button>
-                                <ul class="menu__dropdown--list is-hidden" js-id="dropdown#currency2">
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            <img src="./assets/images/flags/cz.png" alt="">
-                                            Česko  (CZK)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            <img src="./assets/images/flags/sk.png" alt="">
-                                            slovensko (EUR)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            <img src="./assets/images/flags/de.png" alt="">
-                                            Německo (EUR)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu__dropdown--link" href="">
-                                            <img src="./assets/images/flags/fr.png" alt="">
-                                            Francie (EUR)
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex align-center justify-center my-12">
-                    <small class="text--capitalize mr-xs-12">sledujte nás:</small>
-                    <ul class="d-flex">
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="mx-xs-8">
-                            <a href="https://facebook.com" target="__blank" class="link link--regular">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="menu" shop-id="menu::recursive#main">
+                <hr class="hr--light">
+                <ul class="menu menu--nowrapper px-12" js-id="menu::recursive#main">
                     <li>
                         <a href="">
-                            <span>Sekce 1</span>
+                            <span>
+                                Antiviry a zabezpečení
+                            </span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 1.1</span>
+                                    <span>Avast</span>
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
-                                <ul>
+                                <ul class="is-collapse">
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.1</span>
+                                            <span>Windows</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.2</span>
+                                            <span>Alza</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 1.2</span>
+                                    <span>Lenovo</span>
                                     <i class="bi bi-chevron-down"></i>
                                 </a>
-                                <ul>
+                                <ul class="is-collapse">
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.1</span>
+                                            <span>Eset</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <span>Sekce 1.1.2</span>
+                                            <span>AVG</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1263,154 +1477,320 @@
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 2</span>
+                            <span>Zálohování a obnova dat</span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.1</span>
+                                    <span>Avast</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.2</span>
+                                    <span>AVG</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>Sekce 2.3</span>
+                                    <span>Piriform</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 3</span>
+                            <span>Zrychlení a optimalizace</span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
-                        <ul>
+                        <ul class="is-collapse">
                             <li>
                                 <a href="">
-                                    <span>Sekce 3.1</span>
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="">
-                            <span>Sekce 4</span>
+                            <span>Operační systémy</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Kancelářské aplikace</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>Avast</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Piriform</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>VPN</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>AVG</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Hry</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="is-collapse">
+                            <li>
+                                <a href="">
+                                    <span>XBOX</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>PC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Playstation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Náhodné klíče</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Výhodné balíčky</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="modal__drawer modal__drawer--minicart" js-id="modal#minicart">
-                <div class="d-flex align-center justify-between px-24 py-12">
-                    <h3 class="text--lg">Nákupní košík</h3>
-                    <a href="" class="link text--lg" js-id="modal@click(close)#minicart">
-                        <i class="bi bi-x-lg"></i>
-                    </a>
-                </div>
-                <hr class="hr--light">
-                <div class="overflow-auto no-scrollbar h-80">
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product.html" class="product__cart--card p-16">
-                        <div class="product__search--image">
-                            <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
-                        </div>
-                        <div>
-                            <div class="d-flex align-start justify-between mb-8">
-                                <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
-                                <button type="button" class="link link--circle no-shrink">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
-                            </div>
-                            <span>
-                                <span class="text--xs">12 x</span>
-                                <span class="text--xs text--bold text--primary">49,90 €</span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <hr class="hr--light">
-
-                <div class="px-24 py-12">
-                    <div class="d-flex align-center justify-between mb-12">
-                        <span class="text--black text--bold text--lg">Cena: </span>
-                        <span class="text--lg">$128.00</span>
-                    </div>
-                    <div>
-                        <a href="cart.html" class="btn btn--icon w-100">
-                            <i class="bi bi-bag"></i>
-                            <span>Zobrazit košík</span>
+                <div class="d-flex flex-column h-100">
+                    <div class="d-flex align-center justify-between px-24 py-12">
+                        <h3 class="text--lg">Nákupní košík</h3>
+                        <a href="" class="link text--lg" js-id="modal@click(close)#minicart">
+                            <i class="bi bi-x-lg"></i>
                         </a>
+                    </div>
+                    <hr class="hr--light">
+                    <div class="flex-grow overflow-auto no-scrollbar">
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./product.html" class="product__cart--card p-16">
+                            <div class="product__search--image">
+                                <img src="./assets/images/products/placeholder-image.jpg" alt="Product image">
+                            </div>
+                            <div>
+                                <div class="d-flex align-start justify-between mb-8">
+                                    <h4 class="text--sm">Microsoft Office 2021 Professional Plus</h4>
+                                    <button type="button" class="link link--circle no-shrink">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <span>
+                                    <span class="text--xs">12 x</span>
+                                    <span class="text--xs text--bold text--primary">49,90 €</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="hr--light">
+                    <div class="px-24 py-12">
+                        <div class="d-flex align-center justify-between mb-12">
+                            <span class="text--black text--bold text--lg">Cena: </span>
+                            <span class="text--lg">$128.00</span>
+                        </div>
+                        <div>
+                            <a href="cart.html" class="btn btn--icon w-100">
+                                <i class="bi bi-bag"></i>
+                                <span>Zobrazit košík</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
