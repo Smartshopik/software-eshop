@@ -15,16 +15,16 @@ html {
     font-size: 47.5%;
     scroll-behavior: smooth;
 
-    @media only screen and (min-width: get-breakpoint(xl)) {
-        font-size: 62.5%;
+    @media only screen and (min-width: get-breakpoint(sm)) {
+        font-size: 52.5%;
     }   
 
     @media only screen and (min-width: get-breakpoint(md)) {
         font-size: 57.5%;
     }   
 
-    @media only screen and (min-width: get-breakpoint(sm)) {
-        font-size: 52.5%;
+    @media only screen and (min-width: get-breakpoint(lg)) {
+        font-size: 62.5%;
     }   
 }
 
