@@ -96,9 +96,9 @@ html {
   font-size: 47.5%;
   scroll-behavior: smooth;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 479px) {
   html {
-    font-size: 62.5%;
+    font-size: 52.5%;
   }
 }
 @media only screen and (min-width: 767px) {
@@ -106,9 +106,9 @@ html {
     font-size: 57.5%;
   }
 }
-@media only screen and (min-width: 479px) {
+@media only screen and (min-width: 992px) {
   html {
-    font-size: 52.5%;
+    font-size: 62.5%;
   }
 }
 
