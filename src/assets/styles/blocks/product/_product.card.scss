@@ -4,6 +4,7 @@
     max-width: 275px;
     box-shadow: get-shadow(secondary);
     background-color: get-color(white, 500);
+    height: 100%;
 
     &.product__card--noshadow {
         box-shadow: unset;
@@ -72,6 +73,30 @@
     transition: 0.3s background-color, 0.3s border, 0.3s transform;
     transform: translateY(0%);
 
+    &.is-loading {
+        pointer-events: none;
+        color: transparent;
+        user-select: none;
+        background-color: rgba(get-color(primary, 500), 0.75);
+        
+        > * {
+            color: transparent;
+        }
+    }
+    
+    &.is-loading::after {
+        content: "";
+        position: absolute;
+        border: 1px solid rgba(get-color(white, 500), 0.25);
+        border-left-color: get-color(white, 500);
+        border-radius: 50%;
+        left: calc(50% - 8px);
+        top: calc(50% - 8px);
+        min-width: 16px;
+        min-height: 16px;
+        animation: donut-spin 1.2s linear infinite;
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -124,7 +149,7 @@
 }
 
 .product__card--button__wishlist {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
     display: flex;
@@ -172,8 +197,8 @@
 
 .product__card--name {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 0.8rem 1.2rem;
 }

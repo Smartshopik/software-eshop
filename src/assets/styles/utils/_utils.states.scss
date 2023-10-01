@@ -7,8 +7,8 @@ div.is-loading:not(.prevent-loading) {
         z-index: 100;
         top: calc(50% - 20px);
         left: calc(50% - 20px);
-        border: 4px solid rgba(get-color(black, 500), 0.2);
-        border-left-color: get-color(black, 500);
+        border: 4px solid rgba(get-color(primary, 500), 0.2);
+        border-left-color: get-color(primary, 500);
         opacity: 1;
         border-radius: 50%;
         min-width: 40px;

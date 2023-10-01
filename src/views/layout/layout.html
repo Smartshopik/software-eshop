@@ -22,6 +22,16 @@
     }'
 >
     <div id="root">
+        <div class="flash__message" js-id="action#flash_message">
+            <button type="button" class="flash__message--close" js-id="action@click(remove,cache)#flash_message">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="container">
+                <div class="d-flex align-center justify-center p-8">
+                    <p class="text--center text--sm text--white"><i class="bi bi-info-circle mr-4"></i> Občas se může stát, že doručený email s objednávkou skončí ve složce SPAM. Je proto třeba zkontrolovat i nevyžádanou poštu. Děkujeme.</p>
+                </div>
+            </div>
+        </div>
         {% include "blocks/header.html" %}
         <main>
             {% block content %}{% endblock %}

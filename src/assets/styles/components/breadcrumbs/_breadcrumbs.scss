@@ -1,16 +1,16 @@
 .breadcrumb {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     > li {
         position: relative;
-        text-transform: capitalize;
         font-size: 1.6rem;
         font-weight: get-font(weight, bold);
         color: get-color(black, 500);
+        white-space: nowrap;
 
         a {
-            text-transform: capitalize;
             color: get-color(black, 200);
             font-size: 1.6rem;
             font-weight: get-font(weight, regular);
@@ -35,14 +35,12 @@
 .breadcrumb--light {
     > li {
         position: relative;
-        text-transform: capitalize;
         font-size: 1.1rem;
         font-weight: get-font(weight, bold);
         color: get-color(white, 500);
         text-transform: uppercase;
 
         a {
-            text-transform: capitalize;
             color: get-color(white, 500);
             font-size: 1.1rem;
             font-weight: get-font(weight, bold);

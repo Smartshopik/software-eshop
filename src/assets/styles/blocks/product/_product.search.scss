@@ -19,6 +19,7 @@
     .product__search--image {
         max-width: 80px;
         padding-right: 1.6rem;
+        flex-shrink: 0;
 
         img {
             width: 100%;

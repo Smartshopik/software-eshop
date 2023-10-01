@@ -1,0 +1,29 @@
+.flash__message {
+    position: relative;
+    background-color: get-color(primary, 400);
+}
+
+.flash__message--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: get-color(white, 500);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    min-width: 4.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: get-color(primary, 500);
+    }
+}

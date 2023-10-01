@@ -43,7 +43,6 @@
 .menu__dropdown--title {
     color: get-color(black, 500);
     font-size: 1.3rem;
-    text-transform: capitalize;
 }
 
 .menu__dropdown--list {
@@ -52,7 +51,7 @@
     right: 0;
     background-color: get-color(white, 500);
     box-shadow: get-shadow(secondary);
-    z-index: 10;
+    z-index: 101;
     border-radius: 0.2rem;
     min-width: 125px;
     pointer-events: all;

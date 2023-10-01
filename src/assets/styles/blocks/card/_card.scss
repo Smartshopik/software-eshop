@@ -51,6 +51,10 @@
         pointer-events: all;
     }
 
+    &.is-loading {
+        position: absolute !important;
+    }
+
     > * {
         max-width: 525px;
     }
