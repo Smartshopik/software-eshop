@@ -45085,17 +45085,26 @@ img {
   font-size: 1.6rem;
   font-weight: 700;
   color: #333333;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: transparent;
   text-transform: uppercase;
   text-align: start;
   padding: 1.6rem 1.2rem;
-  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   font-size: 1.6rem;
 }
 .table tbody tr > td {
   padding: 1.6rem 1.2rem;
   text-align: start;
   font-size: 1.6rem;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.table:not(.table--products):not(.table--orders) thead tr > th {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.table:not(.table--products):not(.table--orders) tbody tr > td {
   background-color: rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -46484,6 +46493,10 @@ div.is-loading:not(.prevent-loading)::after {
 
 .z-1000 {
   z-index: 1000;
+}
+
+.z-150 {
+  z-index: 150;
 }
 
 .bg--primary {
