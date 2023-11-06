@@ -76,50 +76,105 @@
     text-align: center !important;
 }
 
+// Primary
 .text--primary,
 .text--primary-500 {
     color: get-color(primary, 500) !important;
 }
 
+.text--primary-400 {
+    color: get-color(primary, 400) !important;
+}
+
+// White
 .text--white,
 .text--white-500 {
     color: get-color(white, 500) !important;
 }
 
-.text--black,
-.text--black-500 {
-    color: get-color(black, 500) !important;
+.text--white-400 {
+    color: get-color(white, 400) !important;
 }
 
 .text--white-300 {
     color: get-color(white, 300) !important;
 }
 
-.text--black-200 {
-    color: get-color(black, 200) !important;
+.text--white-200 {
+    color: get-color(white, 200) !important;
+}
+
+// Black
+.text--black,
+.text--black-500 {
+    color: get-color(black, 500) !important;
+}
+.text--black-400 {
+    color: get-color(black, 400) !important;
 }
 
 .text--black-300 {
     color: get-color(black, 300) !important;
 }
 
+.text--black-200 {
+    color: get-color(black, 200) !important;
+}
+
+.text--black-100 {
+    color: get-color(black, 100) !important;
+}
+
+// Gray
 .text--gray-300 {
     color: get-color(gray, 300) !important;
 }
 
+// Green
 .text--green,
 .text--green-500 {
     color: get-color(green, 500) !important;
 }
 
-.text--blue,
-.text--blue-500 {
-    color: get-color(blue, 500);
+.text--green-400 {
+    color: get-color(green, 400) !important;
 }
 
+.text--green-300 {
+    color: get-color(green, 300) !important;
+}
+
+// Blue
+.text--blue,
+.text--blue-500 {
+    color: get-color(blue, 500) !important;
+}
+
+.text--blue,
+.text--blue-400 {
+    color: get-color(blue, 400) !important;
+}
+
+// Orange
+.text--orange,
+.text--orange-500 {
+    color: get-color(orange, 500) !important;
+}
+
+.text--orange-400 {
+    color: get-color(orange, 400) !important;
+}
+
+// Yellow
+.text--yellow,
+.text--yellow-500 {
+    color: get-color(yellow, 500) !important;
+}
+
+// Red
 .text--red,
 .text--red-500 {
-    color: get-color(red, 500);
+    color: get-color(red, 500) !important;
 }
 
 .text--divider {
