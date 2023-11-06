@@ -1,4 +1,14 @@
 <header class="bg--white z-150" js-id="modal::visible#search">
+    <div class="flash__message" js-id="action#flash_message">
+        <button type="button" class="flash__message--close" js-id="action@click(remove,cache)#flash_message">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="container">
+            <div class="d-flex align-center justify-center p-8">
+                <p class="text--center text--sm text--white"><i class="bi bi-info-circle mr-4"></i> Občas se může stát, že doručený email s objednávkou skončí ve složce SPAM. Je proto třeba zkontrolovat i nevyžádanou poštu. Děkujeme.</p>
+            </div>
+        </div>
+    </div>
     <div class="container d-xs-block d-lg-none bg--primary">
         <div class="d-flex align-center flex-xs-column flex-sm-row justify-between py-8">
             <div class="d-flex align-center">
@@ -153,7 +163,7 @@
                                     </button>
                                 </div>
                             </form>
-                            <div class="card card--search is-visible is-loading">
+                            <div class="card card--search is-hidden">
                                 <div class="p-16">
                                     <p>Zadali jste nesprávný výraz</p>
                                 </div>

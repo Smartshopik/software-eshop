@@ -35,6 +35,27 @@
     }
 }
 
+.menu__link--primary {
+    > a, button {
+        color: get-color(primary, 500);
+        transition: 0.3s color, 0.3s opacity;
+
+        > .menu__link--title {
+            color: get-color(primary, 500);
+            font-size: 1.5rem !important;
+            white-space: nowrap;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+}
+
 .menu__link--dropdown {
     position: absolute;
     top: 100%;

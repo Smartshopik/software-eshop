@@ -22,6 +22,11 @@
     font-size: 2.4rem;
 }
 
+.image--product {
+    max-width: 255px;
+    max-height: 360px;
+}
+
 .object-fit--cover {
     object-fit: cover;
 }

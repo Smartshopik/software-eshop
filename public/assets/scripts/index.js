@@ -6984,7 +6984,7 @@ var Variable_1 = __webpack_require__(/*! ../components/Variable */ "./src/assets
 var config_1 = __webpack_require__(/*! ../config */ "./src/assets/scripts/config/index.ts");
 var connector_1 = __webpack_require__(/*! ../connector */ "./src/assets/scripts/connector/index.ts");
 var utils_ajax_1 = __webpack_require__(/*! ../utils/utils.ajax */ "./src/assets/scripts/utils/utils.ajax.ts");
-var AjaxActions = ['value', 'innerText', 'innerHtml'];
+var AjaxActions = ["value", "innerText", "innerHtml"];
 var Ajax = /** @class */function () {
   function Ajax() {
     this.fetcher = new utils_ajax_1["default"](axios_1["default"].create({
@@ -7014,20 +7014,20 @@ var Ajax = /** @class */function () {
     this.init(this.id, this.options, true);
   };
   Ajax.prototype.isBindable = function (value) {
-    return (typeof value === 'string' || value instanceof String) && value.startsWith('{') && value.endsWith('}');
+    return (typeof value === "string" || value instanceof String) && value.startsWith("{") && value.endsWith("}");
   };
   Ajax.prototype.binded = function (instance, value) {
     var default_value = value;
-    var selector = '';
-    var action = '';
-    value = value.replace(/\s/g, '').replace(/}/g, '').replace(/{/g, '');
-    if (value.split('||')[1]) {
-      default_value = value.split('||')[1];
-      selector = value.split('||')[0].split('.')[0].split('(')[1].split(')')[0];
-      action = value.split('||')[0].split('.')[1];
+    var selector = "";
+    var action = "";
+    value = value.replace(/\s/g, "").replace(/}/g, "").replace(/{/g, "");
+    if (value.split("||")[1]) {
+      default_value = value.split("||")[1];
+      selector = value.split("||")[0].split(".")[0].split("(")[1].split(")")[0];
+      action = value.split("||")[0].split(".")[1];
     } else {
-      selector = value.split('.')[0].split('(')[1].split(')')[0];
-      action = value.split('.')[1];
+      selector = value.split(".")[0].split("(")[1].split(")")[0];
+      action = value.split(".")[1];
     }
     var connected = connector_1["default"].get(instance.name, {
       id: instance.id
@@ -7059,10 +7059,10 @@ var Ajax = /** @class */function () {
         //   }
         // });
         // console.log(instance)
-        if (conn.element.classList.contains('is-loading')) {
-          conn.element.classList.remove('is-loading');
+        if (conn.element.classList.contains("is-loading")) {
+          conn.element.classList.remove("is-loading");
         } else {
-          conn.element.classList.add('is-loading');
+          conn.element.classList.add("is-loading");
         }
         // if(conn.element.classList.contains('is-disabled')) {
         //   setTimeout(() => {
@@ -7085,15 +7085,15 @@ var Ajax = /** @class */function () {
     connector_1["default"].get(Template_1.Template.id, {
       id: instance.id
     }).forEach(function (conn) {
-      return conn.element.classList.toggle('is-loading');
+      return conn.element.classList.toggle("is-loading");
     });
     if (instance.event.params[0]) {
-      var parts_1 = instance.event.params[0].split('.').reverse();
+      var parts_1 = instance.event.params[0].split(".").reverse();
       parts_1.forEach(function (part, index) {
         connector_1["default"].get(Template_1.Template.id, {
-          id: parts_1.slice(index, parts_1.length).reverse().join('.')
+          id: parts_1.slice(index, parts_1.length).reverse().join(".")
         }).forEach(function (conn) {
-          return conn.element.classList.toggle('is-loading');
+          return conn.element.classList.toggle("is-loading");
         });
       });
     }
@@ -7123,7 +7123,7 @@ var Ajax = /** @class */function () {
         connector_1["default"].get(Variable_1.Variable.id, {
           type: name
         }).forEach(function (conn) {
-          return Variable_1.Variable.assign(conn, value);
+          return Variable_1.Variable.assign(conn, value, name);
         });
       });
     }
@@ -7131,11 +7131,11 @@ var Ajax = /** @class */function () {
       Object.entries(data).forEach(function (_a) {
         var name = _a[0],
           value = _a[1];
-        if (name !== 'templates' && name !== 'status' && name !== 'redirect_url' && name !== 'variables' && name !== 'replace_url') {
+        if (name !== "templates" && name !== "status" && name !== "redirect_url" && name !== "variables" && name !== "replace_url") {
           connector_1["default"].get(Variable_1.Variable.id, {
             type: name
           }).forEach(function (conn) {
-            return Variable_1.Variable.assign(conn, value);
+            return Variable_1.Variable.assign(conn, value, name);
           });
         }
       });
@@ -7192,7 +7192,7 @@ var Ajax = /** @class */function () {
                 return __generator(this, function (_a) {
                   switch (_a.label) {
                     case 0:
-                      return [4 /*yield*/, this.fetcher.get('', {
+                      return [4 /*yield*/, this.fetcher.get("", {
                         params: __assign({}, data)
                       })];
                     case 1:
@@ -7225,8 +7225,8 @@ var Ajax = /** @class */function () {
 
   Ajax.prototype.handleEvent = function (instance) {
     var _this = this;
-    if (instance.element.getAttribute('listener') !== 'true') {
-      instance.element.setAttribute('listener', 'true');
+    if (instance.element.getAttribute("listener") !== "true") {
+      instance.element.setAttribute("listener", "true");
       instance.element.addEventListener(instance.event.event, function (e) {
         return _this.eventFunction(e, instance);
       });
@@ -7234,12 +7234,12 @@ var Ajax = /** @class */function () {
   };
   Ajax.prototype.eventFunction = function (e, instance) {
     var _this = this;
-    if (instance.element.nodeName !== 'INPUT' && instance.element.type !== 'checkbox') {
+    if (instance.element.nodeName !== "INPUT" && instance.element.type !== "checkbox") {
       e.preventDefault();
     }
     var data = [];
     try {
-      Object.entries(JSON.parse(instance.data.data ? instance.data.data : '{}')).forEach(function (_a) {
+      Object.entries(JSON.parse(instance.data.data ? instance.data.data : "{}")).forEach(function (_a) {
         var key = _a[0],
           value = _a[1];
         if (_this.isBindable(value)) {
@@ -10129,6 +10129,7 @@ var __extends = this && this.__extends || function () {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
+var connector_1 = __webpack_require__(/*! ../../connector */ "./src/assets/scripts/connector/index.ts");
 var component_1 = __webpack_require__(/*! ../component */ "./src/assets/scripts/components/component.ts");
 var Variable = /** @class */function (_super) {
   __extends(Variable, _super);
@@ -10136,16 +10137,24 @@ var Variable = /** @class */function (_super) {
     return _super !== null && _super.apply(this, arguments) || this;
   }
   Variable.prototype.boot = function (instance) {};
-  Variable.prototype.assign = function (instance, value) {
+  Variable.prototype.assign = function (instance, value, name) {
     switch (_typeof(value)) {
-      case 'boolean':
+      case "boolean":
         if (value === true) {
-          instance.element.classList.remove('is-hidden');
-          instance.element.classList.add('is-visible');
+          instance.element.classList.remove("is-hidden");
+          instance.element.classList.add("is-visible");
         } else {
-          instance.element.classList.add('is-hidden');
-          instance.element.classList.remove('is-visible');
+          instance.element.classList.add("is-hidden");
+          instance.element.classList.remove("is-visible");
         }
+        connector_1["default"].get("modal", {
+          id: instance.id,
+          type: null,
+          event: null
+        }).forEach(function (item) {
+          item.element.classList.add("is-active");
+          document.body.classList.add("is-overlay");
+        });
         break;
       default:
         instance.element.innerText = value;

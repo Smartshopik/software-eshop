@@ -37,7 +37,7 @@
     > li {
         color: get-color(white, 500);
         font-size: 2.2rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: none;
         align-items: center;
         flex-wrap: nowrap;

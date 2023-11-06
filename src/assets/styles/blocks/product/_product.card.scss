@@ -5,6 +5,7 @@
     box-shadow: get-shadow(secondary);
     background-color: get-color(white, 500);
     height: 100%;
+    border-radius: 0.7rem;
 
     &.product__card--noshadow {
         box-shadow: unset;
@@ -56,6 +57,7 @@
 .product__card--button {
     position: absolute;
     bottom: 0;
+    right: 0;
     left: 0;
     color: get-color(white, 500);
     font-size: 1.3rem;
@@ -133,7 +135,6 @@
 
     @media (min-width: get-breakpoint(lg)) {
         transform: translateY(100%);
-        right: 0;
 
         .product__card--button__text {
             display: block;
@@ -201,4 +202,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0.8rem 1.2rem;
+
+    > a:first-child {
+        flex-grow: 1;
+    }
 }

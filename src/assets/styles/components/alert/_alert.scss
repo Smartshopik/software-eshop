@@ -64,3 +64,19 @@
     background-color: get-color(info, 500);
     border-color: get-color(info, 500);
 }
+
+.alert--primary {
+    background-color: get-color(primary, 500);
+    border-color: get-color(primary, 500);
+
+    &.alert--muted {
+        color: get-color(primary, 500);
+        background-color: lighten(get-color(primary, 500), 35%);
+        border-color: lighten(get-color(primary, 500), 35%);
+
+        * {
+            color: get-color(primary, 500);
+
+        }
+    }
+}

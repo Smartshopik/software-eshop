@@ -94,3 +94,7 @@
         }
     }
 }
+
+.input--checkbox__filled:has(input:checked) {
+    background-color: lighten(get-color(primary, 500), 35%);
+}

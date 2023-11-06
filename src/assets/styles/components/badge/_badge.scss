@@ -5,14 +5,15 @@
     background-color: get-color(primary, 500);
     color: get-color(white, 500);
     padding: 0.8rem;
-
+    border-radius: 0.7rem;
+    
     > i {
         font-size: 1.6rem;
     }
 }
 
 .badge--gray {
-    background-color: rgba(black, 0.1);
+    background-color: rgba(get-color(black, 500), 0.1);
     color: get-color(black, 500);
 }
 

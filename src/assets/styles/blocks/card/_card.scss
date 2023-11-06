@@ -2,7 +2,7 @@
     position: relative;
     color: get-color(black, 500);
     background-color: get-color(white, 500);
-    border-radius: 0.2rem;
+    border-radius: 0.7rem;
     border: 2px solid rgba(black, 0.1);
 
     .card__header {
@@ -14,6 +14,10 @@
 .card--shadow {
     box-shadow: get-shadow(secondary);
     border: unset; // 1px solid rgba(black, 0.05);
+}
+
+.card--border {
+    border-top: 2px solid get-color(primary, 500) !important;
 }
 
 .card--light {
