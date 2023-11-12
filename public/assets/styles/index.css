@@ -43139,6 +43139,7 @@ img {
   overflow: hidden;
   transition: 0.3s background-color, 0.3s border, 0.3s transform;
   transform: translateY(0%);
+  width: 100%;
 }
 .product__card--button.is-loading {
   pointer-events: none;
@@ -44417,6 +44418,7 @@ img {
   font-size: 1.4rem;
   margin-bottom: 0px;
   line-height: 18px;
+  z-index: 2;
 }
 .input--checkbox label:first-child {
   margin-right: 8px;
@@ -44426,6 +44428,18 @@ img {
 }
 .input--checkbox label a {
   padding: 0;
+}
+.input--checkbox label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.input--checkbox.input--checkbox__filled input:checked + label::after {
+  background-color: #f2f0fb;
 }
 .input--checkbox input {
   position: relative;
@@ -44437,6 +44451,7 @@ img {
   border-radius: 3px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  z-index: 3;
 }
 .input--checkbox input::before {
   content: "";
@@ -44487,10 +44502,6 @@ img {
   color: #FF1A43;
 }
 
-.input--checkbox__filled:has(input:checked) {
-  background-color: #f2f0fb;
-}
-
 .input--radio {
   flex-direction: row !important;
   align-items: flex-start !important;
@@ -44500,6 +44511,7 @@ img {
   font-size: 1.4rem;
   margin-bottom: 0px;
   line-height: 18px;
+  z-index: 2;
 }
 .input--radio label:first-child {
   margin-right: 8px;
@@ -44509,6 +44521,18 @@ img {
 }
 .input--radio label a {
   padding: 0;
+}
+.input--radio label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.input--radio.input--radio__filled > input:checked ~ label::after {
+  background-color: #f2f0fb;
 }
 .input--radio input {
   position: relative;
@@ -44520,6 +44544,7 @@ img {
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  z-index: 3;
 }
 .input--radio input::before {
   content: "";
@@ -44559,10 +44584,6 @@ img {
   position: absolute;
   margin: 2px;
   color: #FF1A43;
-}
-
-.input--radio__filled:has(input:checked) {
-  background-color: #f2f0fb;
 }
 
 .input--toggle {

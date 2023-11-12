@@ -7,6 +7,7 @@
         font-size: 1.4rem;
         margin-bottom: 0px;
         line-height: 18px;
+        z-index: 2;
 
         &:first-child {
             margin-right: 8px;
@@ -18,6 +19,16 @@
         a {
             padding: 0;
         }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     }
 
     input {
@@ -28,6 +39,7 @@
         border-radius: 50%;
         border: 2px solid rgba(black, 0.1);
         cursor: pointer;
+        z-index: 3;
 
         &::before {
             content: "";
@@ -78,9 +90,4 @@
             }
         }
     }
-}
-
-
-.input--radio__filled:has(input:checked) {
-    background-color: lighten(get-color(primary, 500), 35%);
 }
