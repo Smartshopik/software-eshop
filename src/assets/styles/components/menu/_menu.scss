@@ -20,10 +20,12 @@
         padding: 1.2rem;
         transition: 0.3s color, 0.3s background-color;
 
-        > * {
+        > * {   
             color: get-color(black, 300);
             font-size: 1.4rem !important;
-            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            
         }
 
         > i:last-child {
@@ -51,7 +53,6 @@
     > * {
         color: get-color(black, 500);
         font-size: 1.5rem !important;
-        white-space: nowrap;
     }
 
 }

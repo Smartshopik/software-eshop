@@ -43701,7 +43701,8 @@ img {
 .menu li > a > * {
   color: #848484;
   font-size: 1.4rem !important;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .menu li > a > i:last-child {
   transition: 0.3s transform;
@@ -43723,7 +43724,6 @@ img {
 .menu > li > a > * {
   color: #333333;
   font-size: 1.5rem !important;
-  white-space: nowrap;
 }
 
 .menu li.is-active > a > i:last-child {
@@ -44438,9 +44438,6 @@ img {
   height: 100%;
   z-index: -1;
 }
-.input--checkbox.input--checkbox__filled input:checked + label::after {
-  background-color: #f2f0fb;
-}
 .input--checkbox input {
   position: relative;
   -webkit-appearance: none;
@@ -44530,9 +44527,6 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-.input--radio.input--radio__filled > input:checked ~ label::after {
-  background-color: #f2f0fb;
 }
 .input--radio input {
   position: relative;
