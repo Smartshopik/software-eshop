@@ -91,3 +91,7 @@
         }
     }
 }
+
+.input--radio__filled input:checked ~ label::after {
+    background-color: lighten(get-color(primary, 500), 35%);
+}
